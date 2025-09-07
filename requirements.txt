@@ -1,0 +1,4 @@
+#web
+fastapi
+Uvicorn
+jinja2
