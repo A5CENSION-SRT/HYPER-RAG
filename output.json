@@ -1,0 +1,50 @@
+[
+  {
+    "source": "Washing Machine Sales Template.pdf",
+    "type": "text",
+    "page": 1,
+    "bbox": [
+      72.0,
+      72.0,
+      546.0095825195312,
+      101.0390625
+    ]
+  },
+  {
+    "source": "Washing Machine Sales Template.pdf",
+    "type": "text",
+    "page": 1,
+    "bbox": [
+      72.0,
+      108.39492797851562,
+      532.0818481445312,
+      152.31649780273438
+    ]
+  },
+  {
+    "source": "Washing Machine Sales Template.pdf",
+    "type": "text",
+    "page": 1,
+    "bbox": [
+      72.0,
+      174.31292724609375,
+      194.59463500976562,
+      193.67230224609375
+    ]
+  },
+  {
+    "source": "Washing Machine Sales Template.pdf",
+    "type": "text",
+    "page": 1,
+    "bbox": [
+      72.0,
+      202.5762176513672,
+      515.089111328125,
+      292.41583251953125
+    ]
+  },
+  {
+    "source": "Washing Machine Sales Template.pdf",
+    "type": "image",
+    "page": 1,
+    "bbox": 

@@ -2,3 +2,6 @@
 fastapi
 Uvicorn
 jinja2
+
+#rag-core
+fitz
