@@ -2,6 +2,7 @@ import os
 import fitz
 import pdfplumber
 import io
+from typing import List, Optional
 from PIL import Image
 import torch
 from transformers import AutoProcessor, AutoModelForVision2Seq
@@ -25,7 +26,7 @@ def load_blip_model():
     loaded = True
 
 def generate_caption(image):
-    global laded, processor, model
+    global loaded, processor, model
     if not loaded:
         load_blip_model()
     inputs = processor(images=image, return_tensors="pt").to(device)
@@ -55,7 +56,7 @@ def process_pdf_ordered(pdf_path):
                         elements.append({
                             "type": "text",
                             "content": text,
-                            "bbox": round_bbox((x0, y0, x1, y1)),
+                            "bbox": str(round_bbox((x0, y0, x1, y1))),
                             "page": page_num
                         })
 
@@ -69,7 +70,7 @@ def process_pdf_ordered(pdf_path):
                 elements.append({
                     "type": "image",
                     "content": f"[IMAGE] {caption}",
-                    "bbox": round_bbox(bbox),
+                    "bbox": str(round_bbox(bbox)),
                     "page": page_num
                 })
 
@@ -86,7 +87,7 @@ def process_pdf_ordered(pdf_path):
                     y0 = min(cell["top"] for cell in cells)
                     x1 = max(cell["x1"] for cell in cells)
                     y1 = max(cell["bottom"] for cell in cells)
-                    bbox = round_bbox((x0, y0, x1, y1))
+                    bbox = str(round_bbox((x0, y0, x1, y1)))
 
                     # Table text
                     table_text = "\n".join([
@@ -166,18 +167,45 @@ def create_embeddings():
     embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     return embedding_model
 
+def build_chroma_index(
+    documents: List[Document],
+    embedding_model,
+    persist_directory: str = "main_db/vector_db",
+    collection_name: Optional[str] = None,
+):
+    """
+    Create or update a Chroma vector database from a list of LangChain Documents.
+
+    Args:
+        documents (List[Document]): List of LangChain Document objects to index.
+        embedding_model: Any LangChain-compatible embedding function.
+        persist_directory (str): Directory where Chroma DB will be stored.
+        collection_name (str, optional): Name of the Chroma collection.
+        reset (bool): If True, deletes any existing DB at persist_directory.
+
+    Returns:
+        Chroma: A persisted Chroma vector store instance.
+    """
+    
+    vectordb = Chroma.from_documents(
+        documents=documents,
+        embedding=embedding_model,
+        persist_directory=persist_directory,
+        collection_name=collection_name
+    )
+
+    vectordb.persist()
+    return vectordb
+
     
 if __name__ == "__main__":
     # Example usage with the provided PDF
-    pdf_path = r"c:\coding\Repositories\Multi-Agent-RAG-Pipeline\main_db\pdfs_db\Washing Machine Sales Template.pdf"
+    pdf_path = r"c:\coding\Repositories\Multi-Agent-RAG-Pipeline\main_db\pdfs_db\Washing Machine Sales Template (1).pdf"
     if os.path.exists(pdf_path):
-        chunks = process_pdf_ordered(pdf_path)        
-        chunks= chunk_documents(chunks)
+        docs = process_pdf_ordered(pdf_path)        
+        chunks = chunk_documents(docs)
         embedding_model = create_embeddings()
-        texts = [doc.page_content for doc in chunks]
-        embeddings = embedding_model.embed_documents(texts)
-        print(f"Created embeddings for {len(embeddings)} chunks.")
-        print(embeddings)  # Print the first embedding as a sample
-
+        vectordb = build_chroma_index(chunks, embedding_model, collection_name="pdf_collection")
+        print(f" Indexed {len(chunks)} chunks into Chroma at {vectordb._persist_directory}")
     else:
-        print("PDF file not found. Please check the path.")
+        print(" PDF file not found. Please check the path.")
