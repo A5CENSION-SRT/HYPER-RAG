@@ -29,6 +29,9 @@ class Settings(BaseSettings):
     DOCS_DIR_REFRIGERATOR: str = "data/processed/refrigerator"
     DOCS_DIR_WASHING_MACHINE: str = "data/processed/washing_machine"
 
+
+    PROJECT_NAME: str = "Multi-Agent RAG Chatbot"
+    
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
