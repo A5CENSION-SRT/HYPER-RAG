@@ -1,18 +1,30 @@
-# web
-fastapi==0.95.2
-uvicorn==0.22.0
+# --- Web Framework ---
+# Use ~= to get bug fixes and minor updates without breaking changes.
+# This version uses Pydantic V2, which is the modern standard.
+fastapi~=0.111.0
+uvicorn[standard]~=0.29.0  # [standard] adds recommended extras like uvloop.
 
-# rag-core / pdf processing / vision
-PyMuPDF==1.22.5  # provides fitz
-pdfplumber==0.9.0
-Pillow==10.1.0
-torch>=2.0.0
-transformers==4.40.0
+# --- RAG Core / PDF Processing / Vision ---
+PyMuPDF~=1.24.0
+pdfplumber~=0.11.0
+Pillow~=10.3.0
+# torch and transformers are fine, but be explicit about what you need.
+# If you are doing CPU-only inference, you can specify that to reduce download size.
+torch~=2.3.0
+transformers~=4.41.0
 
-# langchain + vector DB
-langchain>=0.0.300
-langchain-community==0.0.20
-chromadb>=0.3.32
+# --- LangChain & Vector DB ---
+# The new modular LangChain structure. Start with at least 0.2.0.
+langchain~=0.2.0
+langchain-core~=0.2.0
+langchain-community~=0.2.0
 
-# utilities
+# Explicitly add the integration for your vector store.
+langchain-chroma~=0.1.0
+
+# Use the latest Chroma version for new projects.
+chromadb~=0.5.0
+
+# --- Development & Utilities ---
 pytest
+python-dotenv  # Almost always needed for managing API keys.

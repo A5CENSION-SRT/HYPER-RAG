@@ -1,9 +1,10 @@
-from fastapi import APIRouter,UploadFile, File,Form, HTTPException, Status 
-import json 
+from fastapi import APIRouter, UploadFile, File, Form, HTTPException
+import json
 import asyncio
 from typing import AsyncGenerator
 
 from fastapi.responses import StreamingResponse
+from starlette import status
 
 from app.services.ingestion_service import store_process_chunk_ingest
 from app.core.config import settings
@@ -14,7 +15,7 @@ router = APIRouter(
     tags=["Knowledge Base"]
 )   
 
-@router.post("/upload/stream", status_code=Status.HTTP_201_CREATED)
+@router.post("/upload/stream", status_code=status.HTTP_201_CREATED)
 
 async def upload_manual(
     product_type: str = Form(..., description="The type of product"),
@@ -22,13 +23,13 @@ async def upload_manual(
 ):
     if product_type not in settings.VALID_PRODUCT_TYPES:
         raise HTTPException(
-            status_code=Status.HTTP_400_BAD_REQUEST,
+            status_code=status.HTTP_400_BAD_REQUEST,
             detail=f"Invalid product type. Valid types are: {settings.VALID_PRODUCT_TYPES}"
         )
 
     if file.content_type != "application/pdf":
         raise HTTPException(
-            status_code=Status.HTTP_400_BAD_REQUEST,
+            status_code=status.HTTP_400_BAD_REQUEST,
             detail="Invalid file type. Only PDF files are accepted."
         )
     
