@@ -12,25 +12,28 @@ import {
   HelpCircle,
   ChevronLeft,
   ChevronRight,
+  MessageCircle,
+  Plus,
 } from "lucide-react";
 
+export type NavigationView = "chat" | "add_manuals" | "manage_washing_machine" | "manage_ac" | "manage_refrigerator";
+
 const navigationItems = [
-  { icon: LayoutDashboard, label: "Dashboard", active: true },
-  { icon: Package, label: "Products", active: false },
-  { icon: FileText, label: "Invoices", active: false },
-  { icon: Users, label: "Customers", active: false },
-  { icon: BarChart3, label: "Analytics", active: false },
-  { icon: Megaphone, label: "Marketing", active: false },
-  { icon: Settings, label: "Settings", active: false },
-  { icon: HelpCircle, label: "Help", active: false },
+  { icon: MessageCircle, label: "Chat", view: "chat" as NavigationView },
+  { icon: Plus, label: "Add Manuals", view: "add_manuals" as NavigationView },
+  { icon: FileText, label: "Manage Washing Machine Manual", view: "manage_washing_machine" as NavigationView },
+  { icon: FileText, label: "Manage AC Manual", view: "manage_ac" as NavigationView },
+  { icon: FileText, label: "Manage Refrigerator Manual", view: "manage_refrigerator" as NavigationView },
 ];
 
 interface SidebarProps {
   isCollapsed?: boolean;
   onToggle?: () => void;
+  activeView?: NavigationView;
+  onNavigate?: (view: NavigationView) => void;
 }
 
-export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
+export function Sidebar({ isCollapsed = false, onToggle, activeView = "chat", onNavigate }: SidebarProps) {
   return (
     <div className="relative">
       {/* Sidebar Container */}
@@ -49,7 +52,7 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
         {/* Header Section */}
         <div className="relative h-16 flex items-center px-3">
           {/* Logo/Title - positioned absolutely to avoid affecting icon alignment */}
-          <div 
+          <div
             className={`
               absolute left-3 top-1/2 transform -translate-y-1/2
               transition-all duration-500 ease-in-out
@@ -60,7 +63,7 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
               MACAG
             </h1>
           </div>
-          
+
           {/* Toggle Button - always positioned on the right */}
           <button
             onClick={onToggle}
@@ -84,14 +87,16 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
           <ul className="space-y-2">
             {navigationItems.map((item) => {
               const Icon = item.icon;
+              const isActive = activeView === item.view;
               return (
                 <li key={item.label}>
                   <button
+                    onClick={() => onNavigate?.(item.view)}
                     className={`
                       w-full relative overflow-hidden
                       transition-all duration-200
-                      ${item.active 
-                        ? 'bg-white text-black' 
+                      ${isActive
+                        ? 'bg-white text-black'
                         : 'text-gray-300 hover:bg-gray-800 hover:text-white'
                       }
                     `}
@@ -106,15 +111,14 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
                     {/* Icon Container - fixed width so icons remain static */}
                     <div className="w-11 flex items-center justify-center flex-shrink-0">
                       <Icon
-                        className={`w-5 h-5 ${item.active ? 'text-black' : 'text-current'}`}
+                        className={`w-5 h-5 ${isActive ? 'text-black' : 'text-current'}`}
                       />
                     </div>
 
                     {/* Label Container - only the text animates; left-aligned when visible */}
                     <div
-                      className={`transition-all duration-300 ease-in-out ${
-                        isCollapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100 flex-1 ml-3'
-                      }`}
+                      className={`transition-all duration-300 ease-in-out ${isCollapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100 flex-1 ml-3'
+                        }`}
                       style={{ textAlign: 'left' }}
                     >
                       <span className={`${fontClasses.navItem} block`}>{item.label}</span>
@@ -126,7 +130,7 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
           </ul>
         </nav>
 
-  {/* removed bottom spacer so the sidebar naturally fills wrapper height */}
+        {/* removed bottom spacer so the sidebar naturally fills wrapper height */}
       </div>
     </div>
   );

@@ -4,7 +4,6 @@ from .core.config import settings
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
-    description="Backend for a multi-agent RAG chatbot system.",
-    version="1.0.0"
+    description="Backend for a multi-agent RAG chatbot system."
 )
 

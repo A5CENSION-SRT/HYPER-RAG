@@ -1,5 +1,5 @@
 from pydantic import BaseSettings
-from typing import Optional
+from typing import List, Optional
 
 class Settings(BaseSettings):
     GOOGLE_API_KEY: Optional[str] = None
@@ -29,9 +29,10 @@ class Settings(BaseSettings):
     DOCS_DIR_REFRIGERATOR: str = "data/processed/refrigerator"
     DOCS_DIR_WASHING_MACHINE: str = "data/processed/washing_machine"
 
-
-    PROJECT_NAME: str = "Multi-Agent RAG Chatbot"
+    VALID_PRODUCT_TYPES: List[str] = ["washing_machine", "ac", "refrigerator"]
     
+    PROJECT_NAME: str = "Multi-Agent RAG Chatbot"
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
