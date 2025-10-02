@@ -49,9 +49,10 @@ async def store_process_chunk_ingest(
         await queue.put(f"PDF stored at {stored_pdf_path}")
         await asyncio.sleep(0.1) # Yield control briefly
 
-        # Step 2: Process the PDF
+        # Step 2: Process the PDF (run in thread to avoid blocking event loop)
         await queue.put("Starting PDF processing...")
-        documents = process_pdf(stored_pdf_path)
+        await queue.put("Loading BLIP model for image captioning... This may take a moment on first run.")
+        documents = await asyncio.to_thread(process_pdf, stored_pdf_path)
         logger.info(f"Extracted {len(documents)} document elements from PDF.")
         await queue.put(f"Extracted {len(documents)} document elements from PDF.")
         await asyncio.sleep(0.1) # Yield control briefly
@@ -111,17 +112,19 @@ async def store_process_chunk_ingest(
         logger.info(f"Saved RAW processed documents to {processed_file_path}")  
 
 
-        # Step 3: Chunk the documents
+        # Step 3: Chunk the documents (run in thread to avoid blocking)
         await queue.put("Starting document chunking...")
-        chunked_docs = chunk_documents(documents)
+        chunked_docs = await asyncio.to_thread(chunk_documents, documents)
         logger.info(f"Created {len(chunked_docs)} chunks from PDF documents.")
         await queue.put(f"Created {len(chunked_docs)} chunks from PDF documents.")
         await asyncio.sleep(0.1) # Yield control briefly
         if not chunked_docs:
             raise ValueError("Document chunking resulted in zero chunks. Please check the content.")
         
-        # Step 4: embed the chunks and injest into vector DB
+        # Step 4: embed the chunks and injest into vector DB (run in thread)
         await queue.put("Starting embedding and ingestion...")
+        await queue.put("Creating embeddings using Gemini API...")
+        
         embedding_model = get_embedding_model()
         persist_directory = {
             "washing_machine": settings.CHROMA_DB_DIR_WASHING_MACHINE,
@@ -132,12 +135,17 @@ async def store_process_chunk_ingest(
         logger.info(f"Using persist directory: {persist_directory}")
         os.makedirs(persist_directory, exist_ok=True)
 
-        vector_store = Chroma.from_documents(
-            documents=chunked_docs,
-            embedding=embedding_model,
-            persist_directory=persist_directory
-        )
-        vector_store.persist()
+        # Run embedding and Chroma operations in thread to avoid blocking
+        def create_vector_store():
+            return Chroma.from_documents(
+                documents=chunked_docs,
+                embedding=embedding_model,
+                persist_directory=persist_directory
+            )
+        
+        vector_store = await asyncio.to_thread(create_vector_store)
+        await queue.put(f"Embedded {len(chunked_docs)} chunks successfully.")
+        
         logger.info(f"Persisted vector store with {len(chunked_docs)} documents to {persist_directory}")
         await queue.put(f"Persisted vector store with {len(chunked_docs)} documents.")
         await asyncio.sleep(0.1) # Yield control briefly

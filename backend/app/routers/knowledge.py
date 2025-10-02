@@ -1,6 +1,7 @@
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 import json
 import asyncio
+import logging
 from typing import AsyncGenerator
 
 from fastapi.responses import StreamingResponse
@@ -8,6 +9,8 @@ from starlette import status
 
 from app.services.ingestion_service import store_process_chunk_ingest
 from app.core.config import settings
+
+logger = logging.getLogger(__name__)
 
 
 router = APIRouter(
@@ -46,17 +49,30 @@ async def upload_manual(
                 product_type=product_type
             )
         )
+        
+        message_count = 0
         while True:
-            message = await queue.get()
+            try:
+                # Wait for message with timeout to send keep-alive
+                message = await asyncio.wait_for(queue.get(), timeout=5.0)
+                
+                if message is None:
+                    logger.info(f"[SSE] Stream ending. Sent {message_count} messages.")
+                    break
 
-            if message is None:
-                break
-
-            log_entry = {"status": "processing", "message": str(message)}
-            if isinstance(message, str) and message.lower().startswith("error"):
-                log_entry["status"] = "error"
-            
-            yield f"data: {json.dumps(log_entry)}\n\n"
+                log_entry = {"status": "processing", "message": str(message)}
+                if isinstance(message, str) and message.lower().startswith("error"):
+                    log_entry["status"] = "error"
+                
+                message_count += 1
+                logger.info(f"[SSE] Sending message #{message_count}: {log_entry}")
+                yield f"data: {json.dumps(log_entry)}\n\n"
+                
+            except asyncio.TimeoutError:
+                # Send keep-alive comment to prevent connection timeout
+                logger.debug("[SSE] Sending keep-alive")
+                yield ": keep-alive\n\n"
+                continue
 
         final_message = {"status": "complete", "message": "Ingestion stream has finished."}
         yield f"data: {json.dumps(final_message)}\n\n"

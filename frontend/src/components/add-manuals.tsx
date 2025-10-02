@@ -56,27 +56,37 @@ export function AddManuals() {
 
         setIsUploading(true);
 
-        const toastId = toast.loading(`Starting upload for ${file.name}...`);
         let hasError = false;
 
         try {
+            console.log('[UPLOAD] Starting upload for:', file.name);
+            toast.info(`Starting upload for ${file.name}...`);
+            
             await uploadAndStream(file, selectedProduct, {
                 onMessage: (data) => {
-                    toast.loading(data.message, { id: toastId });
-                    if (data.status === 'error') hasError = true;
+                    console.log('[SSE MESSAGE]', data);
+                    // Create a new toast for each progress message
+                    if (data.status === 'error') {
+                        hasError = true;
+                        toast.error(data.message);
+                    } else {
+                        toast.info(data.message);
+                    }
                 },
                 onError: (error) => {
+                    console.error('[SSE ERROR]', error);
                     hasError = true;
-                    toast.error(`Error with ${file.name}: ${error.message}`, { id: toastId });
+                    toast.error(`Error with ${file.name}: ${error.message}`);
                 },
                 onComplete: () => {
+                    console.log('[SSE COMPLETE] Upload finished');
                     if (!hasError) {
-                        toast.success(`${file.name} processed successfully!`, { id: toastId });
+                        toast.success(`${file.name} processed successfully!`);
                     }
                 },
             });
         } catch (e) {
-            toast.error(`A critical error occurred uploading ${file.name}`, { id: toastId });
+            toast.error(`A critical error occurred uploading ${file.name}`);
         }
 
         setIsUploading(false);
