@@ -10,7 +10,7 @@ export function AddManuals() {
     // --- STATE CHANGE: From array to single file or null ---
     const [selectedProduct, setSelectedProduct] = useState<ProductType | "">("");
     const [file, setFile] = useState<File | null>(null); // Changed from files: File[]
-    
+
     const [isDragging, setIsDragging] = useState(false);
     const [isUploading, setIsUploading] = useState(false);
 
@@ -61,7 +61,7 @@ export function AddManuals() {
         try {
             console.log('[UPLOAD] Starting upload for:', file.name);
             toast.info(`Starting upload for ${file.name}...`);
-            
+
             await uploadAndStream(file, selectedProduct, {
                 onMessage: (data) => {
                     console.log('[SSE MESSAGE]', data);
