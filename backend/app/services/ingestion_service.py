@@ -57,6 +57,59 @@ async def store_process_chunk_ingest(
         await asyncio.sleep(0.1) # Yield control briefly
         if not documents:
             raise ValueError("No content extracted from PDF. Please check the file.")
+        
+        #step 2.5: Save processed documents for debugging - RAW STRUCTURE
+        processed_dir = {
+            "washing_machine": settings.DOCS_DIR_WASHING_MACHINE,
+            "ac": settings.DOCS_DIR_AC,
+            "refrigerator": settings.DOCS_DIR_REFRIGERATOR
+        }.get(product_type, settings.DOCS_DIR)
+        os.makedirs(processed_dir, exist_ok=True)
+        processed_file_path = os.path.join(processed_dir, f"{Path(file_name).stem}_processed_raw.txt")
+        
+        with open(processed_file_path, "w", encoding="utf-8") as f:
+            f.write(f"="*80 + "\n")
+            f.write(f"RAW PROCESSED DOCUMENTS - BEFORE CHUNKING\n")
+            f.write(f"Total Documents: {len(documents)}\n")
+            f.write(f"="*80 + "\n\n")
+            
+            for idx, doc in enumerate(documents, 1):
+                f.write(f"\n{'='*80}\n")
+                f.write(f"DOCUMENT #{idx}\n")
+                f.write(f"{'='*80}\n")
+                
+                # Show the document type/class
+                f.write(f"Type: {type(doc).__name__}\n")
+                f.write(f"Module: {type(doc).__module__}\n\n")
+                
+                # If it's a LangChain Document object, show all attributes
+                if hasattr(doc, '__dict__'):
+                    f.write(f"--- ALL ATTRIBUTES ---\n")
+                    for key, value in doc.__dict__.items():
+                        f.write(f"{key}: {value}\n")
+                    f.write("\n")
+                
+                # Show page_content (the actual text)
+                if hasattr(doc, 'page_content'):
+                    f.write(f"--- PAGE CONTENT (TEXT) ---\n")
+                    f.write(f"{doc.page_content}\n\n")
+                
+                # Show metadata
+                if hasattr(doc, 'metadata'):
+                    f.write(f"--- METADATA ---\n")
+                    for key, value in doc.metadata.items():
+                        f.write(f"  {key}: {value}\n")
+                    f.write("\n")
+                
+                # Fallback: if it's just a string or other type
+                if isinstance(doc, str):
+                    f.write(f"--- RAW STRING CONTENT ---\n")
+                    f.write(f"{doc}\n\n")
+                
+                f.write(f"\n")
+        
+        logger.info(f"Saved RAW processed documents to {processed_file_path}")  
+
 
         # Step 3: Chunk the documents
         await queue.put("Starting document chunking...")

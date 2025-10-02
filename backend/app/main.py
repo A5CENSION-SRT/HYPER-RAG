@@ -1,10 +1,19 @@
 from fastapi import FastAPI
+from starlette.middleware.cors import CORSMiddleware 
 from .core.config import settings
 from app.routers import knowledge
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
     description="Backend for a multi-agent RAG chatbot system."
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # The default port for Next.js
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
 )
 
 

@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     PDF_DIR_REFRIGERATOR: str = "data/manuals/refrigerator"
     PDF_DIR_WASHING_MACHINE: str = "data/manuals/washing_machine"
 
-    #processed langchain docs paths
+    #processed docs paths
     DOCS_DIR: str = "data/processed"
     DOCS_DIR_AC: str = "data/processed/ac"
     DOCS_DIR_REFRIGERATOR: str = "data/processed/refrigerator"

@@ -49,12 +49,34 @@ def process_pdf(pdf_path: str) -> List[Document]:
             for page_num, page in enumerate(fitz_doc, start=1):
                 plumber_page = plumber_doc.pages[page_num - 1]
                 page_elements = []
+                
+                # First, extract all tables and store their bounding boxes
+                table_bboxes = []
+                try:
+                    for table_obj in plumber_page.find_tables():
+                        if table_obj.bbox:
+                            table_bboxes.append(table_obj.bbox)  # (x0, y0, x1, y1)
+                except Exception as e:
+                    logger.warning(f"Could not detect table regions on page {page_num}. Error: {e}")
 
-                # Extract Text Blocks
+                # Extract Text Blocks (but skip text inside table regions)
                 for block in page.get_text("blocks"):
                     x0, y0, x1, y1, text, _, _ = block
                     if text.strip():
-                        page_elements.append({"bbox": (y0, x0), "content": text, "type": "text"})
+                        # Check if this text block overlaps with any table bbox
+                        is_inside_table = False
+                        for table_bbox in table_bboxes:
+                            tx0, ty0, tx1, ty1 = table_bbox
+                            # Check if block center is inside table bbox
+                            block_center_x = (x0 + x1) / 2
+                            block_center_y = (y0 + y1) / 2
+                            if tx0 <= block_center_x <= tx1 and ty0 <= block_center_y <= ty1:
+                                is_inside_table = True
+                                break
+                        
+                        # Only add text block if it's NOT inside a table
+                        if not is_inside_table:
+                            page_elements.append({"bbox": (y0, x0), "content": text, "type": "text"})
 
                 # Extract Images and generate captions
                 for img_info in page.get_images(full=True):
