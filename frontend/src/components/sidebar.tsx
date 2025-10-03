@@ -1,39 +1,68 @@
 "use client";
 
 import { fontClasses } from "@/lib/fonts";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import {
-  LayoutDashboard,
-  Package,
   FileText,
-  Users,
-  BarChart3,
-  Megaphone,
-  Settings,
-  HelpCircle,
   ChevronLeft,
   ChevronRight,
   MessageCircle,
   Plus,
 } from "lucide-react";
 
-export type NavigationView = "chat" | "add_manuals" | "manage_washing_machine" | "manage_ac" | "manage_refrigerator";
-
+/**
+ * Navigation item configuration
+ * Each item maps to a specific route in the Next.js app router
+ */
 const navigationItems = [
-  { icon: MessageCircle, label: "Chat", view: "chat" as NavigationView },
-  { icon: Plus, label: "Add Manuals", view: "add_manuals" as NavigationView },
-  { icon: FileText, label: "Manage Washing Machine Manual", view: "manage_washing_machine" as NavigationView },
-  { icon: FileText, label: "Manage AC Manual", view: "manage_ac" as NavigationView },
-  { icon: FileText, label: "Manage Refrigerator Manual", view: "manage_refrigerator" as NavigationView },
+  {
+    icon: MessageCircle,
+    label: "Chat",
+    href: "/chat"
+  },
+  {
+    icon: Plus,
+    label: "Add Manuals",
+    href: "/add-manuals"
+  },
+  {
+    icon: FileText,
+    label: "Manage Washing Machine Manual",
+    href: "/manage/washing-machine"
+  },
+  {
+    icon: FileText,
+    label: "Manage AC Manual",
+    href: "/manage/ac"
+  },
+  {
+    icon: FileText,
+    label: "Manage Refrigerator Manual",
+    href: "/manage/refrigerator"
+  },
 ];
 
 interface SidebarProps {
   isCollapsed?: boolean;
   onToggle?: () => void;
-  activeView?: NavigationView;
-  onNavigate?: (view: NavigationView) => void;
 }
 
-export function Sidebar({ isCollapsed = false, onToggle, activeView = "chat", onNavigate }: SidebarProps) {
+/**
+ * Sidebar Component
+ * 
+ * Provides navigation using Next.js Link components for proper routing.
+ * Active state is determined by comparing current pathname with link href.
+ * 
+ * Features:
+ * - Collapsible sidebar with smooth animations
+ * - Active route highlighting using usePathname()
+ * - Next.js Link components for client-side navigation
+ * - Responsive icon/text layout
+ */
+export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
+  // Get current pathname to determine active route
+  const pathname = usePathname();
   return (
     <div className="relative">
       {/* Sidebar Container */}
@@ -87,13 +116,15 @@ export function Sidebar({ isCollapsed = false, onToggle, activeView = "chat", on
           <ul className="space-y-2">
             {navigationItems.map((item) => {
               const Icon = item.icon;
-              const isActive = activeView === item.view;
+              // Determine if this item is active by comparing pathname
+              const isActive = pathname === item.href;
+
               return (
-                <li key={item.label}>
-                  <button
-                    onClick={() => onNavigate?.(item.view)}
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
                     className={`
-                      w-full relative overflow-hidden
+                      w-full relative overflow-hidden block
                       transition-all duration-200
                       ${isActive
                         ? 'bg-white text-black'
@@ -123,7 +154,7 @@ export function Sidebar({ isCollapsed = false, onToggle, activeView = "chat", on
                     >
                       <span className={`${fontClasses.navItem} block`}>{item.label}</span>
                     </div>
-                  </button>
+                  </Link>
                 </li>
               );
             })}
