@@ -46,7 +46,7 @@ async def store_process_chunk_ingest(
             f.write(file_contents)
             
         logger.info(f"Stored PDF at {stored_pdf_path}")
-        await queue.put(f"PDF stored at {stored_pdf_path}")
+        await queue.put(f"PDF stored successfully")
         await asyncio.sleep(0.1) # Yield control briefly
 
         # Step 2: Process the PDF (run in thread to avoid blocking event loop)
@@ -54,8 +54,7 @@ async def store_process_chunk_ingest(
         await queue.put("Loading BLIP model for image captioning... This may take a moment on first run.")
         documents = await asyncio.to_thread(process_pdf, stored_pdf_path)
         logger.info(f"Extracted {len(documents)} document elements from PDF.")
-        await queue.put(f"Extracted {len(documents)} document elements from PDF.")
-        await asyncio.sleep(0.1) # Yield control briefly
+        await queue.put(f"Extracted {len(documents)} document elements")
         if not documents:
             raise ValueError("No content extracted from PDF. Please check the file.")
         
@@ -116,8 +115,7 @@ async def store_process_chunk_ingest(
         await queue.put("Starting document chunking...")
         chunked_docs = await asyncio.to_thread(chunk_documents, documents)
         logger.info(f"Created {len(chunked_docs)} chunks from PDF documents.")
-        await queue.put(f"Created {len(chunked_docs)} chunks from PDF documents.")
-        await asyncio.sleep(0.1) # Yield control briefly
+        await queue.put(f"Created {len(chunked_docs)} text chunks")
         if not chunked_docs:
             raise ValueError("Document chunking resulted in zero chunks. Please check the content.")
         
@@ -144,12 +142,10 @@ async def store_process_chunk_ingest(
             )
         
         vector_store = await asyncio.to_thread(create_vector_store)
-        await queue.put(f"Embedded {len(chunked_docs)} chunks successfully.")
+        await queue.put(f"Successfully embedded {len(chunked_docs)} chunks")
         
         logger.info(f"Persisted vector store with {len(chunked_docs)} documents to {persist_directory}")
-        await queue.put(f"Persisted vector store with {len(chunked_docs)} documents.")
-        await asyncio.sleep(0.1) # Yield control briefly
-        await queue.put("Ingestion complete.")
+        await queue.put(f"Vector database updated successfully")
     except Exception as e:
         logger.error(f"Error during ingestion process: {e}", exc_info=True)
         await queue.put(f"Error: {e}")

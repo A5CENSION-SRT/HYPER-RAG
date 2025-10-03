@@ -41,7 +41,8 @@ async def upload_manual(
     async def event_generator():
         queue = asyncio.Queue()
 
-        asyncio.create_task(
+        # Start the ingestion task
+        task = asyncio.create_task(
             store_process_chunk_ingest(
                 queue=queue,
                 file_name=file.filename,
@@ -50,31 +51,47 @@ async def upload_manual(
             )
         )
         
-        message_count = 0
         while True:
             try:
-                # Wait for message with timeout to send keep-alive
-                message = await asyncio.wait_for(queue.get(), timeout=5.0)
+                # Wait for message with timeout
+                message = await asyncio.wait_for(queue.get(), timeout=30.0)
                 
                 if message is None:
-                    logger.info(f"[SSE] Stream ending. Sent {message_count} messages.")
                     break
 
                 log_entry = {"status": "processing", "message": str(message)}
                 if isinstance(message, str) and message.lower().startswith("error"):
                     log_entry["status"] = "error"
                 
-                message_count += 1
-                logger.info(f"[SSE] Sending message #{message_count}: {log_entry}")
                 yield f"data: {json.dumps(log_entry)}\n\n"
                 
             except asyncio.TimeoutError:
-                # Send keep-alive comment to prevent connection timeout
-                logger.debug("[SSE] Sending keep-alive")
-                yield ": keep-alive\n\n"
+                # Connection timeout
                 continue
+            except Exception as e:
+                logger.error(f"[SSE] Error in event generator: {e}")
+                error_message = {"status": "error", "message": f"Stream error: {str(e)}"}
+                yield f"data: {json.dumps(error_message)}\n\n"
+                break
 
-        final_message = {"status": "complete", "message": "Ingestion stream has finished."}
+        # Wait for the task to complete
+        try:
+            await task
+        except Exception as e:
+            logger.error(f"[SSE] Task completed with error: {e}")
+            
+        final_message = {"status": "complete", "message": "Ingestion complete!"}
         yield f"data: {json.dumps(final_message)}\n\n"
 
-    return StreamingResponse(event_generator(), media_type="text/event-stream")
+    # Set SSE headers to prevent buffering and compression
+    headers = {
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+        "X-Accel-Buffering": "no",
+    }
+    
+    return StreamingResponse(
+        event_generator(), 
+        media_type="text/event-stream",
+        headers=headers
+    )

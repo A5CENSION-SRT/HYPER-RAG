@@ -59,13 +59,10 @@ export function AddManuals() {
         let hasError = false;
 
         try {
-            console.log('[UPLOAD] Starting upload for:', file.name);
             toast.info(`Starting upload for ${file.name}...`);
 
             await uploadAndStream(file, selectedProduct, {
                 onMessage: (data) => {
-                    console.log('[SSE MESSAGE]', data);
-                    // Create a new toast for each progress message
                     if (data.status === 'error') {
                         hasError = true;
                         toast.error(data.message);
@@ -74,12 +71,10 @@ export function AddManuals() {
                     }
                 },
                 onError: (error) => {
-                    console.error('[SSE ERROR]', error);
                     hasError = true;
-                    toast.error(`Error with ${file.name}: ${error.message}`);
+                    toast.error(`Error: ${error.message}`);
                 },
                 onComplete: () => {
-                    console.log('[SSE COMPLETE] Upload finished');
                     if (!hasError) {
                         toast.success(`${file.name} processed successfully!`);
                     }
