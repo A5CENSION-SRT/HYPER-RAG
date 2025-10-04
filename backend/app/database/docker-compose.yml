@@ -1,0 +1,26 @@
+
+# To Start: docker compose up -d
+# To Stop:  docker compose down
+
+version: '3.8'
+
+services:
+  # The 'db' service runs our PostgreSQL database.
+  db:
+    
+    image: postgres:16-alpine
+    container_name: rag_postgres_db
+    restart: "no"
+    
+    
+    environment:
+      POSTGRES_PASSWORD: testpassword123
+      POSTGRES_DB: rag_db 
+      POSTGRES_USER: postgres 
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
+    driver: local

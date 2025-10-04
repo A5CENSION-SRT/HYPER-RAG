@@ -1,30 +1,57 @@
-# --- Web Framework ---
-# Use ~= to get bug fixes and minor updates without breaking changes.
-# This version uses Pydantic V2, which is the modern standard.
+# This is a production-ready requirements file for the Multi-Agent RAG System.
+# We use compatible version specifiers (~=) to allow for safe, non-breaking updates.
+
+# --- Web Framework & Server ---
+# FastAPI is the core web framework.
 fastapi~=0.111.0
-uvicorn[standard]~=0.29.0  # [standard] adds recommended extras like uvloop.
+# Pydantic is a dependency of FastAPI but good to specify. V2 is required.
+pydantic~=2.7.0
+# Pydantic-settings loads config from .env files.
+pydantic-settings~=2.2.0
+# Uvicorn is the high-performance ASGI server. [standard] adds recommended extras.
+uvicorn[standard]~=0.29.0
 
-# --- RAG Core / PDF Processing / Vision ---
-PyMuPDF~=1.24.0
-pdfplumber~=0.11.0
-Pillow~=10.3.0
-# torch and transformers are fine, but be explicit about what you need.
-# If you are doing CPU-only inference, you can specify that to reduce download size.
-torch~=2.3.0
-transformers~=4.41.0
+# --- Database & Migrations ---
+# SQLAlchemy is the Python ORM for interacting with our database.
+sqlalchemy~=2.0.0
+# Psycopg is the driver that allows SQLAlchemy to talk to PostgreSQL.
+psycopg2-binary~=2.9.0
+# Alembic is used for managing database schema migrations.
+alembic~=1.13.0
 
-# --- LangChain & Vector DB ---
-# The new modular LangChain structure. Start with at least 0.2.0.
-langchain~=0.2.0
-langchain-core~=0.2.0
-langchain-community~=0.2.0
+# --- LangChain Core & Integrations ---
+# It's best to keep the core LangChain packages in sync.
+# Using >= ensures you get the latest features from this rapidly developing framework.
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
 
-# Explicitly add the integration for your vector store.
-langchain-chroma~=0.1.0
+# Specific integrations for our components.
+langchain-google-genai>=1.0.0  # For Gemini models (embeddings, chat)
+langchain-chroma>=0.1.0        # For ChromaDB vector store integration
 
-# Use the latest Chroma version for new projects.
+# --- Vector Database ---
+# The client library for ChromaDB.
 chromadb~=0.5.0
 
+# --- PDF Processing & Multi-modality ---
+# PyMuPDF is a high-performance library for PDF parsing.
+PyMuPDF~=1.24.0
+# pdfplumber is excellent for table extraction from PDFs.
+pdfplumber~=0.11.0
+# Pillow is required for image processing (for BLIP captions).
+Pillow~=10.3.0
+
+# The core libraries for our local vision model (BLIP).
+torch~=2.3.0
+transformers~=4.41.0
+# sentence-transformers is needed for the local embedding model if you switch back.
+sentence-transformers~=3.0.0
+
 # --- Development & Utilities ---
+# For managing environment variables (like API keys).
+python-dotenv~=1.0.0
+# Asynchronous file I/O for the ingestion service (if needed, good to have).
+aiofiles~=23.2.0
+# Testing framework.
 pytest
-python-dotenv  # Almost always needed for managing API keys.
