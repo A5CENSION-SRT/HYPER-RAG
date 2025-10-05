@@ -30,7 +30,9 @@ class Settings(BaseSettings):
     DOCS_DIR_WASHING_MACHINE: str = "data/processed/washing_machine"
 
     VALID_PRODUCT_TYPES: List[str] = ["washing_machine", "ac", "refrigerator"]
-    
+
+    DATABASE_URL: str = "postgresql://postgres:testpassword123@localhost:5432/rag_db"
+
     PROJECT_NAME: str = "Multi-Agent RAG Chatbot"
 
     class Config:
