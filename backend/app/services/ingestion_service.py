@@ -138,7 +138,8 @@ async def store_process_chunk_ingest(
             return Chroma.from_documents(
                 documents=chunked_docs,
                 embedding=embedding_model,
-                persist_directory=persist_directory
+                persist_directory=persist_directory,
+                collection_name=product_type
             )
         
         vector_store = await asyncio.to_thread(create_vector_store)
