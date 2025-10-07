@@ -4,8 +4,9 @@ from typing import List, Optional
 class Settings(BaseSettings):
     GOOGLE_API_KEY: Optional[str] = None
 
-    ROUTER_MODEL: str = "gemini-2.5-flash"
+    SUPERVISOR_MODEL: str = "gemini-2.5-flash"
 
+    SUB_AGENT_MODEL: str = "gemini-2.5-pro"
     WASHING_MACHINE_MODEL: str = "gemini-2.5-pro"
     AC_MODEL: str = "gemini-2.5-pro"
     REFRIGERATOR_MODEL: str = "gemini-2.5-pro"

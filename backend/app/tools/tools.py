@@ -1,20 +1,29 @@
 from langchain_core.tools import tool
+from app.rag.chains import create_rag_chain
+from app.core.config import settings
+from app.rag.retrievers import get_retriever
 
 @tool
-def query_washing_machine_knowledge_base(question: str) -> str:
-    """Use this tool for any questions about washing machines."""
-    print("--- Called Washing Machine Tool ---")
-    return f"This is a placeholder answer about washing machines regarding: '{question}'"
+def search_knowledge_base(query: str, product_category: str) -> str:
+    """
+    Use this tool to find information and answer questions about a specific product.
+    You must provide the 'product_category', which must be one of ['washing_machine', 'refrigerator', 'ac'].
+    You must also provide a 'query' which should be a clear, self-contained question.
+    """
+    print(f"\n--- TOOL: Searching Knowledge Base ---")
+    print(f"    Category: {product_category}")
+    print(f"    Query: {query}")
+    
+    if product_category not in settings.VALID_PRODUCT_TYPES:
+        return f"Error: Invalid product category '{product_category}'. Valid options are: {settings.VALID_PRODUCT_TYPES}"
 
-@tool
-def query_refrigerator_knowledge_base(question: str) -> str:
-    """Use this tool for any questions about refrigerators."""
-    print("--- Called Refrigerator Tool ---")
-    return f"This is a placeholder answer about refrigerators regarding: '{question}'"
-
-@tool
-def query_ac_knowledge_base(question: str) -> str:
-    """Use this tool for any questions about air conditioners."""
-    print("--- Called AC Tool ---")
-    return f"This is a placeholder answer about air conditioners regarding: '{question}'"
-
+    try:
+        retriever = get_retriever(product_category=product_category)
+        rag_chain = create_rag_chain(retriever=retriever)
+        answer = rag_chain.invoke({"question": query})
+        print(f"    Answer Found: {answer[:100]}...")
+        return answer
+        
+    except Exception as e:
+        print(f"    ERROR in RAG tool: {e}")
+        return f"An error occurred while searching the {product_category} knowledge base."
