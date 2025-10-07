@@ -113,7 +113,7 @@ async def store_process_chunk_ingest(
 
         # Step 3: Chunk the documents (run in thread to avoid blocking)
         await queue.put("Starting document chunking...")
-        chunked_docs = await asyncio.to_thread(chunk_documents, documents)
+        chunked_docs = await asyncio.to_thread(chunk_documents, documents
         logger.info(f"Created {len(chunked_docs)} chunks from PDF documents.")
         await queue.put(f"Created {len(chunked_docs)} text chunks")
         if not chunked_docs:
