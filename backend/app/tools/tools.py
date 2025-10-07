@@ -7,7 +7,6 @@ from app.rag.retrievers import get_retriever
 def search_knowledge_base(query: str, product_category: str) -> str:
     """
     Use this tool to find information and answer questions about a specific product.
-    You must provide the 'product_category', which must be one of ['washing_machine', 'refrigerator', 'ac'].
     You must also provide a 'query' which should be a clear, self-contained question.
     """
     print(f"\n--- TOOL: Searching Knowledge Base ---")
