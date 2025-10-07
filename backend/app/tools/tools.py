@@ -1,28 +1,38 @@
 from langchain_core.tools import tool
-from app.rag.chains import create_rag_chain
-from app.core.config import settings
-from app.rag.retrievers import get_retriever
+from pydantic import BaseModel, Field
 
-@tool
-def search_knowledge_base(query: str, product_category: str) -> str:
+from app.rag.retrievers import get_retriever
+from app.rag.chains import format_docs # We still need the doc formatter
+
+class RagSearchInput(BaseModel):
+    query: str = Field(description="The specific question to ask the knowledge base.")
+    product_category: str = Field(
+        description="The category of the product. Must be one of 'washing_machine', 'refrigerator', or 'ac'."
+    )
+
+@tool("retrieve-knowledge", args_schema=RagSearchInput)
+def retrieve_knowledge(query: str, product_category: str) -> str:
     """
-    Use this tool to find information and answer questions about a specific product.
-    You must also provide a 'query' which should be a clear, self-contained question.
+    Retrieves factual information from the knowledge base for a specific product category.
+    Use this to gather context before answering a question.
     """
-    print(f"\n--- TOOL: Searching Knowledge Base ---")
+    print(f"\n--- 🛠️ TOOL: retrieve_knowledge ---")
     print(f"    Category: {product_category}")
     print(f"    Query: {query}")
-    
-    if product_category not in settings.VALID_PRODUCT_TYPES:
-        return f"Error: Invalid product category '{product_category}'. Valid options are: {settings.VALID_PRODUCT_TYPES}"
 
     try:
+        # 1. Get the specific retriever.
         retriever = get_retriever(product_category=product_category)
-        rag_chain = create_rag_chain(retriever=retriever)
-        answer = rag_chain.invoke({"question": query})
-        print(f"    Answer Found: {answer[:100]}...")
-        return answer
+        
+        # 2. Invoke the retriever to get the documents.
+        retrieved_docs = retriever.invoke(query)
+        
+        # 3. Format the documents into a single string context.
+        context = format_docs(retrieved_docs)
+        
+        print(f"    ✅ Context Retrieved: {context[:200]}...")
+        return context
         
     except Exception as e:
-        print(f"    ERROR in RAG tool: {e}")
-        return f"An error occurred while searching the {product_category} knowledge base."
+        print(f"    ❌ ERROR in retrieval tool: {e}")
+        return f"An error occurred while retrieving from the {product_category} knowledge base."
