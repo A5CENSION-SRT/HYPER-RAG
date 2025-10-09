@@ -2,7 +2,7 @@ from langchain_core.tools import tool
 from pydantic import BaseModel, Field
 
 from app.rag.retrievers import get_retriever
-from app.rag.chains import format_docs # We still need the doc formatter
+from app.rag.chains import format_docs 
 
 class RagSearchInput(BaseModel):
     query: str = Field(description="The specific question to ask the knowledge base.")
