@@ -1,8 +1,9 @@
+# app/agents/state.py
 from typing import List, TypedDict, Annotated
 from langchain_core.messages import BaseMessage
 import operator
 
+MessagesState = Annotated[List[BaseMessage], operator.add]
+
 class AgentState(TypedDict):
-    """Represents the state of an agent, including its name, tools, and message history."""
-    
-    message_history: Annotated[List[BaseMessage], "A list of messages exchanged by the agent."]
+    messages: MessagesState
