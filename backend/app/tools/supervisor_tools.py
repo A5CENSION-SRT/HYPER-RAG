@@ -13,7 +13,7 @@ def washing_machine_expert_agent(question: str) -> str:
     """
     print("\nDelegating to Washing Machine Expert ---")
     initial_state = {"messages": [HumanMessage(content=question)]}
-    final_state = washing_machine_agent.invoke(initial_state, {"recursion_limit": 5})
+    final_state = washing_machine_agent.invoke(initial_state, {"recursion_limit": 10})
     final_answer = final_state['messages'][-1].content
 
     return final_answer
@@ -26,7 +26,7 @@ def ac_expert_agent(question: str) -> str:
     """
     print("\nDelegating to AC Expert ---")
     initial_state = {"messages": [HumanMessage(content=question)]}
-    final_state = ac_agent.invoke(initial_state, {"recursion_limit": 5})
+    final_state = ac_agent.invoke(initial_state, {"recursion_limit": 10})
     final_answer = final_state['messages'][-1].content
 
     return final_answer
@@ -39,7 +39,7 @@ def refrigerator_expert_agent(question: str) -> str:
     """
     print("\nDelegating to Refrigerator Expert ---")
     initial_state = {"messages": [HumanMessage(content=question)]}
-    final_state = refrigerator_agent.invoke(initial_state, {"recursion_limit": 5})
+    final_state = refrigerator_agent.invoke(initial_state, {"recursion_limit": 10})
     final_answer = final_state['messages'][-1].content
 
     return final_answer
