@@ -1,5 +1,7 @@
 from pydantic_settings import BaseSettings
 from typing import List, Optional
+import os
+from pathlib import Path
 
 class Settings(BaseSettings):
     GOOGLE_API_KEY: Optional[str] = None
@@ -37,7 +39,8 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = "Multi-Agent RAG Chatbot"
 
     class Config:
-        env_file = ".env"
+        # Look for .env file in the backend directory
+        env_file = Path(__file__).parent.parent.parent / ".env"
         env_file_encoding = "utf-8"
 
 settings = Settings()

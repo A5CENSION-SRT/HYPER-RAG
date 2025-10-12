@@ -43,3 +43,9 @@ def refrigerator_expert_agent(question: str) -> str:
     final_answer = final_state['messages'][-1].content
 
     return final_answer
+
+supervisor_tools = [
+    washing_machine_expert_agent,
+    ac_expert_agent,
+    refrigerator_expert_agent
+]

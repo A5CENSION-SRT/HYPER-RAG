@@ -30,14 +30,17 @@ Here is your workflow:
 """
 )
 
-model_with_tools = supervisor_model.bind_tools(supervisor_tools, system_message=system_prompt)
+model_with_tools = supervisor_model.bind_tools(supervisor_tools)
 
 def supervisor_node(state: AgentState):
     """
     The 'thinking' node of the supervisor agent. It calls the LLM to decide the next action.
     """
     print("SUPERVISOR AGENT")
-    response = model_with_tools.invoke(state["messages"])
+    # Add system prompt as a system message to the conversation
+    from langchain_core.messages import SystemMessage
+    messages_with_system = [SystemMessage(content=system_prompt)] + state["messages"]
+    response = model_with_tools.invoke(messages_with_system)
     return {"messages": [response]}
 
 

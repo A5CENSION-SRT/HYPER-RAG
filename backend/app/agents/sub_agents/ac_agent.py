@@ -15,14 +15,17 @@ system_prompt = (
     "Do not answer questions about other products like refrigerators or washing machines."
 )
 
-model_with_tools = sub_agent_model.bind_tools(tools, system_message=system_prompt)
+model_with_tools = sub_agent_model.bind_tools(tools)
 
 def agent_node(state: AgentState):
     """
     The 'thinking' node of the sub-agent. It calls the LLM to decide the next action.
     """
     print("AC SUB-AGENT")
-    response = model_with_tools.invoke(state["messages"])
+    # Add system prompt as a system message to the conversation
+    from langchain_core.messages import SystemMessage
+    messages_with_system = [SystemMessage(content=system_prompt)] + state["messages"]
+    response = model_with_tools.invoke(messages_with_system)
     return {"messages": [response]}
 
 def should_continue(state: AgentState):

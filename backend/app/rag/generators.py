@@ -15,8 +15,7 @@ def get_sub_agent_model() -> ChatGoogleGenerativeAI:
     llm = ChatGoogleGenerativeAI(
         model=settings.SUB_AGENT_MODEL,
         temperature=0.1,
-        google_api_key=settings.GOOGLE_API_KEY,
-        convert_system_message_to_human=True
+        google_api_key=settings.GOOGLE_API_KEY
     )
     
     return llm
@@ -33,7 +32,6 @@ def get_supervisor_model() -> ChatGoogleGenerativeAI:
     llm = ChatGoogleGenerativeAI(
         model=settings.SUPERVISOR_MODEL,
         temperature=0.3,
-        google_api_key=settings.GOOGLE_API_KEY,
-        convert_system_message_to_human=True
+        google_api_key=settings.GOOGLE_API_KEY
     )
     return llm
