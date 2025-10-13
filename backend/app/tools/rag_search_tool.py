@@ -30,7 +30,7 @@ def retrieve_knowledge(query: str, product_category: str) -> str:
         # 3. Format the documents into a single string context.
         context = format_docs(retrieved_docs)
         
-        print(f"    ✅ Context Retrieved: {context[:200]}...")
+        print(f"    ✅ Context Retrieved: {context}...")
         return context
         
     except Exception as e:

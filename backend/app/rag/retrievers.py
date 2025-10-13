@@ -28,4 +28,13 @@ def get_retriever(product_category: str) -> VectorStoreRetriever:
         embedding_function=embedding_function,
         collection_name=product_category,
     )
-    return vectorstore.as_retriever(search_kwargs={"k": 5})
+    
+    # Use MMR (Maximum Marginal Relevance) for better diversity and relevance
+    return vectorstore.as_retriever(
+        search_type="mmr",
+        search_kwargs={
+            "k": 8,  # Return top 8 results (increased from 5)
+            "fetch_k": 20,  # Fetch 20 candidates before MMR selection
+            "lambda_mult": 0.7  # Balance between relevance (1.0) and diversity (0.0)
+        }
+    )

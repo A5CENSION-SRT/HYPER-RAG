@@ -123,15 +123,46 @@ def process_pdf(pdf_path: str) -> List[Document]:
     logger.info(f"Successfully processed PDF. Extracted {len(all_docs)} elements.")
     return all_docs
 
-def chunk_documents(documents: List[Document], chunk_size: int = 1000, chunk_overlap: int = 200) -> List[Document]:
-    """Splits a list of LangChain Document objects into smaller chunks."""
+def chunk_documents(documents: List[Document], chunk_size: int = 800, chunk_overlap: int = 150) -> List[Document]:
+    """Splits documents into smaller chunks with smart handling for different content types."""
     logger.info(f"Starting to chunk {len(documents)} documents...")
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap,
-        length_function=len,
-        is_separator_regex=False,
-    )
-    chunked_docs = text_splitter.split_documents(documents)
-    logger.info(f"Finished chunking. Created {len(chunked_docs)} chunks.")
-    return chunked_docs
+    chunks = []
+    
+    for doc in documents:
+        element_type = doc.metadata.get('element_type', 'text')
+        
+        # Add context header to each chunk
+        context_header = f"[Source: {doc.metadata.get('source', 'unknown')} | Page: {doc.metadata.get('page_number', 'N/A')}]\n\n"
+        
+        if element_type == 'table':
+            # Keep tables whole - don't split them
+            doc.page_content = context_header + doc.page_content
+            chunks.append(doc)
+            
+        elif element_type == 'image':
+            # Keep image captions whole
+            doc.page_content = context_header + doc.page_content
+            chunks.append(doc)
+            
+        else:
+            # Split text with better separators for natural breaks
+            text_splitter = RecursiveCharacterTextSplitter(
+                chunk_size=chunk_size - len(context_header),
+                chunk_overlap=chunk_overlap,
+                length_function=len,
+                separators=["\n\n", "\n", ". ", "! ", "? ", "; ", ", ", " ", ""],
+                is_separator_regex=False,
+            )
+            
+            # Split the text
+            splits = text_splitter.split_text(doc.page_content)
+            
+            # Create new documents with context headers
+            for split in splits:
+                chunks.append(Document(
+                    page_content=context_header + split,
+                    metadata=doc.metadata
+                ))
+    
+    logger.info(f"Finished chunking. Created {len(chunks)} chunks from {len(documents)} documents.")
+    return chunks
