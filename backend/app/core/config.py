@@ -35,7 +35,7 @@ class Settings(BaseSettings):
     DOCS_DIR_REFRIGERATOR: str = str(BACKEND_DIR / "data" / "processed" / "refrigerator")
     DOCS_DIR_WASHING_MACHINE: str = str(BACKEND_DIR / "data" / "processed" / "washing_machine")
 
-    VALID_PRODUCT_TYPES: List[str] = ["washing_machine", "ac", "refrigerator"]
+    VALID_PRODUCT_TYPES: List[str] = ["washing_machine", "air_conditioner", "refrigerator"]
 
     DATABASE_URL: str = "postgresql://postgres:testpassword123@localhost:5432/rag_db"
 

@@ -27,7 +27,7 @@ async def store_process_chunk_ingest(
         queue (Queue): An asyncio Queue to which progress messages are sent.
         file_name (str): The original name of the uploaded PDF file.
         file_contents (bytes): The binary content of the PDF file.
-        product_type (str): The type of product (e.g., 'washing_machine', 'ac', 'refrigerator').
+        product_type (str): The type of product (e.g., 'washing_machine', 'air_conditioner', 'refrigerator').
     """
     
     try:
@@ -35,7 +35,7 @@ async def store_process_chunk_ingest(
         # Step 1: Store the PDF
         storage_dir = {
             "washing_machine": settings.PDF_DIR_WASHING_MACHINE,
-            "ac": settings.PDF_DIR_AC,
+            "air_conditioner": settings.PDF_DIR_AC,
             "refrigerator": settings.PDF_DIR_REFRIGERATOR
         }.get(product_type)
 
@@ -61,7 +61,7 @@ async def store_process_chunk_ingest(
         #step 2.5: Save processed documents for debugging - RAW STRUCTURE
         processed_dir = {
             "washing_machine": settings.DOCS_DIR_WASHING_MACHINE,
-            "ac": settings.DOCS_DIR_AC,
+            "air_conditioner": settings.DOCS_DIR_AC,
             "refrigerator": settings.DOCS_DIR_REFRIGERATOR
         }.get(product_type, settings.DOCS_DIR)
         os.makedirs(processed_dir, exist_ok=True)
@@ -126,7 +126,7 @@ async def store_process_chunk_ingest(
         embedding_model = get_embedding_model()
         persist_directory = {
             "washing_machine": settings.CHROMA_DB_DIR_WASHING_MACHINE,
-            "ac": settings.CHROMA_DB_DIR_AC,
+            "air_conditioner": settings.CHROMA_DB_DIR_AC,
             "refrigerator": settings.CHROMA_DB_DIR_REFRIGERATOR
         }.get(product_type, settings.CHROMA_DB_DIR)
         

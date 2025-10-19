@@ -13,7 +13,7 @@ def get_retriever(product_category: str) -> VectorStoreRetriever:
     # Using the dynamic pathing from your config.py is better than a dictionary
     persist_directory = {
         "washing_machine": settings.CHROMA_DB_DIR_WASHING_MACHINE,
-        "ac": settings.CHROMA_DB_DIR_AC,
+        "air_conditioner": settings.CHROMA_DB_DIR_AC,
         "refrigerator": settings.CHROMA_DB_DIR_REFRIGERATOR,
     }.get(product_category)
 

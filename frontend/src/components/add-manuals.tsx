@@ -5,7 +5,7 @@ import { Upload, FileText, X, CheckCircle, Clock, AlertCircle, Loader2 } from "l
 import { toast } from "sonner";
 import { uploadAndStream } from "@/lib/api/KnowledgeUpload";
 
-type ProductType = "washing_machine" | "refrigerator" | "ac";
+type ProductType = "washing_machine" | "refrigerator" | "air_conditioner";
 
 type UploadStatus = "pending" | "processing" | "completed" | "error";
 
@@ -314,7 +314,7 @@ export function AddManuals() {
                                                     >
                                                         <option value="washing_machine">Washing Machine</option>
                                                         <option value="refrigerator">Refrigerator</option>
-                                                        <option value="ac">Air Conditioner</option>
+                                                        <option value="air_conditioner">Air Conditioner</option>
                                                     </select>
                                                 </div>
 

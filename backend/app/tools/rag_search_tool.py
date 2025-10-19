@@ -7,7 +7,7 @@ from app.rag.chains import format_docs
 class RagSearchInput(BaseModel):
     query: str = Field(description="The specific question to ask the knowledge base.")
     product_category: str = Field(
-        description="The category of the product. Must be one of 'washing_machine', 'refrigerator', or 'ac'."
+        description="The category of the product. Must be one of 'washing_machine', 'refrigerator', or 'air_conditioner'."
     )
 
 @tool("retrieve-knowledge", args_schema=RagSearchInput)

@@ -1,14 +1,14 @@
 "use client";
 
 interface ManageManualProps {
-    productType: "washing_machine" | "refrigerator" | "ac";
+    productType: "washing_machine" | "refrigerator" | "air_conditioner";
 }
 
 export function ManageManual({ productType }: ManageManualProps) {
     const productNames = {
         washing_machine: "Washing Machine",
         refrigerator: "Refrigerator",
-        ac: "Air Conditioner",
+        air_conditioner: "Air Conditioner",
     };
 
     return (

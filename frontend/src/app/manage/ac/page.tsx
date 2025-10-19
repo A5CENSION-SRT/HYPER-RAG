@@ -5,5 +5,5 @@ import { ManageManual } from "@/components/manage-manual";
  * Route: /manage/ac
  */
 export default function ManageACPage() {
-    return <ManageManual productType="ac" />;
+    return <ManageManual productType="air_conditioner" />;
 }
