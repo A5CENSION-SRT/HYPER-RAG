@@ -137,10 +137,7 @@ def chunk_documents(documents: List[Document], chunk_size: int = 1000, chunk_ove
     
     for doc in documents:
         element_type = doc.metadata.get('element_type', 'text')
-        
-        # Tables and OCR blocks are often best kept whole if they fit.
         if element_type in ['table', 'ocr_text_block']:
-            # First, process any pending text batch.
             if current_text_batch:
                 combined_text = "\n\n".join(current_text_batch)
                 splits = text_splitter.split_text(combined_text)
@@ -156,8 +153,6 @@ def chunk_documents(documents: List[Document], chunk_size: int = 1000, chunk_ove
             else:
                 chunks.append(doc)
         else:
-            # For regular text, add it to a batch to be split together.
-            # This helps maintain continuity across small text blocks.
             current_text_batch.append(doc.page_content)
 
     # Process any remaining text in the last batch.

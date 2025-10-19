@@ -42,7 +42,6 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = "Multi-Agent RAG Chatbot"
 
     class Config:
-        # Look for .env file in the backend directory
         env_file = Path(__file__).parent.parent.parent / ".env"
         env_file_encoding = "utf-8"
 
