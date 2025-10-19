@@ -230,10 +230,10 @@ export function AddManuals() {
                     onDragLeave={isProcessing ? undefined : handleDragLeave}
                     onDrop={isProcessing ? undefined : handleDrop}
                     className={`relative border-2 border-dashed rounded-lg p-12 text-center transition-all duration-200 ${isProcessing
-                            ? 'bg-gray-200 cursor-not-allowed'
-                            : isDragging
-                                ? 'border-blue-500 bg-blue-50'
-                                : 'border-gray-300 bg-gray-50 hover:bg-gray-100'
+                        ? 'bg-gray-200 cursor-not-allowed'
+                        : isDragging
+                            ? 'border-blue-500 bg-blue-50'
+                            : 'border-gray-300 bg-gray-50 hover:bg-gray-100'
                         }`}
                 >
                     <input
@@ -259,8 +259,8 @@ export function AddManuals() {
                         <label
                             htmlFor="file-input"
                             className={`px-6 py-3 rounded-lg font-medium transition-colors ${isProcessing
-                                    ? 'bg-gray-400 text-gray-700 cursor-not-allowed'
-                                    : 'bg-blue-600 text-white cursor-pointer hover:bg-blue-700'
+                                ? 'bg-gray-400 text-gray-700 cursor-not-allowed'
+                                : 'bg-blue-600 text-white cursor-pointer hover:bg-blue-700'
                                 }`}
                         >
                             Browse Files
@@ -321,9 +321,9 @@ export function AddManuals() {
                                                 {/* Status Badge */}
                                                 <div className="mt-2">
                                                     <span className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${item.status === "pending" ? "bg-gray-200 text-gray-800" :
-                                                            item.status === "processing" ? "bg-blue-200 text-blue-800" :
-                                                                item.status === "completed" ? "bg-green-200 text-green-800" :
-                                                                    "bg-red-200 text-red-800"
+                                                        item.status === "processing" ? "bg-blue-200 text-blue-800" :
+                                                            item.status === "completed" ? "bg-green-200 text-green-800" :
+                                                                "bg-red-200 text-red-800"
                                                         }`}>
                                                         {item.status.charAt(0).toUpperCase() + item.status.slice(1)}
                                                     </span>
