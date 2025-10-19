@@ -1,0 +1,5891 @@
+================================================================================
+RAW PROCESSED DOCUMENTS - BEFORE CHUNKING
+Total Documents: 181
+================================================================================
+
+
+================================================================================
+DOCUMENT #1
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   1   10/5/2018   12:39:51 PM
+ACXF55-2241_OL.ai   1   10/5/2018   12:39:51 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   1   10/5/2018   12:39:51 PM
+ACXF55-2241_OL.ai   1   10/5/2018   12:39:51 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #2
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: POWER
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+POWER
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #3
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: SLEEP
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+SLEEP
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #4
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: POWERFUL
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+POWERFUL
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #5
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: C 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+C 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #6
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: CU-TU12VKYF series
+CU-TU18VKYF series
+CU-KU12VKYF series
+CU-KU15VKYF series
+CU-KU18VKYF series
+CU-KU18VKYTF series
+CU-KU18VKYLF series
+CU-KU24VKYF series
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+CU-TU12VKYF series
+CU-TU18VKYF series
+CU-KU12VKYF series
+CU-KU15VKYF series
+CU-KU18VKYF series
+CU-KU18VKYTF series
+CU-KU18VKYLF series
+CU-KU24VKYF series
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #7
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: CS-TU12VKYF series
+CS-TU18VKYF series
+CS-KU12VKYF series
+CS-KU15VKYF series
+CS-KU18VKYF series
+CS-KU18VKYTF series
+CS-KU18VKYLF series
+CS-KU24VKYF series
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+CS-TU12VKYF series
+CS-TU18VKYF series
+CS-KU12VKYF series
+CS-KU15VKYF series
+CS-KU18VKYF series
+CS-KU18VKYTF series
+CS-KU18VKYLF series
+CS-KU24VKYF series
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #8
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: Operating Instructions
+Air Conditioner
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Operating Instructions
+Air Conditioner
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #9
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: Thank you for purchasing Panasonic Air Conditioner.
+Installation instructions attached.
+Before operating the unit, please read these operating 
+instructions thoroughly and keep them for future 
+reference. 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Thank you for purchasing Panasonic Air Conditioner.
+Installation instructions attached.
+Before operating the unit, please read these operating 
+instructions thoroughly and keep them for future 
+reference. 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #10
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: English
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+English
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #11
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 1, 'element_type': 'text'}
+page_content: ACXF55-22410-AA
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-22410-AA
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 1
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #12
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 2, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   2   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   2   10/5/2018   12:40:15 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   2   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   2   10/5/2018   12:40:15 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 2
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #13
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 2, 'element_type': 'text'}
+page_content: To confirm Press SET or CLOCK again
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+To confirm Press SET or CLOCK again
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 2
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #14
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 2, 'element_type': 'text'}
+page_content: FAN
+DRY
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+FAN
+DRY
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 2
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #15
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 2, 'element_type': 'text'}
+page_content: Operating the unit at 25 °C or higher degrees
+may save energy.
+•
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Operating the unit at 25 °C or higher degrees
+may save energy.
+•
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 2
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #16
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 2, 'element_type': 'text'}
+page_content: Better comfort condition at 25 °C or higher 
+degrees.
+•
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Better comfort condition at 25 °C or higher 
+degrees.
+•
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 2
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #17
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   3   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   3   10/5/2018   12:40:15 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   3   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   3   10/5/2018   12:40:15 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #18
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: Safety precautions .............................. 4-9
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Safety precautions .............................. 4-9
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #19
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: How to use.......................................10-11
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+How to use.......................................10-11
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #20
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: Cleaning instructions ............................
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Cleaning instructions ............................
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #21
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: 12
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+12
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #22
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: Troubleshooting  
+13
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Troubleshooting  
+13
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #23
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: ....................................
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+....................................
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #24
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: BEE Regulation.....................................14
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+BEE Regulation.....................................14
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #25
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: Information............................................ 15
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Information............................................ 15
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #26
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: CHECK
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+CHECK
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #27
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: FAN
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+FAN
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #28
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'text'}
+page_content: CHECK
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+CHECK
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #29
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 3, 'element_type': 'table'}
+page_content: [TABLE]
+	None
+	
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+	None
+	
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 3
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #30
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   4   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   4   10/5/2018   12:40:15 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   4   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   4   10/5/2018   12:40:15 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #31
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: Safety precautions
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Safety precautions
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #32
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: To prevent personal injury, injury to others or property 
+damage, please comply with the following: 
+Incorrect operation due to failure to follow instructions 
+below may cause harm or damage, the seriousness of 
+which is classified as below:
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+To prevent personal injury, injury to others or property 
+damage, please comply with the following: 
+Incorrect operation due to failure to follow instructions 
+below may cause harm or damage, the seriousness of 
+which is classified as below:
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #33
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'table'}
+page_content: [TABLE]
+	WARNING
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+	WARNING
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #34
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: Indoor unit and outdoor unit
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Indoor unit and outdoor unit
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #35
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: This appliance is not intended for use by 
+persons (including children) with reduced 
+physical, sensory or mental capabilities, or lack 
+of experience and knowledge, unless they have 
+been given supervision or instruction concerning 
+use of the appliance by a person responsible for 
+their safety. Children should be supervised to 
+ensure that they do not play with the appliance.
+The appliance shall be installed, and/or operated 
+in a room with floor area larger than Amin (m²) and 
+keep away from ignition sources, such as heat/
+sparks/open flame or hazardous areas such as 
+gas appliances, gas cooking, reticulated gas 
+supply systems or electric cooking appliances, etc.
+(Refer to Table A of Installation instructions table 
+for Amin (m²))
+Be aware that refrigerant may not contain an 
+odour, highly recommended to ensure suitable 
+flammable refrigerant gas detectors are present, 
+operating and able to warn of a leak.
+Please consult authorised dealer or specialist to 
+clean the internal parts, repair, install, remove 
+and reinstall the unit. Improper installation and 
+handing will cause leakage, electric shock or fire.
+Confirm with authorised dealer or specialist on 
+usage of any specified refrigerant type. 
+Using refrigerant type other than the specified 
+may cause product damage, burst and injury etc.
+Do not use means to accelerate the defrosting 
+process or to clean, other than those 
+recommended by manufacturer. Any unfit 
+method or using incompatible material may 
+cause product damage, burst and serious injury.
+Do not pierce or burn as the appliance is 
+pressurized. Do not expose the appliance to 
+heat, flame, sparks, or other sources of ignition. 
+Else it may explode and cause injury or death.
+Do not install the unit in a potentially explosive 
+or flammable atmosphere. Failure to do so could 
+result in fire.
+Do not insert your fingers or other objects 
+into the air conditioner indoor or outdoor 
+unit, rotating parts may cause injury.
+Do not touch the outdoor unit during lightning, it 
+may cause electric shock.
+Do not expose yourself directly to cold air for a 
+long period to avoid excess cooling.
+Do not sit or step on the unit, you may 
+fall down accidentally.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+This appliance is not intended for use by 
+persons (including children) with reduced 
+physical, sensory or mental capabilities, or lack 
+of experience and knowledge, unless they have 
+been given supervision or instruction concerning 
+use of the appliance by a person responsible for 
+their safety. Children should be supervised to 
+ensure that they do not play with the appliance.
+The appliance shall be installed, and/or operated 
+in a room with floor area larger than Amin (m²) and 
+keep away from ignition sources, such as heat/
+sparks/open flame or hazardous areas such as 
+gas appliances, gas cooking, reticulated gas 
+supply systems or electric cooking appliances, etc.
+(Refer to Table A of Installation instructions table 
+for Amin (m²))
+Be aware that refrigerant may not contain an 
+odour, highly recommended to ensure suitable 
+flammable refrigerant gas detectors are present, 
+operating and able to warn of a leak.
+Please consult authorised dealer or specialist to 
+clean the internal parts, repair, install, remove 
+and reinstall the unit. Improper installation and 
+handing will cause leakage, electric shock or fire.
+Confirm with authorised dealer or specialist on 
+usage of any specified refrigerant type. 
+Using refrigerant type other than the specified 
+may cause product damage, burst and injury etc.
+Do not use means to accelerate the defrosting 
+process or to clean, other than those 
+recommended by manufacturer. Any unfit 
+method or using incompatible material may 
+cause product damage, burst and serious injury.
+Do not pierce or burn as the appliance is 
+pressurized. Do not expose the appliance to 
+heat, flame, sparks, or other sources of ignition. 
+Else it may explode and cause injury or death.
+Do not install the unit in a potentially explosive 
+or flammable atmosphere. Failure to do so could 
+result in fire.
+Do not insert your fingers or other objects 
+into the air conditioner indoor or outdoor 
+unit, rotating parts may cause injury.
+Do not touch the outdoor unit during lightning, it 
+may cause electric shock.
+Do not expose yourself directly to cold air for a 
+long period to avoid excess cooling.
+Do not sit or step on the unit, you may 
+fall down accidentally.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #36
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: This appliance is filled with R32 (mild 
+flammable refrigerant). If the refrigerant is 
+leaked and exposed to an external ignition 
+source, there is a risk of fire.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+This appliance is filled with R32 (mild 
+flammable refrigerant). If the refrigerant is 
+leaked and exposed to an external ignition 
+source, there is a risk of fire.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #37
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'table'}
+page_content: [TABLE]
+	WARNING	This sign warns of death
+or serious injury.
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+	WARNING	This sign warns of death
+or serious injury.
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #38
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'table'}
+page_content: [TABLE]
+	CAUTION	This sign warns of injury
+or damage to property.
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+	CAUTION	This sign warns of injury
+or damage to property.
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #39
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: The instructions to be followed are classified by the 
+following symbols:
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+The instructions to be followed are classified by the 
+following symbols:
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #40
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: This symbol denotes an action that 
+is PROHIBITED.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+This symbol denotes an action that 
+is PROHIBITED.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #41
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: These symbols denote actions 
+COMPULSORY.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+These symbols denote actions 
+COMPULSORY.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #42
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 4, 'element_type': 'text'}
+page_content: 4
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+4
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 4
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #43
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   5   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   5   10/5/2018   12:40:15 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   5   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   5   10/5/2018   12:40:15 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #44
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Remote control
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Remote control
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #45
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Precaution for using R32 refrigerant
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Precaution for using R32 refrigerant
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #46
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: The basic installation work procedures are the same as 
+conventional refrigerant (R410A, R22) models.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+The basic installation work procedures are the same as 
+conventional refrigerant (R410A, R22) models.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #47
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Do not allow infants and small children to play 
+with the remote control to prevent them from 
+accidentally swallowing the batteries.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Do not allow infants and small children to play 
+with the remote control to prevent them from 
+accidentally swallowing the batteries.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #48
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Since the working pressure is higher than that of 
+refrigerant R22 models, some of the piping and 
+installation and service tools are special.
+Especially, when replacing a refrigerant R22 
+model with a new refrigerant R32 model, always 
+replace the conventional piping and flare nuts 
+with the R32 and R410A piping and flare nuts on 
+the outdoor unit side.
+For R32 and R410A, the same flare nut on the 
+outdoor unit side and pipe can be used.
+Models that use refrigerant R32 and R410A 
+have a different charging port thread diameter to 
+prevent erroneous charging with refrigerant R22 
+and for safety.
+Therefore, check beforehand. [The charging port 
+thread diameter for R32 and R410A is 1/2 inch.]
+Be more careful than R22 so that foreign matter 
+(oil, water, etc.) does not enter the piping.
+Also, when storing the piping, securely seal the 
+opening by pinching, taping, etc. (Handling of 
+R32 is similar to R410A.)
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Since the working pressure is higher than that of 
+refrigerant R22 models, some of the piping and 
+installation and service tools are special.
+Especially, when replacing a refrigerant R22 
+model with a new refrigerant R32 model, always 
+replace the conventional piping and flare nuts 
+with the R32 and R410A piping and flare nuts on 
+the outdoor unit side.
+For R32 and R410A, the same flare nut on the 
+outdoor unit side and pipe can be used.
+Models that use refrigerant R32 and R410A 
+have a different charging port thread diameter to 
+prevent erroneous charging with refrigerant R22 
+and for safety.
+Therefore, check beforehand. [The charging port 
+thread diameter for R32 and R410A is 1/2 inch.]
+Be more careful than R22 so that foreign matter 
+(oil, water, etc.) does not enter the piping.
+Also, when storing the piping, securely seal the 
+opening by pinching, taping, etc. (Handling of 
+R32 is similar to R410A.)
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #49
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Power supply
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Power supply
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #50
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Do not use a modified cord, 
+joint cord, extension cord or 
+unspecified cord to prevent 
+overheating and fire.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Do not use a modified cord, 
+joint cord, extension cord or 
+unspecified cord to prevent 
+overheating and fire.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #51
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: To prevent overheating, fire or electric shock:
+• Do not share the same power outlet with 
+other equipment.
+• Do not operate with wet hands. 
+• Do not over bend the power supply cord.
+• Do not operate or stop the unit by inserting 
+or pulling out the power plug.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+To prevent overheating, fire or electric shock:
+• Do not share the same power outlet with 
+other equipment.
+• Do not operate with wet hands. 
+• Do not over bend the power supply cord.
+• Do not operate or stop the unit by inserting 
+or pulling out the power plug.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #52
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: If the supply cord is damaged, it must be 
+replaced by the manufacturer, service agent 
+or similarly qualifi ed persons in order to avoid 
+a hazard.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+If the supply cord is damaged, it must be 
+replaced by the manufacturer, service agent 
+or similarly qualifi ed persons in order to avoid 
+a hazard.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #53
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: It is strongly recommended to be installed 
+with Earth Leakage Circuit Breaker (ELCB) 
+or Residual Current Device (RCD) to prevent 
+electric shock or fi re.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+It is strongly recommended to be installed 
+with Earth Leakage Circuit Breaker (ELCB) 
+or Residual Current Device (RCD) to prevent 
+electric shock or fi re.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #54
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'table'}
+page_content: [TABLE]
+	CAUTION
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+	CAUTION
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #55
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: To prevent overheating, fi re or electric shock:
+• Insert the power plug properly.
+• Dust on the power plug should be 
+periodically wiped with a dry cloth.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+To prevent overheating, fi re or electric shock:
+• Insert the power plug properly.
+• Dust on the power plug should be 
+periodically wiped with a dry cloth.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #56
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Indoor unit and outdoor unit
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Indoor unit and outdoor unit
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #57
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Do not wash the indoor unit with water, benzine, 
+thinner or scouring powder to avoid damage or 
+corrosion at the unit.
+Do not use for preservation of precise 
+equipment, food, animals, plants, artwork 
+or other objects. This may cause quality 
+deterioration, etc.
+Do not use any combustible equipment in front 
+of the airflow outlet to avoid fire propagation.
+Do not expose plants or pet directly to airflow to 
+avoid injury, etc.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Do not wash the indoor unit with water, benzine, 
+thinner or scouring powder to avoid damage or 
+corrosion at the unit.
+Do not use for preservation of precise 
+equipment, food, animals, plants, artwork 
+or other objects. This may cause quality 
+deterioration, etc.
+Do not use any combustible equipment in front 
+of the airflow outlet to avoid fire propagation.
+Do not expose plants or pet directly to airflow to 
+avoid injury, etc.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #58
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Stop using the product if any abnormality/
+failure occurs and disconnect the power plug 
+or turn off the power switch and breaker.
+(Risk of smoke/fi re/electric shock) Examples 
+of abnormality/failure
+• The ELCB trips frequently.
+• Burning smell is observed.
+• Abnormal noise or vibration of the unit is 
+observed.
+• Water leaks from the indoor unit.
+• Power cord or plug becomes abnormally hot.
+• Fan speed cannot be controlled.
+• The unit stops running immediately even if it 
+is switched on for operation.
+• The fan does not stop even if the operation 
+is stopped.
+Contact your local dealer immediately for 
+maintenance/repair.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Stop using the product if any abnormality/
+failure occurs and disconnect the power plug 
+or turn off the power switch and breaker.
+(Risk of smoke/fi re/electric shock) Examples 
+of abnormality/failure
+• The ELCB trips frequently.
+• Burning smell is observed.
+• Abnormal noise or vibration of the unit is 
+observed.
+• Water leaks from the indoor unit.
+• Power cord or plug becomes abnormally hot.
+• Fan speed cannot be controlled.
+• The unit stops running immediately even if it 
+is switched on for operation.
+• The fan does not stop even if the operation 
+is stopped.
+Contact your local dealer immediately for 
+maintenance/repair.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #59
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Do not touch the sharp aluminium fin, 
+sharp parts may cause injury.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Do not touch the sharp aluminium fin, 
+sharp parts may cause injury.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #60
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Do not switch ON the indoor unit when waxing 
+the floor. After waxing, aerate the room properly 
+before operating the unit.
+Do not install the unit in oily and smoky areas to 
+prevent damage to the unit.
+Do not dismantle the unit for cleaning purpose 
+to avoid injury.
+Do not step onto an unstable bench when 
+cleaning the unit to avoid injury.
+Do not place a vase or water container on the 
+unit. Water may enter the unit and degrade the 
+insulation. This may cause an electric shock.
+Do not open window or door for long time during 
+operation, it may lead to inefficient power usage 
+and uncomfortable temperature changes.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Do not switch ON the indoor unit when waxing 
+the floor. After waxing, aerate the room properly 
+before operating the unit.
+Do not install the unit in oily and smoky areas to 
+prevent damage to the unit.
+Do not dismantle the unit for cleaning purpose 
+to avoid injury.
+Do not step onto an unstable bench when 
+cleaning the unit to avoid injury.
+Do not place a vase or water container on the 
+unit. Water may enter the unit and degrade the 
+insulation. This may cause an electric shock.
+Do not open window or door for long time during 
+operation, it may lead to inefficient power usage 
+and uncomfortable temperature changes.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #61
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: This equipment must be earthed to prevent 
+electrical shock or fi re.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+This equipment must be earthed to prevent 
+electrical shock or fi re.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #62
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 5, 'element_type': 'text'}
+page_content: Prevent electric shock by switching off the 
+power supply and unplug:
+ - Before cleaning or servicing,
+ - When extended non-use, or
+ - During abnormally strong lightning activity.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Prevent electric shock by switching off the 
+power supply and unplug:
+ - Before cleaning or servicing,
+ - When extended non-use, or
+ - During abnormally strong lightning activity.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 5
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #63
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   6   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   6   10/5/2018   12:40:15 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   6   10/5/2018   12:40:15 PM
+ACXF55-2241_OL.ai   6   10/5/2018   12:40:15 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #64
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: Safety precautions
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Safety precautions
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #65
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: 2. Servicing
+2-1. Service personnel
+• Any qualifi ed person who is involved with 
+working on or breaking into a refrigerant 
+circuit should hold a current valid certifi cate 
+from an industry-accredited assessment 
+authority, which authorizes their competence 
+to handle refrigerants safely in accordance 
+with an industry recognised assessment 
+specifi cation.
+• Servicing shall only be performed 
+as recommended by the equipment 
+manufacturer.
+Maintenance and repair requiring the 
+assistance of other skilled personnel shall 
+be carried out under the supervision of the 
+person competent in the use of fl ammable 
+refrigerants.
+• Servicing shall be performed only as 
+recommended by the manufacturer.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2. Servicing
+2-1. Service personnel
+• Any qualifi ed person who is involved with 
+working on or breaking into a refrigerant 
+circuit should hold a current valid certifi cate 
+from an industry-accredited assessment 
+authority, which authorizes their competence 
+to handle refrigerants safely in accordance 
+with an industry recognised assessment 
+specifi cation.
+• Servicing shall only be performed 
+as recommended by the equipment 
+manufacturer.
+Maintenance and repair requiring the 
+assistance of other skilled personnel shall 
+be carried out under the supervision of the 
+person competent in the use of fl ammable 
+refrigerants.
+• Servicing shall be performed only as 
+recommended by the manufacturer.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #66
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: Prevent water leakage by ensuring drainage 
+pipe is:
+ - Connected properly,
+ - Kept clear of gutters and containers, or
+ - Not immersed in water
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Prevent water leakage by ensuring drainage 
+pipe is:
+ - Connected properly,
+ - Kept clear of gutters and containers, or
+ - Not immersed in water
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #67
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: After a long period of use or use with any 
+combustible equipment, aerate the room 
+regularly.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+After a long period of use or use with any 
+combustible equipment, aerate the room 
+regularly.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #68
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: After a long period of use, make sure the 
+installation rack does not deteriorate to 
+prevent the unit from falling down.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+After a long period of use, make sure the 
+installation rack does not deteriorate to 
+prevent the unit from falling down.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #69
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: Remote control
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Remote control
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #70
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: Do not use rechargeable (Ni-Cd) batteries. It 
+may damage the remote control.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Do not use rechargeable (Ni-Cd) batteries. It 
+may damage the remote control.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #71
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: To prevent malfunction or damage of the 
+remote control:
+• Remove the batteries if the unit is not going 
+to be used for a long period of time.
+• New batteries of the same type must be 
+inserted following the polarity stated.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+To prevent malfunction or damage of the 
+remote control:
+• Remove the batteries if the unit is not going 
+to be used for a long period of time.
+• New batteries of the same type must be 
+inserted following the polarity stated.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #72
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: 2-2. Work
+• Prior to beginning work on systems 
+containing fl ammable refrigerants, safety 
+checks are necessary to ensure that the risk 
+of ignition is minimised.
+For repair to the refrigerating system, the 
+precautions in #2-2 to #2-8 must be followed 
+before conducting work on the system.
+• Work shall be undertaken under a controlled 
+procedure so as to minimize the risk of a 
+fl ammable gas or vapour being present while 
+the work is being performed.
+• All maintenance staff and others working 
+in the local area shall be instructed and 
+supervised on the nature of work being 
+carried out.
+• Avoid working in confi ned spaces.
+• Wear appropriate protective equipment, 
+including respiratory protection, as 
+conditions warrant.
+• Ensure that the conditions within the area 
+have been made safe by limit of use of any 
+fl ammable material. Keep all sources of 
+ignition and hot metal surfaces away.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2-2. Work
+• Prior to beginning work on systems 
+containing fl ammable refrigerants, safety 
+checks are necessary to ensure that the risk 
+of ignition is minimised.
+For repair to the refrigerating system, the 
+precautions in #2-2 to #2-8 must be followed 
+before conducting work on the system.
+• Work shall be undertaken under a controlled 
+procedure so as to minimize the risk of a 
+fl ammable gas or vapour being present while 
+the work is being performed.
+• All maintenance staff and others working 
+in the local area shall be instructed and 
+supervised on the nature of work being 
+carried out.
+• Avoid working in confi ned spaces.
+• Wear appropriate protective equipment, 
+including respiratory protection, as 
+conditions warrant.
+• Ensure that the conditions within the area 
+have been made safe by limit of use of any 
+fl ammable material. Keep all sources of 
+ignition and hot metal surfaces away.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #73
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: Power supply
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Power supply
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #74
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: Do not disconnect the plug by pulling the cord 
+to prevent electric shock.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Do not disconnect the plug by pulling the cord 
+to prevent electric shock.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #75
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: Precaution for using R32 refrigerant
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Precaution for using R32 refrigerant
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #76
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: The basic installation work procedures are the same as 
+conventional refrigerant (R410A, R22) models.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+The basic installation work procedures are the same as 
+conventional refrigerant (R410A, R22) models.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #77
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: 1. Installation (Space)
+• Must ensure the installation of pipe-work 
+shall be kept to a minimum. Avoid use 
+dented pipe and do not allow acute bending.
+• Must ensure that pipe-work shall be 
+protected from physical damage.
+• Must comply with national gas regulations, 
+state municipal rules and legislation. Notify 
+relevant authorities in accordance with all 
+applicable regulations.
+• Must ensure mechanical connections be 
+accessible for maintenance purposes.
+• In cases that require mechanical ventilation, 
+ventilation openings shall be kept clear of 
+obstruction.
+• When disposal of the product, do follow 
+to the precautions in #12 and comply with 
+national regulations.
+Always contact to local municipal offi ces for 
+proper handling.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+1. Installation (Space)
+• Must ensure the installation of pipe-work 
+shall be kept to a minimum. Avoid use 
+dented pipe and do not allow acute bending.
+• Must ensure that pipe-work shall be 
+protected from physical damage.
+• Must comply with national gas regulations, 
+state municipal rules and legislation. Notify 
+relevant authorities in accordance with all 
+applicable regulations.
+• Must ensure mechanical connections be 
+accessible for maintenance purposes.
+• In cases that require mechanical ventilation, 
+ventilation openings shall be kept clear of 
+obstruction.
+• When disposal of the product, do follow 
+to the precautions in #12 and comply with 
+national regulations.
+Always contact to local municipal offi ces for 
+proper handling.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #78
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: 2-3. Checking for presence of refrigerant
+• The area shall be checked with an 
+appropriate refrigerant detector prior to and 
+during work, to ensure the technician is 
+aware of potentially fl ammable atmospheres.
+• Ensure that the leak detection equipment 
+being used is suitable for use with fl ammable 
+refrigerants, i.e. non sparking, adequately 
+sealed or intrinsically safe.
+• In case of leakage/spillage happened, 
+immediately ventilate area and stay upwind 
+and away from spill/release.
+• In case of leakage/spillage happened, do 
+notify persons down wind of the leaking/spill, 
+isolate immediate hazard area and keep 
+unauthorized personnel out.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2-3. Checking for presence of refrigerant
+• The area shall be checked with an 
+appropriate refrigerant detector prior to and 
+during work, to ensure the technician is 
+aware of potentially fl ammable atmospheres.
+• Ensure that the leak detection equipment 
+being used is suitable for use with fl ammable 
+refrigerants, i.e. non sparking, adequately 
+sealed or intrinsically safe.
+• In case of leakage/spillage happened, 
+immediately ventilate area and stay upwind 
+and away from spill/release.
+• In case of leakage/spillage happened, do 
+notify persons down wind of the leaking/spill, 
+isolate immediate hazard area and keep 
+unauthorized personnel out.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #79
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 6, 'element_type': 'text'}
+page_content: 6
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+6
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 6
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #80
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 7, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   7   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   7   10/5/2018   12:40:16 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   7   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   7   10/5/2018   12:40:16 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 7
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #81
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 7, 'element_type': 'text'}
+page_content: 2-4. Presence of fi re extinguisher
+• If any hot work is to be conducted on the 
+refrigeration equipment or any associated 
+parts, appropriate fi re extinguishing 
+equipment shall be available at hand.
+• Have a dry powder or CO2 fi re extinguisher 
+adjacent to the charging area.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2-4. Presence of fi re extinguisher
+• If any hot work is to be conducted on the 
+refrigeration equipment or any associated 
+parts, appropriate fi re extinguishing 
+equipment shall be available at hand.
+• Have a dry powder or CO2 fi re extinguisher 
+adjacent to the charging area.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 7
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #82
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 7, 'element_type': 'text'}
+page_content: 2-8. Checks to electrical devices
+• Repair and maintenance to electrical 
+components shall include initial safety 
+checks and component inspection 
+procedures.
+• Initial safety checks shall include but not 
+limit to:-
+ - That capacitors are discharged: this 
+shall be done in a safe manner to avoid 
+possibility of sparking.
+ - That there no live electrical components 
+and wiring are exposed while charging, 
+recovering or purging the system.
+ - That there is continuity of earth bonding.
+• At all times the manufacturer’s maintenance 
+and service guidelines shall be followed.
+• If in doubt consult the manufacturer’s 
+technical department for assistance.
+• If a fault exists that could compromise safety, 
+then no electrical supply shall be connected 
+to the circuit until it is satisfactorily dealt with.
+• If the fault cannot be corrected immediately 
+but it is necessary to continue operation, an 
+adequate temporary solution shall be used.
+• The owner of the equipment must be 
+informed or reported so all parties are 
+advised thereinafter.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2-8. Checks to electrical devices
+• Repair and maintenance to electrical 
+components shall include initial safety 
+checks and component inspection 
+procedures.
+• Initial safety checks shall include but not 
+limit to:-
+ - That capacitors are discharged: this 
+shall be done in a safe manner to avoid 
+possibility of sparking.
+ - That there no live electrical components 
+and wiring are exposed while charging, 
+recovering or purging the system.
+ - That there is continuity of earth bonding.
+• At all times the manufacturer’s maintenance 
+and service guidelines shall be followed.
+• If in doubt consult the manufacturer’s 
+technical department for assistance.
+• If a fault exists that could compromise safety, 
+then no electrical supply shall be connected 
+to the circuit until it is satisfactorily dealt with.
+• If the fault cannot be corrected immediately 
+but it is necessary to continue operation, an 
+adequate temporary solution shall be used.
+• The owner of the equipment must be 
+informed or reported so all parties are 
+advised thereinafter.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 7
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #83
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 7, 'element_type': 'text'}
+page_content: 2-5. No ignition sources
+• No person carrying out work in relation to a 
+refrigeration system which involves exposing 
+any pipe work that contains or has contained 
+fl ammable refrigerant shall use any sources 
+of ignition in such a manner that it may lead 
+to the risk of fi re or explosion. He/She must 
+not be smoking when carrying out such work.
+• All possible ignition sources, including 
+cigarette smoking, should be kept suffi ciently 
+far away from the site of installation, 
+repairing, removing and disposal, during 
+which fl ammable refrigerant can possibly be 
+released to the surrounding space.
+• Prior to work taking place, the area around 
+the equipment is to be surveyed to make 
+sure that there are no fl ammable hazards or 
+ignition risks.
+• “No Smoking” signs shall be displayed.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2-5. No ignition sources
+• No person carrying out work in relation to a 
+refrigeration system which involves exposing 
+any pipe work that contains or has contained 
+fl ammable refrigerant shall use any sources 
+of ignition in such a manner that it may lead 
+to the risk of fi re or explosion. He/She must 
+not be smoking when carrying out such work.
+• All possible ignition sources, including 
+cigarette smoking, should be kept suffi ciently 
+far away from the site of installation, 
+repairing, removing and disposal, during 
+which fl ammable refrigerant can possibly be 
+released to the surrounding space.
+• Prior to work taking place, the area around 
+the equipment is to be surveyed to make 
+sure that there are no fl ammable hazards or 
+ignition risks.
+• “No Smoking” signs shall be displayed.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 7
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #84
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 7, 'element_type': 'text'}
+page_content: 2-6. Ventilated area
+• Ensure that the area is in the open or that it 
+is adequately ventilated before breaking into 
+the system or conducting any hot work.
+• A degree of ventilation shall continue during 
+the period that the work is carried out.
+• The ventilation should safely disperse any 
+released refrigerant and preferably expel it 
+externally into the atmosphere.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2-6. Ventilated area
+• Ensure that the area is in the open or that it 
+is adequately ventilated before breaking into 
+the system or conducting any hot work.
+• A degree of ventilation shall continue during 
+the period that the work is carried out.
+• The ventilation should safely disperse any 
+released refrigerant and preferably expel it 
+externally into the atmosphere.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 7
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #85
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 7, 'element_type': 'text'}
+page_content: 3. Repairs to sealed components
+• During repairs to sealed components, all 
+electrical supplies shall be disconnected 
+from the equipment being worked upon prior 
+to any removal of sealed covers, etc.
+• If it is absolutely necessary to have an 
+electrical supply to equipment during 
+servicing, then a permanently operating 
+form of leak detection shall be located at the 
+most critical point to warn of a potentially 
+hazardous situation.
+• Particular attention shall be paid to the 
+following to ensure that by working on 
+electrical components, the casing is not 
+altered in such a way that the level of 
+protection is affected.
+This shall include damage to cables, 
+excessive number of connections, terminals 
+not made to original specifi cation, damage to 
+seals, incorrect fi tting of glands, etc.
+• Ensure that apparatus is mounted securely.
+• Ensure that seals or sealing materials have 
+not degraded such that they no longer serve 
+the purpose of preventing the ingress of 
+fl ammable atmospheres.
+• Replacement parts shall be in accordance 
+with the manufacturer’s specifi cations.
+NOTE: The use of silicon sealant may inhibit 
+the effectiveness of some types of leak 
+detection equipment.
+Intrinsically safe components do not have to 
+be isolated prior to working on them.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+3. Repairs to sealed components
+• During repairs to sealed components, all 
+electrical supplies shall be disconnected 
+from the equipment being worked upon prior 
+to any removal of sealed covers, etc.
+• If it is absolutely necessary to have an 
+electrical supply to equipment during 
+servicing, then a permanently operating 
+form of leak detection shall be located at the 
+most critical point to warn of a potentially 
+hazardous situation.
+• Particular attention shall be paid to the 
+following to ensure that by working on 
+electrical components, the casing is not 
+altered in such a way that the level of 
+protection is affected.
+This shall include damage to cables, 
+excessive number of connections, terminals 
+not made to original specifi cation, damage to 
+seals, incorrect fi tting of glands, etc.
+• Ensure that apparatus is mounted securely.
+• Ensure that seals or sealing materials have 
+not degraded such that they no longer serve 
+the purpose of preventing the ingress of 
+fl ammable atmospheres.
+• Replacement parts shall be in accordance 
+with the manufacturer’s specifi cations.
+NOTE: The use of silicon sealant may inhibit 
+the effectiveness of some types of leak 
+detection equipment.
+Intrinsically safe components do not have to 
+be isolated prior to working on them.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 7
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #86
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 7, 'element_type': 'text'}
+page_content: 2-7. Checks to the refrigeration equipment
+• Where electrical components are being 
+changed, they shall be fi t for the purpose 
+and to the correct specifi cation.
+• At all times the manufacturer’s maintenance 
+and service guidelines shall be followed.
+• If in doubt consult the manufacturer’s 
+technical department for assistance.
+• The following checks shall be applied to 
+installations using fl ammable refrigerants.
+ - The charge size is in accordance with 
+the room size within which the refrigerant 
+containing parts are installed.
+ - The ventilation machinery and outlets are 
+operating adequately and are not obstructed.
+ - If an indirect refrigerating circuit is being 
+used, the secondary circuit shall be 
+checked for the presence of refrigerant.
+ - Marking to the equipment continues to be 
+visible and legible. Markings and signs that 
+are illegible shall be corrected.
+ - Refrigeration pipe or components are 
+installed in a position where they are unlikely 
+to be exposed to any substance which may 
+corrode refrigerant containing components, 
+unless the components are constructed of 
+materials which are inherently resistant to 
+being corroded or are properly protected 
+against being so corroded.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2-7. Checks to the refrigeration equipment
+• Where electrical components are being 
+changed, they shall be fi t for the purpose 
+and to the correct specifi cation.
+• At all times the manufacturer’s maintenance 
+and service guidelines shall be followed.
+• If in doubt consult the manufacturer’s 
+technical department for assistance.
+• The following checks shall be applied to 
+installations using fl ammable refrigerants.
+ - The charge size is in accordance with 
+the room size within which the refrigerant 
+containing parts are installed.
+ - The ventilation machinery and outlets are 
+operating adequately and are not obstructed.
+ - If an indirect refrigerating circuit is being 
+used, the secondary circuit shall be 
+checked for the presence of refrigerant.
+ - Marking to the equipment continues to be 
+visible and legible. Markings and signs that 
+are illegible shall be corrected.
+ - Refrigeration pipe or components are 
+installed in a position where they are unlikely 
+to be exposed to any substance which may 
+corrode refrigerant containing components, 
+unless the components are constructed of 
+materials which are inherently resistant to 
+being corroded or are properly protected 
+against being so corroded.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 7
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #87
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 7, 'element_type': 'text'}
+page_content: 7
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+7
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 7
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #88
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   8   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   8   10/5/2018   12:40:16 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   8   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   8   10/5/2018   12:40:16 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #89
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: Safety precautions
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Safety precautions
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #90
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: 4. Repair to intrinsically safe components
+• Do not apply any permanent inductive or 
+capacitance loads to the circuit without 
+ensuring that this will not exceed the 
+permissible voltage and current permitted for 
+the equipment in use.
+• Intrinsically safe components are the only 
+types that can be worked on while live in the 
+presence of a fl ammable atmosphere.
+• The test apparatus shall be at the correct 
+rating.
+• Replace components only with parts 
+specifi ed by the manufacturer. Unspecifi ed 
+parts by manufacturer may result ignition of 
+refrigerant in the atmosphere from a leak.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+4. Repair to intrinsically safe components
+• Do not apply any permanent inductive or 
+capacitance loads to the circuit without 
+ensuring that this will not exceed the 
+permissible voltage and current permitted for 
+the equipment in use.
+• Intrinsically safe components are the only 
+types that can be worked on while live in the 
+presence of a fl ammable atmosphere.
+• The test apparatus shall be at the correct 
+rating.
+• Replace components only with parts 
+specifi ed by the manufacturer. Unspecifi ed 
+parts by manufacturer may result ignition of 
+refrigerant in the atmosphere from a leak.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #91
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: 8. Removal and evacuation
+• When breaking into the refrigerant circuit to make 
+repairs – or for any other purpose – conventional 
+procedures shall be used.
+However, it is important that best practice is 
+followed since fl ammability is a consideration.
+The following procedure shall be adhered to:
+remove refrigerant -> purge the circuit with inert 
+gas -> evacuate -> purge again with inert gas -> 
+open the circuit by cutting or brazing
+• The refrigerant charge shall be recovered into 
+the correct recovery cylinders.
+• The system shall be “fl ushed” with OFN to 
+render the unit safe.
+• This process may need to be repeated several times.
+• Compressed air or oxygen shall not be used 
+for this task.
+• Flushing shall be achieved by breaking the 
+vacuum in the system with OFN and continuing 
+to fi ll until the working pressure is achieved, 
+then venting to atmosphere, and fi nally pulling 
+down to a vacuum.
+• This process shall be repeated until no 
+refrigerant is within the system.
+• When the fi nal OFN charge is used, the system 
+shall be vented down to atmospheric pressure 
+to enable work to take place.
+• This operation is absolutely vital if brazing 
+operations on the pipe work are to take place.
+• Ensure that the outlet for the vacuum pump is 
+not close to any ignition sources and there is 
+ventilation available.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+8. Removal and evacuation
+• When breaking into the refrigerant circuit to make 
+repairs – or for any other purpose – conventional 
+procedures shall be used.
+However, it is important that best practice is 
+followed since fl ammability is a consideration.
+The following procedure shall be adhered to:
+remove refrigerant -> purge the circuit with inert 
+gas -> evacuate -> purge again with inert gas -> 
+open the circuit by cutting or brazing
+• The refrigerant charge shall be recovered into 
+the correct recovery cylinders.
+• The system shall be “fl ushed” with OFN to 
+render the unit safe.
+• This process may need to be repeated several times.
+• Compressed air or oxygen shall not be used 
+for this task.
+• Flushing shall be achieved by breaking the 
+vacuum in the system with OFN and continuing 
+to fi ll until the working pressure is achieved, 
+then venting to atmosphere, and fi nally pulling 
+down to a vacuum.
+• This process shall be repeated until no 
+refrigerant is within the system.
+• When the fi nal OFN charge is used, the system 
+shall be vented down to atmospheric pressure 
+to enable work to take place.
+• This operation is absolutely vital if brazing 
+operations on the pipe work are to take place.
+• Ensure that the outlet for the vacuum pump is 
+not close to any ignition sources and there is 
+ventilation available.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #92
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: 5. Cabling
+• Check that cabling will not be subject 
+to wear, corrosion, excessive pressure, 
+vibration, sharp edges or any other adverse 
+environmental effects.
+• The check shall also take into account the 
+effects of aging or continual vibration from 
+sources such as compressors or fans.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+5. Cabling
+• Check that cabling will not be subject 
+to wear, corrosion, excessive pressure, 
+vibration, sharp edges or any other adverse 
+environmental effects.
+• The check shall also take into account the 
+effects of aging or continual vibration from 
+sources such as compressors or fans.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #93
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: 6. Detection of fl ammable refrigerants
+• Under no circumstances shall potential 
+sources of ignition be used in the searching 
+or detection of refrigerant leaks.
+• A halide torch (or any other detector using a 
+naked fl ame) shall not be used.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+6. Detection of fl ammable refrigerants
+• Under no circumstances shall potential 
+sources of ignition be used in the searching 
+or detection of refrigerant leaks.
+• A halide torch (or any other detector using a 
+naked fl ame) shall not be used.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #94
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: 7. Leak detection methods
+• Electronic leak detectors shall be used 
+to detect fl ammable refrigerants, but the 
+sensitivity may not be adequate, or may 
+need re-calibration.
+(Detection equipment shall be calibrated in a 
+refrigerant-free area.)
+• Ensure that the detector is not a potential 
+source of ignition and is suitable for the 
+refrigerant used.
+• Leak detection equipment shall be set at 
+a percentage of the LFL of the refrigerant 
+and shall be calibrated to the refrigerant 
+employed and the appropriate percentage of 
+gas (25 % maximum) is confi rmed.
+• Leak detection fl uids are suitable for use with 
+most refrigerants but the use of detergents 
+containing chlorine shall be avoided as the 
+chlorine may react with the refrigerant and 
+corrode the copper pipe-work.
+• If a leak is suspected, all naked fl ames shall 
+be removed/extinguished.
+• If a leakage of refrigerant is found which 
+requires brazing, all of the refrigerant shall 
+be recovered from the system, or isolated 
+(by means of shut off valves) in a part of the 
+system remote from the leak. Oxygen free 
+nitrogen (OFN) shall then be purged through 
+the system both before and during the 
+brazing process.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+7. Leak detection methods
+• Electronic leak detectors shall be used 
+to detect fl ammable refrigerants, but the 
+sensitivity may not be adequate, or may 
+need re-calibration.
+(Detection equipment shall be calibrated in a 
+refrigerant-free area.)
+• Ensure that the detector is not a potential 
+source of ignition and is suitable for the 
+refrigerant used.
+• Leak detection equipment shall be set at 
+a percentage of the LFL of the refrigerant 
+and shall be calibrated to the refrigerant 
+employed and the appropriate percentage of 
+gas (25 % maximum) is confi rmed.
+• Leak detection fl uids are suitable for use with 
+most refrigerants but the use of detergents 
+containing chlorine shall be avoided as the 
+chlorine may react with the refrigerant and 
+corrode the copper pipe-work.
+• If a leak is suspected, all naked fl ames shall 
+be removed/extinguished.
+• If a leakage of refrigerant is found which 
+requires brazing, all of the refrigerant shall 
+be recovered from the system, or isolated 
+(by means of shut off valves) in a part of the 
+system remote from the leak. Oxygen free 
+nitrogen (OFN) shall then be purged through 
+the system both before and during the 
+brazing process.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #95
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: 9. Charging procedures
+• In addition to conventional charging procedures, 
+the following requirements shall be followed.
+ - Ensure that contamination of different 
+refrigerants does not occur when using 
+charging equipment.
+ - Hoses or lines shall be as short as possible to 
+minimize the amount of refrigerant contained 
+in them.
+ - Cylinders shall be kept upright.
+ - Ensure that the refrigeration system is earthed 
+prior to charging the system with refrigerant.
+ - Label the system when charging is complete 
+(if not already).
+ - Extreme care shall be taken not to over fi ll the 
+refrigeration system.
+• Prior to recharging the system it shall be 
+pressure tested with OFN (refer to #7).
+• The system shall be leak tested on completion 
+of charging but prior to commissioning.
+• A follow up leak test shall be carried out prior to 
+leaving the site.
+• Electrostatic charge may accumulate and 
+create a hazardous condition when charging 
+and discharging the refrigerant.
+To avoid fi re or explosion, dissipate static 
+electricity during transfer by grounding and 
+bonding containers and equipment before 
+charging/discharging.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+9. Charging procedures
+• In addition to conventional charging procedures, 
+the following requirements shall be followed.
+ - Ensure that contamination of different 
+refrigerants does not occur when using 
+charging equipment.
+ - Hoses or lines shall be as short as possible to 
+minimize the amount of refrigerant contained 
+in them.
+ - Cylinders shall be kept upright.
+ - Ensure that the refrigeration system is earthed 
+prior to charging the system with refrigerant.
+ - Label the system when charging is complete 
+(if not already).
+ - Extreme care shall be taken not to over fi ll the 
+refrigeration system.
+• Prior to recharging the system it shall be 
+pressure tested with OFN (refer to #7).
+• The system shall be leak tested on completion 
+of charging but prior to commissioning.
+• A follow up leak test shall be carried out prior to 
+leaving the site.
+• Electrostatic charge may accumulate and 
+create a hazardous condition when charging 
+and discharging the refrigerant.
+To avoid fi re or explosion, dissipate static 
+electricity during transfer by grounding and 
+bonding containers and equipment before 
+charging/discharging.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #96
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 8, 'element_type': 'text'}
+page_content: 8
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+8
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 8
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #97
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 9, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   9   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   9   10/5/2018   12:40:16 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   9   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   9   10/5/2018   12:40:16 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 9
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #98
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 9, 'element_type': 'text'}
+page_content: 10. Decommissioning
+• Before carrying out this procedure, it is 
+essential that the technician is completely 
+familiar with the equipment and all its details.
+• It is recommended good practice that all 
+refrigerants are recovered safely.
+• Prior to the task being carried out, an oil 
+and refrigerant sample shall be taken in 
+case analysis is required prior to re-use of 
+reclaimed refrigerant.
+• It is essential that electrical power is 
+available before the task is commenced.
+a)  Become familiar with the equipment and 
+its operation.
+b) Isolate system electrically.
+c) Before attempting the procedure ensure 
+that:
+• mechanical handling equipment is 
+available, if required, for handling 
+refrigerant cylinders; 
+• all personal protective equipment is 
+available and being used correctly;
+• the recovery process is supervised at all 
+times by a competent person;
+• recovery equipment and cylinders conform 
+to the appropriate standards.
+d)  Pump down refrigerant system, if 
+possible.
+e)  If a vacuum is not possible, make a 
+manifold so that refrigerant can be 
+removed from various parts of the system.
+f)  Make sure that cylinder is situated on the 
+scales before recovery takes place.
+g)  Start the recovery machine and operate 
+in accordance with manufacturer’s 
+instructions.
+h)  Do not over fi ll cylinders. (No more than 
+80 % volume liquid charge).
+i)  Do not exceed the maximum working 
+pressure of the cylinder, even temporarily.
+j)  When the cylinders have been fi lled 
+correctly and the process completed, make 
+sure that the cylinders and the equipment 
+are removed from site promptly and all 
+isolation valves on the equipment are 
+closed off.
+k)  Recovered refrigerant shall not be 
+charged into another refrigeration system 
+unless it has been cleaned and checked.
+• Electrostatic charge may accumulate and 
+create a hazardous condition when charging 
+or discharging the refrigerant.
+To avoid fi re or explosion, dissipate static 
+electricity during transfer by grounding and 
+bonding containers and equipment before 
+charging/discharging.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+10. Decommissioning
+• Before carrying out this procedure, it is 
+essential that the technician is completely 
+familiar with the equipment and all its details.
+• It is recommended good practice that all 
+refrigerants are recovered safely.
+• Prior to the task being carried out, an oil 
+and refrigerant sample shall be taken in 
+case analysis is required prior to re-use of 
+reclaimed refrigerant.
+• It is essential that electrical power is 
+available before the task is commenced.
+a)  Become familiar with the equipment and 
+its operation.
+b) Isolate system electrically.
+c) Before attempting the procedure ensure 
+that:
+• mechanical handling equipment is 
+available, if required, for handling 
+refrigerant cylinders; 
+• all personal protective equipment is 
+available and being used correctly;
+• the recovery process is supervised at all 
+times by a competent person;
+• recovery equipment and cylinders conform 
+to the appropriate standards.
+d)  Pump down refrigerant system, if 
+possible.
+e)  If a vacuum is not possible, make a 
+manifold so that refrigerant can be 
+removed from various parts of the system.
+f)  Make sure that cylinder is situated on the 
+scales before recovery takes place.
+g)  Start the recovery machine and operate 
+in accordance with manufacturer’s 
+instructions.
+h)  Do not over fi ll cylinders. (No more than 
+80 % volume liquid charge).
+i)  Do not exceed the maximum working 
+pressure of the cylinder, even temporarily.
+j)  When the cylinders have been fi lled 
+correctly and the process completed, make 
+sure that the cylinders and the equipment 
+are removed from site promptly and all 
+isolation valves on the equipment are 
+closed off.
+k)  Recovered refrigerant shall not be 
+charged into another refrigeration system 
+unless it has been cleaned and checked.
+• Electrostatic charge may accumulate and 
+create a hazardous condition when charging 
+or discharging the refrigerant.
+To avoid fi re or explosion, dissipate static 
+electricity during transfer by grounding and 
+bonding containers and equipment before 
+charging/discharging.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 9
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #99
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 9, 'element_type': 'text'}
+page_content: 12. Recovery
+• When removing refrigerant from a system, 
+either for servicing or decommissioning, 
+it is recommended good practice that all 
+refrigerants are removed safely.
+• When transferring refrigerant into cylinders, 
+ensure that only appropriate refrigerant 
+recovery cylinders are employed.
+• Ensure that the correct number of cylinders 
+for holding the total system charge are 
+available.
+• All cylinders to be used are designated for 
+the recovered refrigerant and labelled for 
+that refrigerant (i.e. special cylinders for the 
+recovery of refrigerant).
+• Cylinders shall be complete with pressure 
+relief valve and associated shut-off valves in 
+good working order.
+• Recovery cylinders are evacuated and, if 
+possible, cooled before recovery occurs.
+• The recovery equipment shall be in good 
+working order with a set of instructions 
+concerning the equipment that is at hand 
+and shall be suitable for the recovery of 
+fl ammable refrigerants.
+• In addition, a set of calibrated weighing 
+scales shall be available and in good 
+working order.
+• Hoses shall be complete with leak-free 
+disconnect couplings and in good condition.
+• Before using the recovery machine, check 
+that it is in satisfactory working order, has 
+been properly maintained and that any 
+associated electrical components are 
+sealed to prevent ignition in the event of a 
+refrigerant release.
+Consult manufacturer if in doubt.
+• The recovered refrigerant shall be returned 
+to the refrigerant supplier in the correct 
+recovery cylinder, and the relevant Waste 
+Transfer Note arranged.
+• Do not mix refrigerants in recovery units and 
+especially not in cylinders.
+• If compressors or compressor oils are to 
+be removed, ensure that they have been 
+evacuated to an acceptable level to make 
+certain that fl ammable refrigerant does not 
+remain within the lubricant.
+• The evacuation process shall be carried 
+out prior to returning the compressor to the 
+suppliers.
+• Only electric heating to the compressor 
+body shall be employed to accelerate this 
+process.
+• When oil is drained from a system, it shall be 
+carried out safely.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+12. Recovery
+• When removing refrigerant from a system, 
+either for servicing or decommissioning, 
+it is recommended good practice that all 
+refrigerants are removed safely.
+• When transferring refrigerant into cylinders, 
+ensure that only appropriate refrigerant 
+recovery cylinders are employed.
+• Ensure that the correct number of cylinders 
+for holding the total system charge are 
+available.
+• All cylinders to be used are designated for 
+the recovered refrigerant and labelled for 
+that refrigerant (i.e. special cylinders for the 
+recovery of refrigerant).
+• Cylinders shall be complete with pressure 
+relief valve and associated shut-off valves in 
+good working order.
+• Recovery cylinders are evacuated and, if 
+possible, cooled before recovery occurs.
+• The recovery equipment shall be in good 
+working order with a set of instructions 
+concerning the equipment that is at hand 
+and shall be suitable for the recovery of 
+fl ammable refrigerants.
+• In addition, a set of calibrated weighing 
+scales shall be available and in good 
+working order.
+• Hoses shall be complete with leak-free 
+disconnect couplings and in good condition.
+• Before using the recovery machine, check 
+that it is in satisfactory working order, has 
+been properly maintained and that any 
+associated electrical components are 
+sealed to prevent ignition in the event of a 
+refrigerant release.
+Consult manufacturer if in doubt.
+• The recovered refrigerant shall be returned 
+to the refrigerant supplier in the correct 
+recovery cylinder, and the relevant Waste 
+Transfer Note arranged.
+• Do not mix refrigerants in recovery units and 
+especially not in cylinders.
+• If compressors or compressor oils are to 
+be removed, ensure that they have been 
+evacuated to an acceptable level to make 
+certain that fl ammable refrigerant does not 
+remain within the lubricant.
+• The evacuation process shall be carried 
+out prior to returning the compressor to the 
+suppliers.
+• Only electric heating to the compressor 
+body shall be employed to accelerate this 
+process.
+• When oil is drained from a system, it shall be 
+carried out safely.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 9
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #100
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 9, 'element_type': 'text'}
+page_content: 11. Labelling
+• Equipment shall be labelled stating that it 
+has been de-commissioned and emptied of 
+refrigerant.
+• The label shall be dated and signed.
+• Ensure that there are labels on the 
+equipment stating the equipment contains 
+fl ammable refrigerant.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+11. Labelling
+• Equipment shall be labelled stating that it 
+has been de-commissioned and emptied of 
+refrigerant.
+• The label shall be dated and signed.
+• Ensure that there are labels on the 
+equipment stating the equipment contains 
+fl ammable refrigerant.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 9
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #101
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 9, 'element_type': 'text'}
+page_content: 9
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+9
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 9
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #102
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   10   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   10   10/5/2018   12:40:16 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   10   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   10   10/5/2018   12:40:16 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #103
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: AUTO - For your convenience 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+AUTO - For your convenience 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #104
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: Unit run with optimised settings.
+You can change the temperature according to 
+your comfort. 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Unit run with optimised settings.
+You can change the temperature according to 
+your comfort. 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #105
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: POWER
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+POWER
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #106
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: SLEEP
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+SLEEP
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #107
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: POWERFUL
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+POWERFUL
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #108
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: C 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+C 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #109
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: COOL - To enjoy cool air 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+COOL - To enjoy cool air 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #110
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: To reduce power consumption during COOL mode, 
+use curtains to screen off sunlight and outdoor heat.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+To reduce power consumption during COOL mode, 
+use curtains to screen off sunlight and outdoor heat.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #111
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: (Blue)
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+(Blue)
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #112
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: DRY - To dehumidify the environment
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+DRY - To dehumidify the environment
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #113
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: (Orange)
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+(Orange)
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #114
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: Unit operates at low fan speed to give a gentle
+cooling operation.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Unit operates at low fan speed to give a gentle
+cooling operation.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #115
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: FAN - To operate Air-Con in “Fan Only” mode
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+FAN - To operate Air-Con in “Fan Only” mode
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #116
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: Only indoor unit fan operates as per remote settings.
+Outdoor is OFF, so no cooling acheived.
+Provides fresh air circulation in the room.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Only indoor unit fan operates as per remote settings.
+Outdoor is OFF, so no cooling acheived.
+Provides fresh air circulation in the room.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #117
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: * Indoor unit temp. display will show set temp. for 
+  AUTO,COOL & DRY mode and room temp. for FAN 
+  mode.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+* Indoor unit temp. display will show set temp. for 
+  AUTO,COOL & DRY mode and room temp. for FAN 
+  mode.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #118
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: FAN
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+FAN
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #119
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: SLEEP
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+SLEEP
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #120
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: CHECK
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+CHECK
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #121
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: POWERFUL
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+POWERFUL
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #122
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: This operation is to achieve faster cooling.
+•
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+This operation is to achieve faster cooling.
+•
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #123
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: Press the button to turn on.
+•
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Press the button to turn on.
+•
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #124
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 10, 'element_type': 'text'}
+page_content: 10
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+10
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 10
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #125
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 11, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   11   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   11   10/5/2018   12:40:16 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   11   10/5/2018   12:40:16 PM
+ACXF55-2241_OL.ai   11   10/5/2018   12:40:16 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 11
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #126
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 11, 'element_type': 'text'}
+page_content: If AUTO is set, the louver swings up/down 
+automatically.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+If AUTO is set, the louver swings up/down 
+automatically.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 11
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #127
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 11, 'element_type': 'text'}
+page_content: • To cancel ON or OFF timer, press 
+ or 
+ 
+ then press 
+.
+• If timer is cancelled manually or due to power 
+failure, you can restore the timer again by 
+pressing 
+ or 
+ then press 
+.
+• The nearest timer setting will be displayed and 
+will activate in sequence.
+• When ON Timer is set, the unit may start 
+earlier (up to 15 minutes) before the actual 
+set time in order to achieve the desired 
+temperature on time.
+• Timer operation is based on the clock set in 
+the remote control and repeats daily once set. 
+For clock setting, please refer to Quick guide.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+• To cancel ON or OFF timer, press 
+ or 
+ 
+ then press 
+.
+• If timer is cancelled manually or due to power 
+failure, you can restore the timer again by 
+pressing 
+ or 
+ then press 
+.
+• The nearest timer setting will be displayed and 
+will activate in sequence.
+• When ON Timer is set, the unit may start 
+earlier (up to 15 minutes) before the actual 
+set time in order to achieve the desired 
+temperature on time.
+• Timer operation is based on the clock set in 
+the remote control and repeats daily once set. 
+For clock setting, please refer to Quick guide.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 11
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #128
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 11, 'element_type': 'text'}
+page_content: POWERFUL, SLEEP and TIMER
+function will not resume after power failure.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+POWERFUL, SLEEP and TIMER
+function will not resume after power failure.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 11
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #129
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 11, 'element_type': 'table'}
+page_content: [TABLE]
+	
+	50 30
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+	
+	50 30
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 11
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #130
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 11, 'element_type': 'text'}
+page_content: 11
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+11
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 11
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #131
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   12   10/5/2018   12:40:17 PM
+ACXF55-2241_OL.ai   12   10/5/2018   12:40:17 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   12   10/5/2018   12:40:17 PM
+ACXF55-2241_OL.ai   12   10/5/2018   12:40:17 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #132
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: Dust filters
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Dust filters
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #133
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: PM2.5 Filters
+Filter
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+PM2.5 Filters
+Filter
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #134
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: Dust filters
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Dust filters
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #135
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: • Wash/rinse the dust filters gently 
+  with water to avoid damage to the 
+  filter surface.
+• Dry the dust filters thoroughly under shade, 
+  away from fire or direct sunlight.
+• Replace any damaged filters.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+• Wash/rinse the dust filters gently 
+  with water to avoid damage to the 
+  filter surface.
+• Dry the dust filters thoroughly under shade, 
+  away from fire or direct sunlight.
+• Replace any damaged filters.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #136
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: Please remove the Filter / PM2.5 Filter before wash/rinse the
+dust filter with water.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Please remove the Filter / PM2.5 Filter before wash/rinse the
+dust filter with water.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #137
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: Filter & PM 2.5 filter
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Filter & PM 2.5 filter
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #138
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: Filter / PM 2.5 filter.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Filter / PM 2.5 filter.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #139
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: • Clean the filter whenever necessary.
+• Don’t wash/rinse the filter with water.
+• The surface of the filter shouldn’t be rubbed
+  with any object.
+• The filter shouldn’t be pulled with strong force
+  as it may get damaged.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+• Clean the filter whenever necessary.
+• Don’t wash/rinse the filter with water.
+• The surface of the filter shouldn’t be rubbed
+  with any object.
+• The filter shouldn’t be pulled with strong force
+  as it may get damaged.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #140
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 12, 'element_type': 'text'}
+page_content: 12
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+12
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 12
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #141
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 13, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   13   10/5/2018   12:40:18 PM
+ACXF55-2241_OL.ai   13   10/5/2018   12:40:18 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   13   10/5/2018   12:40:18 PM
+ACXF55-2241_OL.ai   13   10/5/2018   12:40:18 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 13
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #142
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 13, 'element_type': 'text'}
+page_content: The unit stops and some alpha-numeric codes
+appear on IDU display.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+The unit stops and some alpha-numeric codes
+appear on IDU display.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 13
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #143
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 13, 'element_type': 'text'}
+page_content: 13
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+13
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 13
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #144
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   14   10/5/2018   12:40:18 PM
+ACXF55-2241_OL.ai   14   10/5/2018   12:40:18 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   14   10/5/2018   12:40:18 PM
+ACXF55-2241_OL.ai   14   10/5/2018   12:40:18 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #145
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: BEE Regulation 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+BEE Regulation 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #146
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Testing Guidelines
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Testing Guidelines
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #147
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Cooling Test Mode for Full Load (100%) and
+Half Load (50%)
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Cooling Test Mode for Full Load (100%) and
+Half Load (50%)
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #148
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'table'}
+page_content: [TABLE]
+None	DRY
+FAN	
+None	(For Full	Load)
+None		
+None	DRY
+FAN	
+None	(For Hal	f Load)
+None	the test mo	None
+	None	None
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+None	DRY
+FAN	
+None	(For Full	Load)
+None		
+None	DRY
+FAN	
+None	(For Hal	f Load)
+None	the test mo	None
+	None	None
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #149
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Turn on the main power supply to unit.
+•
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Turn on the main power supply to unit.
+•
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #150
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: 1) Mode
+: Select ‘COOL’
+2) Temperature
+: a)  16 ºC for Full Load (100%)
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+1) Mode
+: Select ‘COOL’
+2) Temperature
+: a)  16 ºC for Full Load (100%)
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #151
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: 3) Air Swing
+: S
+4) Fan speed           :
+et vane position to 3rd step from top  
+: b)  17 ºC for Half Load (50%)
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+3) Air Swing
+: S
+4) Fan speed           :
+et vane position to 3rd step from top  
+: b)  17 ºC for Half Load (50%)
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #152
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Maximum
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Maximum
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #153
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: •
+•
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+•
+•
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #154
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Open the Front Panel by lifting Intake Grille.  
+Follow the below Instructions.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Open the Front Panel by lifting Intake Grille.  
+Follow the below Instructions.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #155
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Step a): Press and Hold the (Auto OFF/ON) button 
+              on indoor Unit. 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Step a): Press and Hold the (Auto OFF/ON) button 
+              on indoor Unit. 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #156
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Step b): Within 5 second, press once the Remote 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Step b): Within 5 second, press once the Remote 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #157
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Control             button when display is showing 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Control             button when display is showing 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #158
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: OFF, while holding the indoor unit button.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+OFF, while holding the indoor unit button.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #159
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: Step c): After hearing a beep sound from the Indoor
+              Unit, immediately release the (Auto OFF/ON)
+              button on Indoor Unit.
+ 
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Step c): After hearing a beep sound from the Indoor
+              Unit, immediately release the (Auto OFF/ON)
+              button on Indoor Unit.
+ 
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #160
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content:               All this should be done within 5 seconds.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+              All this should be done within 5 seconds.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #161
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: The POWER indication LED on indoor unit gets dim when the unit enters the test mode.
+•
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+The POWER indication LED on indoor unit gets dim when the unit enters the test mode.
+•
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #162
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: (Auto OFF/ON Button)
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+(Auto OFF/ON Button)
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #163
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'table'}
+page_content: [TABLE]
+		None
+None	None	
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+		None
+None	None	
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #164
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'table'}
+page_content: [TABLE]
+	None	
+None		None
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+	None	
+None		None
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #165
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: (Indication for Half load)
+(Indication for Full load)
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+(Indication for Half load)
+(Indication for Full load)
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #166
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 14, 'element_type': 'text'}
+page_content: 14
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+14
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 14
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #167
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   15   10/5/2018   12:40:19 PM
+ACXF55-2241_OL.ai   15   10/5/2018   12:40:19 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   15   10/5/2018   12:40:19 PM
+ACXF55-2241_OL.ai   15   10/5/2018   12:40:19 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #168
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'text'}
+page_content: Information on hazardous constituents as specified in sub-rule1 of rule16 (1) in electrical and electronic 
+equipment.
+Declaration of Conformity with the requirements of the E-Waste (Management) Amendment Rules 2018 
+with the rule 16 (1) limits with respect to Lead, Mercury, Cadmium, Hexavalent chromium, Polybrominated 
+biphenyls, Polybrominated diphenyl ethers.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Information on hazardous constituents as specified in sub-rule1 of rule16 (1) in electrical and electronic 
+equipment.
+Declaration of Conformity with the requirements of the E-Waste (Management) Amendment Rules 2018 
+with the rule 16 (1) limits with respect to Lead, Mercury, Cadmium, Hexavalent chromium, Polybrominated 
+biphenyls, Polybrominated diphenyl ethers.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #169
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'text'}
+page_content: The content of hazardous substance with the exemption of the applications listed in SCHEDULE II of the 
+E-Waste (Management) Amendment Rules 2018 :
+1. Lead (Pb) – not over 0.1% by weight;
+2. Cadmium (Cd) – not over 0.01% by weight;
+3. Mercury (Hg) – not over 0.1% by weight;
+4. Hexavalent chromium (Cr6+) – not over 0.1% by weight;
+5. Polybrominated biphenyls (PBBs) – not over 0.1% by weight;
+6. Polybrominated diphenyl ethers (PBDEs) – not over 0.1% by weight.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+The content of hazardous substance with the exemption of the applications listed in SCHEDULE II of the 
+E-Waste (Management) Amendment Rules 2018 :
+1. Lead (Pb) – not over 0.1% by weight;
+2. Cadmium (Cd) – not over 0.01% by weight;
+3. Mercury (Hg) – not over 0.1% by weight;
+4. Hexavalent chromium (Cr6+) – not over 0.1% by weight;
+5. Polybrominated biphenyls (PBBs) – not over 0.1% by weight;
+6. Polybrominated diphenyl ethers (PBDEs) – not over 0.1% by weight.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #170
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'text'}
+page_content: For the purpose of recycling to facilitate effective utilization of resources, 
+please return this product to a nearby authorized collection center, 
+registered dismantler of recycler, or Panasonic service center when 
+disposing of this product.
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+For the purpose of recycling to facilitate effective utilization of resources, 
+please return this product to a nearby authorized collection center, 
+registered dismantler of recycler, or Panasonic service center when 
+disposing of this product.
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #171
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'text'}
+page_content: English
+Information / BEE Regulation
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+English
+Information / BEE Regulation
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #172
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'text'}
+page_content: Customer care number ( Toll free ) :   1800 103 1333 ,1800 108 1333
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Customer care number ( Toll free ) :   1800 103 1333 ,1800 108 1333
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #173
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'text'}
+page_content: Please see the Panasonic website for further information on collection centers, etc.
+or call the customer care toll-free number
+http://www.panasonic.com/in/corporate/sustainability/panasonic-india-i-recycle-program.html
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Please see the Panasonic website for further information on collection centers, etc.
+or call the customer care toll-free number
+http://www.panasonic.com/in/corporate/sustainability/panasonic-india-i-recycle-program.html
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #174
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'table'}
+page_content: [TABLE]
+Do’s & Don’t: E-waste (Management ) Amendment Rules 2018	None	None
+S.No.	Do's	Don't
+All
+1. to
+rec	electrical and electronic products are required
+be handed over only to the Authorized
+ycler.	The product should not be opened by the User
+himself / herself, but only by authorized service
+personnel.
+Th
+2. aut	e product should be handed over only to
+horized recycler for disposal.	The product is not meant for re-sale to any
+unauthorized agencies / scrap dealer / kabari-
+walas.
+Ke
+3. be
+pre	ep the product in isolated area, after it
+comes non-functional / un-repairable so as to
+vent its accidental breakage.	The product is not meant for mixing into house-
+hold waste stream.
+Pro
+4.
+pro	vide information on the catalogue with
+duct end-of-life.	Do not keep any replaced spare part(s) from the
+product in exposed area.
+Alw
+en
+5. Ce	ays dispose products that have reached
+d-of life at Panasonic India Authorized Service
+ntre.	Do not donate old electronic items to any body.
+Do not dispose your product in garbage bins
+along with municipal waste that ultimately
+reaches landfill.
+Wh
+6. pa
+wa	erever possible or as instructed, separate the
+ckaging material according to responsible
+ste disposal options and sorting for recycling.	Do not give e-waste to informal and unorganized
+sectors like Local Scrap Dealer / Rag Pickers.
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+Do’s & Don’t: E-waste (Management ) Amendment Rules 2018	None	None
+S.No.	Do's	Don't
+All
+1. to
+rec	electrical and electronic products are required
+be handed over only to the Authorized
+ycler.	The product should not be opened by the User
+himself / herself, but only by authorized service
+personnel.
+Th
+2. aut	e product should be handed over only to
+horized recycler for disposal.	The product is not meant for re-sale to any
+unauthorized agencies / scrap dealer / kabari-
+walas.
+Ke
+3. be
+pre	ep the product in isolated area, after it
+comes non-functional / un-repairable so as to
+vent its accidental breakage.	The product is not meant for mixing into house-
+hold waste stream.
+Pro
+4.
+pro	vide information on the catalogue with
+duct end-of-life.	Do not keep any replaced spare part(s) from the
+product in exposed area.
+Alw
+en
+5. Ce	ays dispose products that have reached
+d-of life at Panasonic India Authorized Service
+ntre.	Do not donate old electronic items to any body.
+Do not dispose your product in garbage bins
+along with municipal waste that ultimately
+reaches landfill.
+Wh
+6. pa
+wa	erever possible or as instructed, separate the
+ckaging material according to responsible
+ste disposal options and sorting for recycling.	Do not give e-waste to informal and unorganized
+sectors like Local Scrap Dealer / Rag Pickers.
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #175
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 15, 'element_type': 'text'}
+page_content: 15
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+15
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 15
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #176
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 16, 'element_type': 'text'}
+page_content: ACXF55-2241_OL.ai   16   10/5/2018   12:40:19 PM
+ACXF55-2241_OL.ai   16   10/5/2018   12:40:19 PM
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-2241_OL.ai   16   10/5/2018   12:40:19 PM
+ACXF55-2241_OL.ai   16   10/5/2018   12:40:19 PM
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 16
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #177
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 16, 'element_type': 'table'}
+page_content: [TABLE]
+WARNING	This symbol shows that this equipment
+uses a flammable refrigerant. If the
+refrigerant is leaked, together with
+an external ignition source, there is a
+possibility of ignition.		This symbol shows that the
+Operation Instructions should
+be read carefully.
+	This symbol shows that a service
+personnel should be handling this
+equipment with reference to the
+Installation Instructions.		This symbol shows that there
+is information included in the
+Operation Instructions and/or
+Installation Instructions.
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+WARNING	This symbol shows that this equipment
+uses a flammable refrigerant. If the
+refrigerant is leaked, together with
+an external ignition source, there is a
+possibility of ignition.		This symbol shows that the
+Operation Instructions should
+be read carefully.
+	This symbol shows that a service
+personnel should be handling this
+equipment with reference to the
+Installation Instructions.		This symbol shows that there
+is information included in the
+Operation Instructions and/or
+Installation Instructions.
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 16
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #178
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 16, 'element_type': 'table'}
+page_content: [TABLE]
+	
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+[TABLE]
+	
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 16
+  element_type: table
+
+
+
+================================================================================
+DOCUMENT #179
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 16, 'element_type': 'text'}
+page_content: Website: http://www.panasonic.com
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Website: http://www.panasonic.com
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 16
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #180
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 16, 'element_type': 'text'}
+page_content: © Panasonic Corporation 2019
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+© Panasonic Corporation 2019
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 16
+  element_type: text
+
+
+
+================================================================================
+DOCUMENT #181
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KU12VKYF series.pdf', 'page_number': 16, 'element_type': 'text'}
+page_content: ACXF55-22410-AA
+FT0918-0
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+ACXF55-22410-AA
+FT0918-0
+
+
+--- METADATA ---
+  source: CS-KU12VKYF series.pdf
+  page_number: 16
+  element_type: text
+
+
