@@ -8,7 +8,7 @@ from app.database.database import get_db
 from app.models.session import ChatSession, ChatMessage
 from app.schemas.chat import ChatSessionResponse, ChatMessageResponse, ChatMessageCreate
 
-from app.agents.agent_manager import main_app
+from app.agents.agent_manager import agent_manager
 from langchain_core.messages import HumanMessage, AIMessage
 
 router = APIRouter(
@@ -70,7 +70,7 @@ async def stream_message(
     async def event_generator() -> AsyncGenerator[str, None]:
         full_ai_response = ""
         
-        async for event in main_app.astream_events(initial_state, version="v2", config={"recursion_limit": 10}):
+        async for event in agent_manager.astream_events(initial_state, version="v2", config={"recursion_limit": 10}):
             kind = event["event"]
             
             if kind == "on_llm_stream" and event["name"] == "supervisor":
