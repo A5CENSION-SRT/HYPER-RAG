@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import { AIInput } from "@/components/ui/ai-input";
 import { Loader } from "lucide-react";
 import { getChatHistory, postMessageAndStreamResponse, ChatMessage } from "@/lib/chatService";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface ChatViewProps {
     sessionId?: string;
@@ -153,12 +155,28 @@ export function ChatView({ sessionId }: ChatViewProps) {
                                 </div>
                             )}
                             <div
-                                className={`max-w-[80%] rounded-lg px-4 py-2.5 ${msg.sender === 'human'
+                                className={`max-w-[80%] rounded-lg px-4 py-2.5 prose prose-sm dark:prose-invert max-w-none ${msg.sender === 'human'
                                     ? 'bg-white dark:bg-gray-100 text-gray-900 border border-gray-200 dark:border-gray-300'
-                                    : 'bg-gray-900 dark:bg-gray-800 text-white'
+                                    : 'bg-gray-900 dark:bg-gray-800 text-white prose-headings:text-white prose-p:text-white prose-strong:text-white prose-code:text-white prose-li:text-white'
                                     }`}
                             >
-                                <p className="text-xs whitespace-pre-wrap break-words leading-relaxed">{msg.content}</p>
+                                <ReactMarkdown
+                                    remarkPlugins={[remarkGfm]}
+                                    components={{
+                                        p: ({ node, ...props }) => <p className="text-xs leading-relaxed my-1" {...props} />,
+                                        strong: ({ node, ...props }) => <strong className="font-semibold" {...props} />,
+                                        em: ({ node, ...props }) => <em className="italic" {...props} />,
+                                        ul: ({ node, ...props }) => <ul className="text-xs my-1 ml-4 list-disc" {...props} />,
+                                        ol: ({ node, ...props }) => <ol className="text-xs my-1 ml-4 list-decimal" {...props} />,
+                                        li: ({ node, ...props }) => <li className="my-0" {...props} />,
+                                        code: ({ node, ...props }) => <code className="text-xs bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded" {...props} />,
+                                        h1: ({ node, ...props }) => <h1 className="text-sm font-bold my-2" {...props} />,
+                                        h2: ({ node, ...props }) => <h2 className="text-sm font-bold my-2" {...props} />,
+                                        h3: ({ node, ...props }) => <h3 className="text-xs font-bold my-2" {...props} />,
+                                    }}
+                                >
+                                    {msg.content}
+                                </ReactMarkdown>
                             </div>
                         </div>
                     ))}
