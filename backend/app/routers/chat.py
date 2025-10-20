@@ -16,6 +16,7 @@ router = APIRouter(
     tags=["Chat"],
 )
 
+#new session 
 @router.post("/", response_model=ChatSessionResponse, status_code=status.HTTP_2_CREATED)
 def create_chat_session(db: Session = Depends(get_db)):
     new_session = ChatSession(title="New Chat")
@@ -24,11 +25,13 @@ def create_chat_session(db: Session = Depends(get_db)):
     db.refresh(new_session)
     return new_session
 
+#all chat sessions
 @router.get("/", response_model=List[ChatSessionResponse])
 def get_all_chat_sessions(db: Session = Depends(get_db)):
     sessions = db.query(ChatSession).order_by(ChatSession.updated_at.desc()).all()
     return sessions
 
+#get chat history
 @router.get("/{session_id}", response_model=List[ChatMessageResponse])
 def get_chat_history(session_id: str, db: Session = Depends(get_db)):
     session = db.query(ChatSession).filter(ChatSession.id == session_id).first()
