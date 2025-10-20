@@ -78,10 +78,50 @@ async def stream_message(
         try:
             async for event in agent_manager.astream_events(initial_state, version="v2", config={"recursion_limit": 10}):
                 kind = event["event"]
+                name = event.get("name", "")
+                metadata = event.get("metadata", {})
+                langgraph_node = metadata.get("langgraph_node", "")
+                
+                print(f"[EVENT] Kind: {kind}, Name: {name}, Node: {langgraph_node}")
+                
+                # Send status when supervisor node starts
+                if kind == "on_chain_start" and langgraph_node == "supervisor":
+                    status_msg = 'Supervisor analyzing your question...'
+                    print(f"[STATUS] {status_msg}")
+                    yield f"data: {json.dumps({'status': status_msg})}\n\n"
+                
+                # Send status updates for tool calls (when supervisor delegates to agents)
+                if kind == "on_tool_start":
+                    # Clean up tool name
+                    tool_name = name.replace("_", " ").replace("tool", "").strip().title()
+                    if "washing" in name.lower():
+                        status_msg = 'Delegating to Washing Machine Expert...'
+                    elif "refrigerator" in name.lower():
+                        status_msg = 'Delegating to Refrigerator Expert...'
+                    elif "air" in name.lower() or "conditioner" in name.lower():
+                        status_msg = 'Delegating to Air Conditioner Expert...'
+                    else:
+                        status_msg = f'Calling tool: {tool_name}'
+                    print(f"[STATUS] {status_msg}")
+                    yield f"data: {json.dumps({'status': status_msg})}\n\n"
+                
+                # Send status when sub-agents start running
+                if kind == "on_chain_start" and langgraph_node and langgraph_node != "supervisor":
+                    # Clean up agent name
+                    agent_name = langgraph_node.replace("_", " ").replace("agent", "").strip().title()
+                    if "washing" in langgraph_node.lower():
+                        status_msg = 'Washing Machine Agent searching knowledge base...'
+                    elif "refrigerator" in langgraph_node.lower():
+                        status_msg = 'Refrigerator Agent searching knowledge base...'
+                    elif "air" in langgraph_node.lower():
+                        status_msg = 'Air Conditioner Agent searching knowledge base...'
+                    else:
+                        status_msg = f'Running {agent_name}...'
+                    print(f"[STATUS] {status_msg}")
+                    yield f"data: {json.dumps({'status': status_msg})}\n\n"
                 
                 # Only capture streaming tokens from the final supervisor response
                 if kind == "on_chat_model_stream" and event.get("name") == "ChatGoogleGenerativeAI":
-                    metadata = event.get("metadata", {})
                     # Check if this is from the supervisor node (not sub-agents)
                     if metadata.get("langgraph_node") == "supervisor":
                         chunk = event["data"].get("chunk")

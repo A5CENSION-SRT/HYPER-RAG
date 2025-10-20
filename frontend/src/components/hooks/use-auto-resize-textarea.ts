@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useCallback } from "react"
+import { useRef, useCallback, useEffect } from "react"
 
 interface UseAutoResizeTextareaProps {
     minHeight?: number
@@ -32,6 +32,12 @@ export function useAutoResizeTextarea({
         },
         [minHeight, maxHeight]
     )
+
+    useEffect(() => {
+        if (textareaRef.current) {
+            textareaRef.current.style.height = `${minHeight}px`
+        }
+    }, [minHeight])
 
     return { textareaRef, adjustHeight }
 }

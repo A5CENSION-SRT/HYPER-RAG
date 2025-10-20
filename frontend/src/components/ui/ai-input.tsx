@@ -43,9 +43,9 @@ export function AIInput({
           id={id}
           placeholder={placeholder}
           className={cn(
-            "max-w-xl bg-black/5 dark:bg-white/5 rounded-3xl pl-6 pr-16",
-            "placeholder:text-black/50 dark:placeholder:text-white/50",
-            "border-none ring-black/20 dark:ring-white/20",
+            "max-w-xl bg-white dark:bg-gray-800 rounded-3xl pl-6 pr-16",
+            "placeholder:text-gray-400 dark:placeholder:text-gray-500",
+            "border border-gray-200 dark:border-gray-700",
             "text-black dark:text-white text-wrap",
             "overflow-y-auto resize-none",
             "focus-visible:ring-0 focus-visible:ring-offset-0",
@@ -53,7 +53,7 @@ export function AIInput({
             "leading-[1.2] py-[16px]",
             `min-h-[${minHeight}px]`,
             `max-h-[${maxHeight}px]`,
-            "[&::-webkit-resizer]:hidden" // Скрываем ресайзер
+            "[&::-webkit-resizer]:hidden"
           )}
           ref={textareaRef}
           value={inputValue}
@@ -71,25 +71,25 @@ export function AIInput({
 
         <div
           className={cn(
-            "absolute top-1/2 -translate-y-1/2 rounded-xl bg-black/5 dark:bg-white/5 py-1 px-1 transition-all duration-200",
+            "absolute top-1/2 -translate-y-1/2 rounded-xl bg-gray-100 dark:bg-gray-700 py-1 px-1 transition-all duration-200",
             inputValue ? "right-10" : "right-3"
           )}
         >
-          <Mic className="w-4 h-4 text-black/70 dark:text-white/70" />
+          <Mic className="w-4 h-4 text-gray-600 dark:text-gray-300" />
         </div>
         <button
           onClick={handleReset}
           type="button"
           className={cn(
             "absolute top-1/2 -translate-y-1/2 right-3",
-            "rounded-xl bg-black/5 dark:bg-white/5 py-1 px-1",
+            "rounded-xl bg-gray-100 dark:bg-gray-700 py-1 px-1",
             "transition-all duration-200",
             inputValue
               ? "opacity-100 scale-100"
               : "opacity-0 scale-95 pointer-events-none"
           )}
         >
-          <CornerRightUp className="w-4 h-4 text-black/70 dark:text-white/70" />
+          <CornerRightUp className="w-4 h-4 text-gray-600 dark:text-gray-300" />
         </button>
       </div>
     </div>
