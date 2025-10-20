@@ -1,28 +1,28 @@
 "use client"
 
 import { useState,useEffect, use } from "react"
-import { getAllChatSessions,createChatSession, ChatSession } from "@/lib/api/chatService"
+import { getAllChatSessions,createChatSession, ChatSession } from "@/lib/chatService"
 
 export function useChatSessions() {
-    const [chatSessions, setChatSessions] = useState<ChatSession[]>([])
-    const [loading, setLoading] = useState<boolean>(false)
+    const [sessions, setSessions] = useState<ChatSession[]>([])
+    const [isLoading, setIsLoading] = useState<boolean>(false)
     const [error, setError] = useState<string | null>(null)
 
     useEffect(() => {
         async function fetchChatSessions() {
-            setLoading(true)
+            setIsLoading(true)
             setError(null)
             try {
                 const sessions = await getAllChatSessions()
-                setChatSessions(sessions)
+                setSessions(sessions)
             } catch (err) {
                 setError((err as Error).message)
             } finally {
-                setLoading(false)
+                setIsLoading(false)
            }    
         }
 
         fetchChatSessions()
     }, [])
-    return { chatSessions, loading, error }
+    return { sessions, isLoading, error }
 }

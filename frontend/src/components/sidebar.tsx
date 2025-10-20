@@ -26,21 +26,6 @@ const navigationItems = [
     label: "Add Manuals",
     href: "/add-manuals"
   },
-  {
-    icon: FileText,
-    label: "Manage Washing Machine Manual",
-    href: "/manage/washing-machine"
-  },
-  {
-    icon: FileText,
-    label: "Manage AC Manual",
-    href: "/manage/ac"
-  },
-  {
-    icon: FileText,
-    label: "Manage Refrigerator Manual",
-    href: "/manage/refrigerator"
-  },
 ];
 
 interface SidebarProps {

@@ -27,27 +27,21 @@ export function DashboardLayoutWrapper({
 
     return (
         <div className="flex h-screen bg-gray-100 overflow-hidden">
-            {/* Fixed Sidebar - inset from top/bottom for rounded corners */}
-            <div className="fixed left-0 top-2 bottom-2 z-10 flex items-stretch p-3">
+            <div className="fixed left-0 top-1 bottom-1 z-10 flex items-stretch p-1.5">
                 <Sidebar isCollapsed={isCollapsed} onToggle={handleToggle} />
             </div>
 
-            {/* Main Content Area - dynamic padding based on sidebar state */}
             <div
                 className="flex-1 transition-all duration-500 ease-in-out"
                 style={{
-                    // Calculation: wrapper padding (12px each side) + sidebar border (2px) + sidebar width
-                    // Collapsed: 64px sidebar + 12px padding + 12px padding = 88px
-                    // Expanded: 224px sidebar + 12px padding + 12px padding = 248px
-                    paddingLeft: isCollapsed ? "88px" : "248px",
+                    paddingLeft: isCollapsed ? "76px" : "232px",
                 }}
             >
-                <main className="h-full p-4">
+                <main className="h-full p-2">
                     <div
                         className="h-full bg-white shadow-sm border border-gray-200"
                         style={{ borderRadius: "16px" }}
                     >
-                        {/* Page content from Next.js routing */}
                         {children}
                     </div>
                 </main>

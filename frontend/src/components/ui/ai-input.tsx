@@ -37,7 +37,7 @@ export function AIInput({
   };
 
   return (
-    <div className={cn("w-full py-4", className)}>
+    <div className={cn("w-full py-2 px-2", className)}>
       <div className="relative max-w-xl w-full mx-auto">
         <Textarea
           id={id}

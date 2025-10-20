@@ -9,7 +9,7 @@ export function ChatView() {
 
     return (
         <div className="h-full flex flex-col">
-            <div className="flex-1 overflow-y-auto p-4">
+            <div className="flex-1 overflow-y-auto px-2 py-2">
                 <div className="text-center text-gray-500">
                     <h2 className="text-2xl font-semibold mb-2">Chat Interface</h2>
                     <p>Your messages will appear here</p>
