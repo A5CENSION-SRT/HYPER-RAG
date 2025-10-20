@@ -7,7 +7,7 @@ from asyncio import Queue
 from app.core.config import settings
 from app.rag.parsers import process_pdf,chunk_documents
 from app.rag.embeddings import get_embedding_model
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

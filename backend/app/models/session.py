@@ -1,7 +1,6 @@
 import uuid 
-from sqlalchemy import Column, String,TIMESTAMP, ForeignKey, JSON , BigInteger
+from sqlalchemy import Column, String,TIMESTAMP, ForeignKey, JSON , BigInteger, func
 from sqlalchemy.orm import relationship
-from sqlalchemy.orm import func
 
 from app.database.database import Base
 

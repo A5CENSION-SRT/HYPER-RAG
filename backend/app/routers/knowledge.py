@@ -41,7 +41,6 @@ async def upload_manual(
     async def event_generator():
         queue = asyncio.Queue()
 
-        # Start the ingestion task
         task = asyncio.create_task(
             store_process_chunk_ingest(
                 queue=queue,
@@ -53,7 +52,6 @@ async def upload_manual(
         
         while True:
             try:
-                # Wait for message with timeout
                 message = await asyncio.wait_for(queue.get(), timeout=30.0)
                 
                 if message is None:
@@ -66,7 +64,6 @@ async def upload_manual(
                 yield f"data: {json.dumps(log_entry)}\n\n"
                 
             except asyncio.TimeoutError:
-                # Connection timeout
                 continue
             except Exception as e:
                 logger.error(f"[SSE] Error in event generator: {e}")
@@ -74,7 +71,6 @@ async def upload_manual(
                 yield f"data: {json.dumps(error_message)}\n\n"
                 break
 
-        # Wait for the task to complete
         try:
             await task
         except Exception as e:
@@ -83,7 +79,6 @@ async def upload_manual(
         final_message = {"status": "complete", "message": "Ingestion complete!"}
         yield f"data: {json.dumps(final_message)}\n\n"
 
-    # Set SSE headers to prevent buffering and compression
     headers = {
         "Cache-Control": "no-cache",
         "Connection": "keep-alive",

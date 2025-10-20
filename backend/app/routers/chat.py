@@ -4,7 +4,7 @@ from fastapi.responses import StreamingResponse
 from sqlalchemy.orm import Session
 from typing import List, AsyncGenerator
 
-from app.database.database import get_db
+from app.database.database import get_db, SessionLocal
 from app.models.session import ChatSession, ChatMessage
 from app.schemas.chat import ChatSessionResponse, ChatMessageResponse, ChatMessageCreate
 
@@ -16,22 +16,22 @@ router = APIRouter(
     tags=["Chat"],
 )
 
-#new session 
-@router.post("/", response_model=ChatSessionResponse, status_code=status.HTTP_2_CREATED)
+@router.post("/", response_model=ChatSessionResponse, status_code=status.HTTP_201_CREATED)
 def create_chat_session(db: Session = Depends(get_db)):
     new_session = ChatSession(title="New Chat")
     db.add(new_session)
     db.commit()
     db.refresh(new_session)
+    new_session.id = str(new_session.id)
     return new_session
 
-#all chat sessions
 @router.get("/", response_model=List[ChatSessionResponse])
 def get_all_chat_sessions(db: Session = Depends(get_db)):
     sessions = db.query(ChatSession).order_by(ChatSession.updated_at.desc()).all()
+    for session in sessions:
+        session.id = str(session.id)
     return sessions
 
-#get chat history
 @router.get("/{session_id}", response_model=List[ChatMessageResponse])
 def get_chat_history(session_id: str, db: Session = Depends(get_db)):
     session = db.query(ChatSession).filter(ChatSession.id == session_id).first()
@@ -39,6 +39,8 @@ def get_chat_history(session_id: str, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Chat session not found")
         
     messages = db.query(ChatMessage).filter(ChatMessage.session_id == session_id).order_by(ChatMessage.created_at).all()
+    for message in messages:
+        message.session_id = str(message.session_id)
     return messages
 
 @router.post("/{session_id}/messages/stream")
@@ -73,31 +75,53 @@ async def stream_message(
     async def event_generator() -> AsyncGenerator[str, None]:
         full_ai_response = ""
         
-        async for event in agent_manager.astream_events(initial_state, version="v2", config={"recursion_limit": 10}):
-            kind = event["event"]
-            
-            if kind == "on_llm_stream" and event["name"] == "supervisor":
-                chunk = event["data"]["chunk"]
-                if hasattr(chunk, 'content'):
-                    token = chunk.content
-                    if token:
-                        full_ai_response += token
-                        yield f"data: {json.dumps({'token': token})}\n\n"
+        try:
+            async for event in agent_manager.astream_events(initial_state, version="v2", config={"recursion_limit": 10}):
+                kind = event["event"]
+                
+                # Only capture streaming tokens from the final supervisor response
+                if kind == "on_chat_model_stream" and event.get("name") == "ChatGoogleGenerativeAI":
+                    metadata = event.get("metadata", {})
+                    # Check if this is from the supervisor node (not sub-agents)
+                    if metadata.get("langgraph_node") == "supervisor":
+                        chunk = event["data"].get("chunk")
+                        if chunk and hasattr(chunk, 'content'):
+                            token = chunk.content
+                            if token:
+                                full_ai_response += token
+                                yield f"data: {json.dumps({'token': token})}\n\n"
+        except Exception as e:
+            print(f"Error during streaming: {e}")
+            import traceback
+            traceback.print_exc()
+            yield f"data: {json.dumps({'error': str(e)})}\n\n"
 
+        # Save the AI response to database after streaming is complete
         with SessionLocal() as db_session:
-            session_to_update = db_session.query(ChatSession).filter(ChatSession.id == session_id).first()
-            if session_to_update and full_ai_response:
+            if full_ai_response:
                 ai_message_to_save = ChatMessage(
                     session_id=session_id,
                     sender="ai",
                     content=full_ai_response.strip()
                 )
                 db_session.add(ai_message_to_save)
-                session_to_update.updated_at = ai_message_to_save.created_at
                 db_session.commit()
+                db_session.refresh(ai_message_to_save)
+                
+                # Update session's updated_at timestamp
+                session_to_update = db_session.query(ChatSession).filter(ChatSession.id == session_id).first()
+                if session_to_update:
+                    session_to_update.updated_at = ai_message_to_save.created_at
+                    db_session.commit()
         
         yield f"data: {json.dumps({'event': 'end'})}\n\n"
-
-    from app.database.database import SessionLocal
     
-    return StreamingResponse(event_generator(), media_type="text/event-stream")
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        }
+    )

@@ -1,7 +1,7 @@
 "use client";
 
 import { fontClasses } from "@/lib/fonts";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import {
   FileText,
@@ -9,18 +9,16 @@ import {
   ChevronRight,
   MessageCircle,
   Plus,
+  Loader,
 } from "lucide-react";
+import { useChatSessions } from "@/hooks/useChatSessions";
+import { createChatSession } from "@/lib/chatService";
 
 /**
  * Navigation item configuration
  * Each item maps to a specific route in the Next.js app router
  */
 const navigationItems = [
-  {
-    icon: MessageCircle,
-    label: "Chat",
-    href: "/chat"
-  },
   {
     icon: Plus,
     label: "Add Manuals",
@@ -46,8 +44,19 @@ interface SidebarProps {
  * - Responsive icon/text layout
  */
 export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
-  // Get current pathname to determine active route
   const pathname = usePathname();
+  const router = useRouter();
+  const { sessions, isLoading, error } = useChatSessions();
+
+  const handleNewChat = async () => {
+    try {
+      const newSession = await createChatSession();
+      router.push(`/chat/${newSession.id}`);
+    } catch (err) {
+      console.error('Failed to create new chat:', err);
+    }
+  };
+
   return (
     <div className="relative">
       {/* Sidebar Container */}
@@ -97,11 +106,39 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
         </div>
 
         {/* Navigation Section */}
-        <nav className="flex-1 px-2 py-4">
+        <nav className="flex-1 px-2 py-4 overflow-y-auto">
           <ul className="space-y-2">
+            <li>
+              <button
+                onClick={handleNewChat}
+                className="
+                  w-full relative overflow-hidden
+                  transition-all duration-200
+                  text-gray-300 hover:bg-gray-800 hover:text-white
+                "
+                style={{
+                  borderRadius: '12px',
+                  height: '44px',
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+                title={isCollapsed ? "New Chat" : undefined}
+              >
+                <div className="w-11 flex items-center justify-center flex-shrink-0">
+                  <Plus className="w-5 h-5" />
+                </div>
+                <div
+                  className={`transition-all duration-300 ease-in-out ${isCollapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100 flex-1 ml-3'
+                    }`}
+                  style={{ textAlign: 'left' }}
+                >
+                  <span className={`${fontClasses.navItem} block`}>New Chat</span>
+                </div>
+              </button>
+            </li>
+
             {navigationItems.map((item) => {
               const Icon = item.icon;
-              // Determine if this item is active by comparing pathname
               const isActive = pathname === item.href;
 
               return (
@@ -124,14 +161,11 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
                     }}
                     title={isCollapsed ? item.label : undefined}
                   >
-                    {/* Icon Container - fixed width so icons remain static */}
                     <div className="w-11 flex items-center justify-center flex-shrink-0">
                       <Icon
                         className={`w-5 h-5 ${isActive ? 'text-black' : 'text-current'}`}
                       />
                     </div>
-
-                    {/* Label Container - only the text animates; left-aligned when visible */}
                     <div
                       className={`transition-all duration-300 ease-in-out ${isCollapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100 flex-1 ml-3'
                         }`}
@@ -144,6 +178,64 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
               );
             })}
           </ul>
+
+          {/* Chat History Section */}
+          <div className="pt-4 mt-4 border-t border-gray-700">
+            {!isCollapsed && (
+              <h3 className="px-2 pb-2 text-xs font-semibold text-gray-400 uppercase">
+                History
+              </h3>
+            )}
+            {isLoading && (
+              <div className="flex items-center p-2 space-x-3 text-gray-400">
+                <Loader className="animate-spin w-5 h-5" />
+                {!isCollapsed && <span className="text-sm">Loading...</span>}
+              </div>
+            )}
+            {error && !isCollapsed && (
+              <div className="p-2 text-red-400 text-sm">Error loading chats.</div>
+            )}
+            <ul className="space-y-1">
+              {sessions.map((session) => {
+                const isActive = pathname === `/chat/${session.id}`;
+                return (
+                  <li key={session.id}>
+                    <Link
+                      href={`/chat/${session.id}`}
+                      className={`
+                        w-full relative overflow-hidden block
+                        transition-all duration-200
+                        ${isActive
+                          ? 'bg-white text-black'
+                          : 'text-gray-300 hover:bg-gray-800 hover:text-white'
+                        }
+                      `}
+                      style={{
+                        borderRadius: '12px',
+                        height: '44px',
+                        display: 'flex',
+                        alignItems: 'center',
+                      }}
+                      title={session.title || 'New Chat'}
+                    >
+                      <div className="w-11 flex items-center justify-center flex-shrink-0">
+                        <MessageCircle className={`w-5 h-5 ${isActive ? 'text-black' : 'text-current'}`} />
+                      </div>
+                      <div
+                        className={`transition-all duration-300 ease-in-out ${isCollapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100 flex-1 ml-3'
+                          }`}
+                        style={{ textAlign: 'left' }}
+                      >
+                        <span className={`${fontClasses.navItem} block truncate`}>
+                          {session.title || 'New Chat'}
+                        </span>
+                      </div>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </nav>
 
         {/* removed bottom spacer so the sidebar naturally fills wrapper height */}
