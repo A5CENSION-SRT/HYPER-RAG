@@ -1,18 +1,22 @@
+import json
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy import Session
-from typing import List
+from fastapi.responses import StreamingResponse
+from sqlalchemy.orm import Session
+from typing import List, AsyncGenerator
 
 from app.database.database import get_db
 from app.models.session import ChatSession, ChatMessage
-from app.schemas.session import ChatSessionCreate, ChatSessionResponse, ChatMessageCreate
-from app.schemas.chat import ChatMessageResponse
-from app.agents.agent_manager import agent_manager
+from app.schemas.chat import ChatSessionResponse, ChatMessageResponse, ChatMessageCreate
+
+from app.agents.agent_manager import main_app
 from langchain_core.messages import HumanMessage, AIMessage
 
-router = APIRouter(prefix="/chats", tags=["chat"])
+router = APIRouter(
+    prefix="/chats",
+    tags=["Chat"],
+)
 
-
-@router.post("/", response_model=ChatSessionResponse, status_code=status.HTTP_201_CREATED)
+@router.post("/", response_model=ChatSessionResponse, status_code=status.HTTP_2_CREATED)
 def create_chat_session(db: Session = Depends(get_db)):
     new_session = ChatSession(title="New Chat")
     db.add(new_session)
@@ -34,8 +38,8 @@ def get_chat_history(session_id: str, db: Session = Depends(get_db)):
     messages = db.query(ChatMessage).filter(ChatMessage.session_id == session_id).order_by(ChatMessage.created_at).all()
     return messages
 
-@router.post("/{session_id}/messages", response_model=ChatMessageResponse)
-def post_message(
+@router.post("/{session_id}/messages/stream")
+async def stream_message(
     session_id: str,
     message_in: ChatMessageCreate,
     db: Session = Depends(get_db)
@@ -63,18 +67,34 @@ def post_message(
             
     initial_state = {"messages": messages_for_agent}
 
-    final_state = agent_manager.invoke(initial_state, {"recursion_limit": 100})
-    ai_response_message = final_state['messages'][-1]
-    
-    ai_message_to_save = ChatMessage(
-        session_id=session_id,
-        sender="ai",
-        content=ai_response_message.content
-    )
-    db.add(ai_message_to_save)
-    
-    session.updated_at = ai_message_to_save.created_at
-    db.commit()
-    db.refresh(ai_message_to_save)
+    async def event_generator() -> AsyncGenerator[str, None]:
+        full_ai_response = ""
+        
+        async for event in main_app.astream_events(initial_state, version="v2", config={"recursion_limit": 10}):
+            kind = event["event"]
+            
+            if kind == "on_llm_stream" and event["name"] == "supervisor":
+                chunk = event["data"]["chunk"]
+                if hasattr(chunk, 'content'):
+                    token = chunk.content
+                    if token:
+                        full_ai_response += token
+                        yield f"data: {json.dumps({'token': token})}\n\n"
 
-    return ai_message_to_save
+        with SessionLocal() as db_session:
+            session_to_update = db_session.query(ChatSession).filter(ChatSession.id == session_id).first()
+            if session_to_update and full_ai_response:
+                ai_message_to_save = ChatMessage(
+                    session_id=session_id,
+                    sender="ai",
+                    content=full_ai_response.strip()
+                )
+                db_session.add(ai_message_to_save)
+                session_to_update.updated_at = ai_message_to_save.created_at
+                db_session.commit()
+        
+        yield f"data: {json.dumps({'event': 'end'})}\n\n"
+
+    from app.database.database import SessionLocal
+    
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
