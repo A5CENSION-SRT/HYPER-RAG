@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware 
 from .core.config import settings
-from app.routers import knowledge
+from app.routers import knowledge, chat, health
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -17,8 +17,9 @@ app.add_middleware(
 )
 
 
+app.include_router(health.router, tags=["Health"])
 app.include_router(knowledge.router, prefix="/api/v1")
-
+app.include_router(chat.router, prefix="/api/v1")
 
 
 @app.get("/", tags=["Root"])
