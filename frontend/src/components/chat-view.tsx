@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { AIInput } from "@/components/ui/ai-input";
-import { User, Bot } from "lucide-react";
+import { Loader } from "lucide-react";
 import { getChatHistory, postMessageAndStreamResponse, ChatMessage } from "@/lib/chatService";
 
 interface ChatViewProps {
@@ -74,44 +74,28 @@ export function ChatView({ sessionId }: ChatViewProps) {
 
     return (
         <div className="h-full flex flex-col">
-            <div className="flex-1 overflow-y-auto px-2 py-4">
-                <div className="max-w-4xl mx-auto space-y-6">
+            <div className="flex-1 overflow-y-auto px-4 py-4">
+                <div className="max-w-6xl mx-auto space-y-4">
                     {messages.map((msg) => (
                         <div
                             key={msg.id}
-                            className={`flex gap-4 ${msg.sender === 'human' ? 'justify-end' : 'justify-start'}`}
+                            className={`flex ${msg.sender === 'human' ? 'justify-end' : 'justify-start'}`}
                         >
-                            {msg.sender === 'ai' && (
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                                    <Bot className="w-6 h-6 text-white" />
-                                </div>
-                            )}
                             <div
-                                className={`max-w-[70%] rounded-2xl px-4 py-3 ${msg.sender === 'human'
+                                className={`max-w-[80%] rounded-lg px-4 py-2.5 ${
+                                    msg.sender === 'human'
                                         ? 'bg-blue-500 text-white'
                                         : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100'
-                                    }`}
+                                }`}
                             >
-                                <p className="whitespace-pre-wrap break-words">{msg.content}</p>
+                                <p className="text-sm whitespace-pre-wrap break-words leading-relaxed">{msg.content}</p>
                             </div>
-                            {msg.sender === 'human' && (
-                                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
-                                    <User className="w-6 h-6 text-gray-600 dark:text-gray-300" />
-                                </div>
-                            )}
                         </div>
                     ))}
                     {isLoading && messages.length > 0 && messages[messages.length - 1].sender === 'ai' && messages[messages.length - 1].content === '' && (
-                        <div className="flex gap-4 justify-start">
-                            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                                <Bot className="w-6 h-6 text-white" />
-                            </div>
-                            <div className="bg-gray-100 dark:bg-gray-800 rounded-2xl px-4 py-3">
-                                <div className="flex space-x-2">
-                                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-                                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-                                    <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
-                                </div>
+                        <div className="flex justify-start">
+                            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg px-4 py-2.5">
+                                <Loader className="animate-spin w-4 h-4 text-gray-600 dark:text-gray-400" />
                             </div>
                         </div>
                     )}
