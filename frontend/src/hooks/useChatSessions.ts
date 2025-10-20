@@ -1,7 +1,7 @@
 "use client"
 
-import { useState,useEffect, use } from "react"
-import { getAllChatSessions,createChatSession, ChatSession } from "@/lib/chatService"
+import { useState, useEffect, use } from "react"
+import { getAllChatSessions, createChatSession, ChatSession } from "@/lib/chatService"
 
 export function useChatSessions() {
     const [sessions, setSessions] = useState<ChatSession[]>([])
@@ -19,7 +19,7 @@ export function useChatSessions() {
                 setError((err as Error).message)
             } finally {
                 setIsLoading(false)
-           }    
+            }
         }
 
         fetchChatSessions()
