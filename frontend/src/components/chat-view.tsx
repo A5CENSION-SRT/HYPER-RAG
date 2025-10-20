@@ -87,11 +87,10 @@ export function ChatView({ sessionId }: ChatViewProps) {
                                 </div>
                             )}
                             <div
-                                className={`max-w-[70%] rounded-2xl px-4 py-3 ${
-                                    msg.sender === 'human'
+                                className={`max-w-[70%] rounded-2xl px-4 py-3 ${msg.sender === 'human'
                                         ? 'bg-blue-500 text-white'
                                         : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100'
-                                }`}
+                                    }`}
                             >
                                 <p className="whitespace-pre-wrap break-words">{msg.content}</p>
                             </div>
