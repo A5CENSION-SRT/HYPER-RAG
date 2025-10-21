@@ -6,7 +6,7 @@ from typing import List, AsyncGenerator
 
 from app.database.database import get_db, SessionLocal
 from app.models.session import ChatSession, ChatMessage
-from app.schemas.chat import ChatSessionResponse, ChatMessageResponse, ChatMessageCreate, ChatSessionTitleUpdate
+from app.schemas.chat import ChatSessionResponse, ChatMessageResponse, ChatMessageCreate, ChatSessionTitleUpdate, ChatMessageMetadataUpdate
 
 from app.agents.agent_manager import agent_manager
 from langchain_core.messages import HumanMessage, AIMessage
@@ -56,6 +56,29 @@ def update_session_title(
     session.title = title_update.title
     db.commit()
     return {"message": "Title updated successfully"}
+
+@router.patch("/{session_id}/messages/{message_id}/metadata", status_code=status.HTTP_200_OK)
+def update_message_metadata(
+    session_id: str,
+    message_id: int,
+    metadata_update: ChatMessageMetadataUpdate,
+    db: Session = Depends(get_db)
+):
+    message = db.query(ChatMessage).filter(
+        ChatMessage.id == message_id,
+        ChatMessage.session_id == session_id
+    ).first()
+    
+    if not message:
+        raise HTTPException(status_code=404, detail="Message not found")
+    
+    if metadata_update.agent_name is not None:
+        message.agent_name = metadata_update.agent_name
+    if metadata_update.time_consumed is not None:
+        message.time_consumed = metadata_update.time_consumed
+    
+    db.commit()
+    return {"message": "Message metadata updated successfully"}
 
 @router.post("/{session_id}/messages/stream")
 async def stream_message(
@@ -151,6 +174,7 @@ async def stream_message(
             yield f"data: {json.dumps({'error': str(e)})}\n\n"
 
         # Save the AI response to database after streaming is complete
+        message_id = None
         with SessionLocal() as db_session:
             if full_ai_response:
                 ai_message_to_save = ChatMessage(
@@ -161,6 +185,7 @@ async def stream_message(
                 db_session.add(ai_message_to_save)
                 db_session.commit()
                 db_session.refresh(ai_message_to_save)
+                message_id = ai_message_to_save.id
                 
                 # Update session's updated_at timestamp
                 session_to_update = db_session.query(ChatSession).filter(ChatSession.id == session_id).first()
@@ -168,7 +193,7 @@ async def stream_message(
                     session_to_update.updated_at = ai_message_to_save.created_at
                     db_session.commit()
         
-        yield f"data: {json.dumps({'event': 'end'})}\n\n"
+        yield f"data: {json.dumps({'event': 'end', 'message_id': message_id})}\n\n"
     
     return StreamingResponse(
         event_generator(),

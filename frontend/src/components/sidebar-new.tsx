@@ -10,12 +10,13 @@ import { MessageCircle, Plus, Book, ChevronLeft, ChevronRight, Loader } from 'lu
 
 export function Sidebar() {
     const [isCollapsed, setIsCollapsed] = useState(false);
-    const { sessions, isLoading, error } = useChatSessions();
+    const { sessions, isLoading, error, refetch } = useChatSessions();
     const router = useRouter();
 
     const handleNewChat = async () => {
         try {
             const newSession = await createChatSession();
+            await refetch(); // Refresh the sessions list
             router.push(`/chat/${newSession.id}`);
         } catch (err) {
             console.error('Failed to create new chat:', err);

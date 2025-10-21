@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { AIInput } from "@/components/ui/ai-input";
 import { Loader } from "lucide-react";
-import { getChatHistory, postMessageAndStreamResponse, ChatMessage, updateSessionTitle } from "@/lib/chatService";
+import { getChatHistory, postMessageAndStreamResponse, ChatMessage, updateSessionTitle, updateMessageMetadata } from "@/lib/chatService";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -21,6 +21,7 @@ export function ChatView({ sessionId }: ChatViewProps) {
     const messagesEndRef = useRef<HTMLDivElement>(null);
     const timerRef = useRef<NodeJS.Timeout | null>(null);
     const startTimeRef = useRef<number>(0);
+    const messageAgentsRef = useRef<Record<number, string>>({});
 
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -30,7 +31,22 @@ export function ChatView({ sessionId }: ChatViewProps) {
         if (sessionId) {
             setIsLoading(true);
             getChatHistory(sessionId)
-                .then(setMessages)
+                .then(history => {
+                    setMessages(history);
+                    // Load saved metadata from the database
+                    const agents: Record<number, string> = {};
+                    const times: Record<number, number> = {};
+                    history.forEach(msg => {
+                        if (msg.sender === 'ai' && msg.agent_name) {
+                            agents[msg.id] = `Fetched from ${msg.agent_name} Agent`;
+                        }
+                        if (msg.sender === 'ai' && msg.time_consumed) {
+                            times[msg.id] = msg.time_consumed / 1000; // Convert ms to seconds
+                        }
+                    });
+                    setMessageAgents(agents);
+                    setMessageTimes(times);
+                })
                 .catch(err => console.error("Failed to fetch history:", err))
                 .finally(() => setIsLoading(false));
         }
@@ -76,6 +92,9 @@ export function ChatView({ sessionId }: ChatViewProps) {
             setElapsedTime(elapsed);
         }, 100);
 
+        // Track agent name in closure scope (not relying on state)
+        let capturedAgentName: string | null = null;
+
         postMessageAndStreamResponse(sessionId, message, {
             onToken: (token) => {
                 setMessages(prev =>
@@ -102,9 +121,15 @@ export function ChatView({ sessionId }: ChatViewProps) {
                         agentName = match ? match[1] + " Agent" : "Agent";
                     }
 
+                    // Capture the agent name for saving to DB later
+                    capturedAgentName = agentName;
+                    const badge = `Fetched from ${agentName}`;
+
+                    // Update both state (for UI) and ref (for immediate access)
+                    messageAgentsRef.current[aiPlaceholder.id] = badge;
                     setMessageAgents(prev => ({
                         ...prev,
-                        [aiPlaceholder.id]: `Fetched from ${agentName}`
+                        [aiPlaceholder.id]: badge
                     }));
                 }
             },
@@ -122,7 +147,7 @@ export function ChatView({ sessionId }: ChatViewProps) {
                     timerRef.current = null;
                 }
             },
-            onComplete: () => {
+            onComplete: async (realMessageId?: number) => {
                 setIsLoading(false);
                 setCurrentStatus("");
                 // Stop the timer and store the final time
@@ -135,6 +160,31 @@ export function ChatView({ sessionId }: ChatViewProps) {
                     ...prev,
                     [aiPlaceholder.id]: finalTime
                 }));
+
+                // Save metadata to database using the REAL message ID from backend
+                if (realMessageId) {
+                    // Use messageAgentsRef (synchronous) as the source of truth
+                    const agentBadge = messageAgentsRef.current[aiPlaceholder.id];
+
+                    // Extract agent name from the badge (e.g., "Fetched from Washing Machine Agent" -> "Washing Machine")
+                    let agentName: string | null = null;
+                    if (agentBadge && agentBadge.startsWith("Fetched from ")) {
+                        agentName = agentBadge.replace("Fetched from ", "").replace(" Agent", "");
+                    }
+
+                    const timeInMs = Math.round(finalTime * 1000);
+
+                    try {
+                        await updateMessageMetadata(
+                            sessionId,
+                            realMessageId,
+                            agentName || undefined,
+                            timeInMs
+                        );
+                    } catch (error) {
+                        console.error("Failed to save message metadata:", error);
+                    }
+                }
             },
         });
     };

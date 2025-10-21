@@ -32,6 +32,8 @@ class ChatMessage(Base):
     )
     sender = Column(String(50), nullable=False) # 'human' or 'ai'
     content = Column(String, nullable=False)
+    agent_name = Column(String(100), nullable=True)
+    time_consumed = Column(BigInteger, nullable=True)
     created_at = Column(
         TIMESTAMP(timezone=True), server_default=func.now(), nullable=False
     )

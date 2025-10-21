@@ -13,6 +13,8 @@ class ChatMessageResponse(OrmConfig):
     session_id: str
     sender: str
     content: str
+    agent_name: Optional[str] = None
+    time_consumed: Optional[int] = None
     created_at: datetime.datetime
 
 class ChatSessionResponse(OrmConfig):
@@ -35,3 +37,10 @@ class ChatSessionTitleUpdate(BaseModel):
     Schema for updating a chat session's title.
     """
     title: str
+
+class ChatMessageMetadataUpdate(BaseModel):
+    """
+    Schema for updating a chat message's metadata (agent name and time consumed).
+    """
+    agent_name: Optional[str] = None
+    time_consumed: Optional[int] = None

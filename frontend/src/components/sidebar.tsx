@@ -46,11 +46,12 @@ interface SidebarProps {
 export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const { sessions, isLoading, error } = useChatSessions();
+  const { sessions, isLoading, error, refetch } = useChatSessions();
 
   const handleNewChat = async () => {
     try {
       const newSession = await createChatSession();
+      await refetch(); // Refresh the sessions list
       router.push(`/chat/${newSession.id}`);
     } catch (err) {
       console.error('Failed to create new chat:', err);
