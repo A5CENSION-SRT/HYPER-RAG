@@ -6,7 +6,7 @@ from typing import List, AsyncGenerator
 
 from app.database.database import get_db, SessionLocal
 from app.models.session import ChatSession, ChatMessage
-from app.schemas.chat import ChatSessionResponse, ChatMessageResponse, ChatMessageCreate
+from app.schemas.chat import ChatSessionResponse, ChatMessageResponse, ChatMessageCreate, ChatSessionTitleUpdate
 
 from app.agents.agent_manager import agent_manager
 from langchain_core.messages import HumanMessage, AIMessage
@@ -42,6 +42,20 @@ def get_chat_history(session_id: str, db: Session = Depends(get_db)):
     for message in messages:
         message.session_id = str(message.session_id)
     return messages
+
+@router.patch("/{session_id}/title", status_code=status.HTTP_200_OK)
+def update_session_title(
+    session_id: str, 
+    title_update: ChatSessionTitleUpdate,
+    db: Session = Depends(get_db)
+):
+    session = db.query(ChatSession).filter(ChatSession.id == session_id).first()
+    if not session:
+        raise HTTPException(status_code=404, detail="Chat session not found")
+    
+    session.title = title_update.title
+    db.commit()
+    return {"message": "Title updated successfully"}
 
 @router.post("/{session_id}/messages/stream")
 async def stream_message(
@@ -107,8 +121,6 @@ async def stream_message(
                 
                 # Send status when sub-agents start running
                 if kind == "on_chain_start" and langgraph_node and langgraph_node != "supervisor":
-                    # Clean up agent name
-                    agent_name = langgraph_node.replace("_", " ").replace("agent", "").strip().title()
                     if "washing" in langgraph_node.lower():
                         status_msg = 'Washing Machine Agent searching knowledge base...'
                     elif "refrigerator" in langgraph_node.lower():
@@ -116,7 +128,9 @@ async def stream_message(
                     elif "air" in langgraph_node.lower():
                         status_msg = 'Air Conditioner Agent searching knowledge base...'
                     else:
-                        status_msg = f'Running {agent_name}...'
+                        # Fallback: clean up node name
+                        clean_name = langgraph_node.replace("_", " ").replace("agent", "").replace("Agent", "").strip().title()
+                        status_msg = f'Running {clean_name} Agent...'
                     print(f"[STATUS] {status_msg}")
                     yield f"data: {json.dumps({'status': status_msg})}\n\n"
                 

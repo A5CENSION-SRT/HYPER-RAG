@@ -29,3 +29,9 @@ class ChatMessageCreate(BaseModel):
     Schema for the data the client sends when creating a new message.
     """
     content: str
+
+class ChatSessionTitleUpdate(BaseModel):
+    """
+    Schema for updating a chat session's title.
+    """
+    title: str
