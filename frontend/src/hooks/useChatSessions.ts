@@ -24,6 +24,6 @@ export function useChatSessions() {
     useEffect(() => {
         fetchChatSessions()
     }, [fetchChatSessions])
-    
+
     return { sessions, isLoading, error, refetch: fetchChatSessions }
 }
