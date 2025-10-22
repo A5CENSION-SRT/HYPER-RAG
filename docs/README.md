@@ -21,6 +21,8 @@ This folder contains all visual assets and diagrams used in the project document
 | `ui-multi-agent-demo.png` | Multi-agent system in action with "Running Agent Agent" status indicator | README.md, VISUAL_GUIDE.md |
 | `ui-agent-response-example.png` | Detailed agent responses showing washing machine and AC expert answers with timing | README.md, VISUAL_GUIDE.md |
 | `manual-upload-interface.png` | PDF manual upload interface for document ingestion | README.md, VISUAL_GUIDE.md |
+| `ingestion-process-in-progress.png` | Real-time ingestion events showing PDF processing, BLIP model loading, document extraction, and embedding creation | README.md |
+| `ingestion-process-completed.png` | Completed ingestion with success status, showing all files processed, chunks embedded, and vector database updated | README.md |
 
 ## File Naming Convention
 

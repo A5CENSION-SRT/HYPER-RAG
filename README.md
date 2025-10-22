@@ -692,8 +692,33 @@ To test the document ingestion system, you can upload PDF manuals through the AP
 1. Navigate to the "Add Manuals" interface
 2. Select product type (washing_machine, refrigerator, or air_conditioner)
 3. Upload PDF files
-4. Monitor the ingestion process
+4. Monitor the ingestion process with real-time events
 5. Verify documents are processed and stored in ChromaDB
+
+#### Ingestion Process with Real-Time Events
+
+The system provides detailed real-time feedback during document ingestion. Watch as your PDFs are processed through multiple stages:
+
+**During Processing:**
+![Ingestion In Progress](docs/ingestion-process-in-progress.png)
+*Real-time event stream showing the ingestion pipeline in action. See events for:*
+- Document extraction (identifying elements from PDFs)
+- BLIP model loading for image captioning
+- PDF processing stages
+- PDF storage operations
+- Document chunking and embedding creation
+- Vector database updates
+
+**After Completion:**
+![Ingestion Completed](docs/ingestion-process-completed.png)
+*Successful completion with all files processed. The event log shows:*
+- All 2 files processed successfully
+- Individual file completion status (2/2)
+- Vector database updated successfully
+- Total chunks embedded (69 chunks)
+- Embeddings created using Gemini API
+- Final text chunk creation
+- Document element extraction counts (181 elements)
 
 ### Interactive Chat Testing
 
