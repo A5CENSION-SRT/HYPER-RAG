@@ -66,6 +66,12 @@ The application provides a modern, intuitive interface for interacting with the 
 ![Agent Response Example](docs/ui-agent-response-example.png)
 *Detailed agent response with timing information and performance metrics*
 
+![Ingestion Process - In Progress](docs/ingestion-process-in-progress.png)
+*Document ingestion with real-time event stream: PDF processing, BLIP model loading, document extraction, embedding creation, and vector database updates*
+
+![Ingestion Process - Completed](docs/ingestion-process-completed.png)
+*Successful ingestion completion showing all files processed (2/2), 69 chunks embedded, 181 elements extracted, and vector database updated*
+
 ---
 
 ## Docker & PostgreSQL Setup
