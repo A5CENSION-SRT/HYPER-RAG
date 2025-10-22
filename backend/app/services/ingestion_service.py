@@ -13,33 +13,69 @@ from langchain_community.vectorstores import Chroma
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
+def ensure_directories_exist(product_type: str):
+    """Ensure all necessary directories exist with proper permissions."""
+    directories = []
+    
+    manual_dir = {
+        "washing_machine": settings.PDF_DIR_WASHING_MACHINE,
+        "air_conditioner": settings.PDF_DIR_AC,
+        "refrigerator": settings.PDF_DIR_REFRIGERATOR
+    }.get(product_type)
+    if manual_dir:
+        directories.append(manual_dir)
+    
+    processed_dir = {
+        "washing_machine": settings.DOCS_DIR_WASHING_MACHINE,
+        "air_conditioner": settings.DOCS_DIR_AC,
+        "refrigerator": settings.DOCS_DIR_REFRIGERATOR
+    }.get(product_type)
+    if processed_dir:
+        directories.append(processed_dir)
+    
+    chroma_dir = {
+        "washing_machine": settings.CHROMA_DB_DIR_WASHING_MACHINE,
+        "air_conditioner": settings.CHROMA_DB_DIR_AC,
+        "refrigerator": settings.CHROMA_DB_DIR_REFRIGERATOR
+    }.get(product_type)
+    if chroma_dir:
+        directories.append(chroma_dir)
+    
+    for directory in directories:
+        os.makedirs(directory, exist_ok=True)
+        os.chmod(directory, 0o755)
+        
+        try:
+            for root, dirs, files in os.walk(directory):
+                for dir_name in dirs:
+                    os.chmod(os.path.join(root, dir_name), 0o755)
+                for file_name in files:
+                    os.chmod(os.path.join(root, file_name), 0o644)
+        except Exception as e:
+            logger.warning(f"Could not fix permissions in {directory}: {e}")
+        
+        logger.info(f"Ensured directory exists with proper permissions: {directory}")
+
+
 async def store_process_chunk_ingest(
         queue: Queue,
         file_name: str,
         file_contents: bytes,
         product_type: str
 ):
-    """async function to store, process, chunk, and ingest a PDF file.
-    
-    This function is designed to be run as a background task by the API endpoint.
-
-    Args:
-        queue (Queue): An asyncio Queue to which progress messages are sent.
-        file_name (str): The original name of the uploaded PDF file.
-        file_contents (bytes): The binary content of the PDF file.
-        product_type (str): The type of product (e.g., 'washing_machine', 'air_conditioner', 'refrigerator').
-    """
+    """Store, process, chunk, and ingest a PDF file into the vector database."""
     
     try:
+        ensure_directories_exist(product_type)
+        
         await queue.put("Starting PDF storage...")
-        # Step 1: Store the PDF
         storage_dir = {
             "washing_machine": settings.PDF_DIR_WASHING_MACHINE,
             "air_conditioner": settings.PDF_DIR_AC,
             "refrigerator": settings.PDF_DIR_REFRIGERATOR
         }.get(product_type)
 
-        os.makedirs(storage_dir, exist_ok=True)
         stored_pdf_path = os.path.join(storage_dir, file_name)
 
         with open(stored_pdf_path, "wb") as f:
@@ -64,54 +100,38 @@ async def store_process_chunk_ingest(
             "air_conditioner": settings.DOCS_DIR_AC,
             "refrigerator": settings.DOCS_DIR_REFRIGERATOR
         }.get(product_type, settings.DOCS_DIR)
-        os.makedirs(processed_dir, exist_ok=True)
         processed_file_path = os.path.join(processed_dir, f"{Path(file_name).stem}_processed_raw.txt")
         
         with open(processed_file_path, "w", encoding="utf-8") as f:
-            f.write(f"="*80 + "\n")
-            f.write(f"RAW PROCESSED DOCUMENTS - BEFORE CHUNKING\n")
-            f.write(f"Total Documents: {len(documents)}\n")
-            f.write(f"="*80 + "\n\n")
+            f.write(f"{'='*80}\nRAW PROCESSED DOCUMENTS - BEFORE CHUNKING\n")
+            f.write(f"Total Documents: {len(documents)}\n{'='*80}\n\n")
             
             for idx, doc in enumerate(documents, 1):
-                f.write(f"\n{'='*80}\n")
-                f.write(f"DOCUMENT #{idx}\n")
-                f.write(f"{'='*80}\n")
+                f.write(f"\n{'='*80}\nDOCUMENT #{idx}\n{'='*80}\n")
+                f.write(f"Type: {type(doc).__name__}\nModule: {type(doc).__module__}\n\n")
                 
-                # Show the document type/class
-                f.write(f"Type: {type(doc).__name__}\n")
-                f.write(f"Module: {type(doc).__module__}\n\n")
-                
-                # If it's a LangChain Document object, show all attributes
                 if hasattr(doc, '__dict__'):
                     f.write(f"--- ALL ATTRIBUTES ---\n")
                     for key, value in doc.__dict__.items():
                         f.write(f"{key}: {value}\n")
                     f.write("\n")
                 
-                # Show page_content (the actual text)
                 if hasattr(doc, 'page_content'):
-                    f.write(f"--- PAGE CONTENT (TEXT) ---\n")
-                    f.write(f"{doc.page_content}\n\n")
+                    f.write(f"--- PAGE CONTENT (TEXT) ---\n{doc.page_content}\n\n")
                 
-                # Show metadata
                 if hasattr(doc, 'metadata'):
                     f.write(f"--- METADATA ---\n")
                     for key, value in doc.metadata.items():
                         f.write(f"  {key}: {value}\n")
                     f.write("\n")
                 
-                # Fallback: if it's just a string or other type
                 if isinstance(doc, str):
-                    f.write(f"--- RAW STRING CONTENT ---\n")
-                    f.write(f"{doc}\n\n")
+                    f.write(f"--- RAW STRING CONTENT ---\n{doc}\n\n")
                 
                 f.write(f"\n")
         
-        logger.info(f"Saved RAW processed documents to {processed_file_path}")  
+        logger.info(f"Saved RAW processed documents to {processed_file_path}")
 
-
-        # Step 3: Chunk the documents (run in thread to avoid blocking)
         await queue.put("Starting document chunking...")
         chunked_docs = await asyncio.to_thread(chunk_documents, documents)
         logger.info(f"Created {len(chunked_docs)} chunks from PDF documents.")
@@ -119,7 +139,6 @@ async def store_process_chunk_ingest(
         if not chunked_docs:
             raise ValueError("Document chunking resulted in zero chunks. Please check the content.")
         
-        # Step 4: embed the chunks and injest into vector DB (run in thread)
         await queue.put("Starting embedding and ingestion...")
         await queue.put("Creating embeddings using Gemini API...")
         
@@ -131,9 +150,7 @@ async def store_process_chunk_ingest(
         }.get(product_type, settings.CHROMA_DB_DIR)
         
         logger.info(f"Using persist directory: {persist_directory}")
-        os.makedirs(persist_directory, exist_ok=True)
 
-        # Run embedding and Chroma operations in thread to avoid blocking
         def create_vector_store():
             return Chroma.from_documents(
                 documents=chunked_docs,
@@ -152,12 +169,3 @@ async def store_process_chunk_ingest(
         await queue.put(f"Error: {e}")
     finally:
         await queue.put(None)
-
-
-
-
-        
-
-
-
-        

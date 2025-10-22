@@ -84,7 +84,7 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
             `}
           >
             <h1 className={`${fontClasses.title} text-white whitespace-nowrap`}>
-              MACAG
+              HYPER-RAG
             </h1>
           </div>
 

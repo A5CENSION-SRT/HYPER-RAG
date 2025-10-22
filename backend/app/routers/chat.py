@@ -121,45 +121,38 @@ async def stream_message(
                 
                 print(f"[EVENT] Kind: {kind}, Name: {name}, Node: {langgraph_node}")
                 
-                # Send status when supervisor node starts
                 if kind == "on_chain_start" and langgraph_node == "supervisor":
                     status_msg = 'Supervisor analyzing your question...'
                     print(f"[STATUS] {status_msg}")
                     yield f"data: {json.dumps({'status': status_msg})}\n\n"
                 
-                # Send status updates for tool calls (when supervisor delegates to agents)
                 if kind == "on_tool_start":
-                    # Clean up tool name
                     tool_name = name.replace("_", " ").replace("tool", "").strip().title()
                     if "washing" in name.lower():
                         status_msg = 'Delegating to Washing Machine Expert...'
                     elif "refrigerator" in name.lower():
                         status_msg = 'Delegating to Refrigerator Expert...'
-                    elif "air" in name.lower() or "conditioner" in name.lower():
+                    elif "ac" in name.lower() or "air" in name.lower() or "conditioner" in name.lower():
                         status_msg = 'Delegating to Air Conditioner Expert...'
                     else:
                         status_msg = f'Calling tool: {tool_name}'
                     print(f"[STATUS] {status_msg}")
                     yield f"data: {json.dumps({'status': status_msg})}\n\n"
                 
-                # Send status when sub-agents start running
                 if kind == "on_chain_start" and langgraph_node and langgraph_node != "supervisor":
                     if "washing" in langgraph_node.lower():
                         status_msg = 'Washing Machine Agent searching knowledge base...'
                     elif "refrigerator" in langgraph_node.lower():
                         status_msg = 'Refrigerator Agent searching knowledge base...'
-                    elif "air" in langgraph_node.lower():
+                    elif "ac" in langgraph_node.lower() or "air" in langgraph_node.lower():
                         status_msg = 'Air Conditioner Agent searching knowledge base...'
                     else:
-                        # Fallback: clean up node name
                         clean_name = langgraph_node.replace("_", " ").replace("agent", "").replace("Agent", "").strip().title()
                         status_msg = f'Running {clean_name} Agent...'
                     print(f"[STATUS] {status_msg}")
                     yield f"data: {json.dumps({'status': status_msg})}\n\n"
                 
-                # Only capture streaming tokens from the final supervisor response
                 if kind == "on_chat_model_stream" and event.get("name") == "ChatGoogleGenerativeAI":
-                    # Check if this is from the supervisor node (not sub-agents)
                     if metadata.get("langgraph_node") == "supervisor":
                         chunk = event["data"].get("chunk")
                         if chunk and hasattr(chunk, 'content'):
@@ -173,7 +166,6 @@ async def stream_message(
             traceback.print_exc()
             yield f"data: {json.dumps({'error': str(e)})}\n\n"
 
-        # Save the AI response to database after streaming is complete
         message_id = None
         with SessionLocal() as db_session:
             if full_ai_response:

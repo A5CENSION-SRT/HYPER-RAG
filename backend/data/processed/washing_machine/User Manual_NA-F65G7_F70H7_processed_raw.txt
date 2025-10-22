@@ -1,6 +1,6 @@
 ================================================================================
 RAW PROCESSED DOCUMENTS - BEFORE CHUNKING
-Total Documents: 550
+Total Documents: 552
 ================================================================================
 
 
@@ -2748,42 +2748,42 @@ Module: langchain_core.documents.base
 id: None
 metadata: {'source': 'User Manual_NA-F65G7_F70H7.pdf', 'page_number': 4, 'element_type': 'table'}
 page_content: [TABLE]
-Water amounts		
+Water amounts	None	None
 NA-F70H7	NA-
 F65G7
 F65H7	NA-
 F62G7
 F62H7
 52 L	48 L	46 L
-48 L	44 L	
-42 L		
-39 L		
-37 L		
-35 L		
-32 L		
-31 L		
-29 L		
-20 L		
+48 L	44 L	None
+42 L	None	None
+39 L	None	None
+37 L	None	None
+35 L	None	None
+32 L	None	None
+31 L	None	None
+29 L	None	None
+20 L	None	None
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
 [TABLE]
-Water amounts		
+Water amounts	None	None
 NA-F70H7	NA-
 F65G7
 F65H7	NA-
 F62G7
 F62H7
 52 L	48 L	46 L
-48 L	44 L	
-42 L		
-39 L		
-37 L		
-35 L		
-32 L		
-31 L		
-29 L		
-20 L		
+48 L	44 L	None
+42 L	None	None
+39 L	None	None
+37 L	None	None
+35 L	None	None
+32 L	None	None
+31 L	None	None
+29 L	None	None
+20 L	None	None
 
 --- METADATA ---
   source: User Manual_NA-F65G7_F70H7.pdf
@@ -4784,104 +4784,104 @@ Module: langchain_core.documents.base
 id: None
 metadata: {'source': 'User Manual_NA-F65G7_F70H7.pdf', 'page_number': 6, 'element_type': 'table'}
 page_content: [TABLE]
-Program			Purpose		Maximum capacity		
-					NA-F70H7	NA-F65G7
+Program	None	None	Purpose	None	Maximum capacity	None	None
+None	None	None	None	None	NA-F70H7	NA-F65G7
 NA-F65H7	NA-F62G7
 NA-F62H7
-1	Normal* (P. 8)		Everyday clothes
-• Daily washing		7.0 kg	6.5 kg	6.2 kg
-2	Favorite* (P. 9)		Everyday clothes
+1	Normal* (P. 8)	None	Everyday clothes
+• Daily washing	None	7.0 kg	6.5 kg	6.2 kg
+2	Favorite* (P. 9)	None	Everyday clothes
 • Washing with your saved
-preferred settings		7.0 kg	6.5 kg	6.2 kg
-3	Quick (P. 8)		Speedy washing for light soil		2.0 kg	2.0 kg	2.0 kg
-4	Jeans* (P. 8)		Jeans & heavily soiled clothes
+preferred settings	None	7.0 kg	6.5 kg	6.2 kg
+3	Quick (P. 8)	None	Speedy washing for light soil	None	2.0 kg	2.0 kg	2.0 kg
+4	Jeans* (P. 8)	None	Jeans & heavily soiled clothes
 • Washing with powerful
-swirling water		7.0 kg	6.5 kg	6.2 kg
-5	Soak* (P. 8)		Heavily soiled clothes
-• Presoaking to wash		7.0 kg	6.5 kg	6.2 kg
+swirling water	None	7.0 kg	6.5 kg	6.2 kg
+5	Soak* (P. 8)	None	Heavily soiled clothes
+• Presoaking to wash	None	7.0 kg	6.5 kg	6.2 kg
 6	Gentle Hand Wash
 (P. 10)
-(NA-F65G7 / NA-F62G7)		Delicates
-• Washing delicates gently		―	1.2 kg	1.2 kg
-	Delicate (P. 10)
+(NA-F65G7 / NA-F62G7)	None	Delicates
+• Washing delicates gently	None	―	1.2 kg	1.2 kg
+None	Delicate (P. 10)
 (NA-F70H7 / NA-F65H7 /
-NA-F62H7)				3.5 kg	3.5 kg	3.5 kg
-7	Daily Sari (P. 8)		Sari washing		1.2 kg	1.2 kg	1.2 kg
-8	Bed Sheets (P. 10)		Bed sheets		4.2 kg	4.2 kg	4.2 kg
+NA-F62H7)	None	None	None	3.5 kg	3.5 kg	3.5 kg
+7	Daily Sari (P. 8)	None	Sari washing	None	1.2 kg	1.2 kg	1.2 kg
+8	Bed Sheets (P. 10)	None	Bed sheets	None	4.2 kg	4.2 kg	4.2 kg
 9	Air Dry (90 min)
-(P. 11)		Drying synthetic fibre clothes		2.0 kg	2.0 kg	2.0 kg
-			Tub drying		―	―	―
+(P. 11)	None	Drying synthetic fibre clothes	None	2.0 kg	2.0 kg	2.0 kg
+None	None	None	Tub drying	None	―	―	―
 10	Tub Hygiene
-(P. 13)		Tub cleaning
+(P. 13)	None	Tub cleaning
 • Preventing black mould and
-smell		―	―	―
+smell	None	―	―	―
 ■
-Stain Master programs (P. 9) (NA-F65G7 / NA-F62G7)							
+Stain Master programs (P. 9) (NA-F65G7 / NA-F62G7)	None	None	None	None	None	None	None
 Light
 stain
 Heavy
-stain	11	Sweat*	Sweat stains		―	2.0 kg	2.0 kg
-	12	Sauces*	Sauce stains (soya, tomato, etc.)				
-	13	Collar/Cuff*	Sebum stains on
+stain	11	Sweat*	Sweat stains	None	―	2.0 kg	2.0 kg
+None	12	Sauces*	Sauce stains (soya, tomato, etc.)	None	None	None	None
+None	13	Collar/Cuff*	Sebum stains on
 collars or cuffs	HOT (50 ºC),
-Wash only			
-	14	Oil*	Oil stains				
-	15	Curry*	Curry stains				
+Wash only	None	None	None
+None	14	Oil*	Oil stains	None	None	None	None
+None	15	Curry*	Curry stains	None	None	None	None
 NOTE
 Stain Master Program is designed to give improved washing performance however the results are dependent
 on various factors as mentioned in program details and result may vary depending upon type of cloth and stain
-intensity. (Conditions apply)							
+intensity. (Conditions apply)	None	None	None	None	None	None	None
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
 [TABLE]
-Program			Purpose		Maximum capacity		
-					NA-F70H7	NA-F65G7
+Program	None	None	Purpose	None	Maximum capacity	None	None
+None	None	None	None	None	NA-F70H7	NA-F65G7
 NA-F65H7	NA-F62G7
 NA-F62H7
-1	Normal* (P. 8)		Everyday clothes
-• Daily washing		7.0 kg	6.5 kg	6.2 kg
-2	Favorite* (P. 9)		Everyday clothes
+1	Normal* (P. 8)	None	Everyday clothes
+• Daily washing	None	7.0 kg	6.5 kg	6.2 kg
+2	Favorite* (P. 9)	None	Everyday clothes
 • Washing with your saved
-preferred settings		7.0 kg	6.5 kg	6.2 kg
-3	Quick (P. 8)		Speedy washing for light soil		2.0 kg	2.0 kg	2.0 kg
-4	Jeans* (P. 8)		Jeans & heavily soiled clothes
+preferred settings	None	7.0 kg	6.5 kg	6.2 kg
+3	Quick (P. 8)	None	Speedy washing for light soil	None	2.0 kg	2.0 kg	2.0 kg
+4	Jeans* (P. 8)	None	Jeans & heavily soiled clothes
 • Washing with powerful
-swirling water		7.0 kg	6.5 kg	6.2 kg
-5	Soak* (P. 8)		Heavily soiled clothes
-• Presoaking to wash		7.0 kg	6.5 kg	6.2 kg
+swirling water	None	7.0 kg	6.5 kg	6.2 kg
+5	Soak* (P. 8)	None	Heavily soiled clothes
+• Presoaking to wash	None	7.0 kg	6.5 kg	6.2 kg
 6	Gentle Hand Wash
 (P. 10)
-(NA-F65G7 / NA-F62G7)		Delicates
-• Washing delicates gently		―	1.2 kg	1.2 kg
-	Delicate (P. 10)
+(NA-F65G7 / NA-F62G7)	None	Delicates
+• Washing delicates gently	None	―	1.2 kg	1.2 kg
+None	Delicate (P. 10)
 (NA-F70H7 / NA-F65H7 /
-NA-F62H7)				3.5 kg	3.5 kg	3.5 kg
-7	Daily Sari (P. 8)		Sari washing		1.2 kg	1.2 kg	1.2 kg
-8	Bed Sheets (P. 10)		Bed sheets		4.2 kg	4.2 kg	4.2 kg
+NA-F62H7)	None	None	None	3.5 kg	3.5 kg	3.5 kg
+7	Daily Sari (P. 8)	None	Sari washing	None	1.2 kg	1.2 kg	1.2 kg
+8	Bed Sheets (P. 10)	None	Bed sheets	None	4.2 kg	4.2 kg	4.2 kg
 9	Air Dry (90 min)
-(P. 11)		Drying synthetic fibre clothes		2.0 kg	2.0 kg	2.0 kg
-			Tub drying		―	―	―
+(P. 11)	None	Drying synthetic fibre clothes	None	2.0 kg	2.0 kg	2.0 kg
+None	None	None	Tub drying	None	―	―	―
 10	Tub Hygiene
-(P. 13)		Tub cleaning
+(P. 13)	None	Tub cleaning
 • Preventing black mould and
-smell		―	―	―
+smell	None	―	―	―
 ■
-Stain Master programs (P. 9) (NA-F65G7 / NA-F62G7)							
+Stain Master programs (P. 9) (NA-F65G7 / NA-F62G7)	None	None	None	None	None	None	None
 Light
 stain
 Heavy
-stain	11	Sweat*	Sweat stains		―	2.0 kg	2.0 kg
-	12	Sauces*	Sauce stains (soya, tomato, etc.)				
-	13	Collar/Cuff*	Sebum stains on
+stain	11	Sweat*	Sweat stains	None	―	2.0 kg	2.0 kg
+None	12	Sauces*	Sauce stains (soya, tomato, etc.)	None	None	None	None
+None	13	Collar/Cuff*	Sebum stains on
 collars or cuffs	HOT (50 ºC),
-Wash only			
-	14	Oil*	Oil stains				
-	15	Curry*	Curry stains				
+Wash only	None	None	None
+None	14	Oil*	Oil stains	None	None	None	None
+None	15	Curry*	Curry stains	None	None	None	None
 NOTE
 Stain Master Program is designed to give improved washing performance however the results are dependent
 on various factors as mentioned in program details and result may vary depending upon type of cloth and stain
-intensity. (Conditions apply)							
+intensity. (Conditions apply)	None	None	None	None	None	None	None
 
 --- METADATA ---
   source: User Manual_NA-F65G7_F70H7.pdf
@@ -5604,14 +5604,14 @@ Module: langchain_core.documents.base
 id: None
 metadata: {'source': 'User Manual_NA-F65G7_F70H7.pdf', 'page_number': 7, 'element_type': 'table'}
 page_content: [TABLE]
-			
-			
+None			
+		None	
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
 [TABLE]
-			
-			
+None			
+		None	
 
 --- METADATA ---
   source: User Manual_NA-F65G7_F70H7.pdf
@@ -14036,8 +14036,8 @@ Module: langchain_core.documents.base
 id: None
 metadata: {'source': 'User Manual_NA-F65G7_F70H7.pdf', 'page_number': 16, 'element_type': 'table'}
 page_content: [TABLE]
-Error display		Points to be checked
-		Water cannot drain.
+Error display	None	Points to be checked
+	None	Water cannot drain.
 Check the drain water hose for the following abnormalities:
 ● Is it crushed?
 ● Is it clogged with lint?
@@ -14046,28 +14046,28 @@ Check the drain water hose for the following abnormalities:
 ● Is the total length longer than 3 m (including the extension hose)? (P. 14)
 When the above problems are solved, you can resume operation by opening and
 closing the lid.
-		The lid is open.
+	None	The lid is open.
 ● Did you try to run the washing machine with the lid open?
 →Close the lid.
-		Spin or Air Dry is not possible.
+	None	Spin or Air Dry is not possible.
 ● Are clothes concentrated on one side of the tub?
 →Distribute the clothes evenly and close the lid.
 ● Is the washing machine installed on an unstable
 or inclined surface?
 → You can resume operation by opening and
 closing the lid.
-		Water cannot be supplied.
+	None	Water cannot be supplied.
 ● Is the water faucet turned on?
 →When using Temp Setting, Collar/Cuff, Oil and Curry programs, turn on both hot
 and cold water faucets.
 ● Water outage?
 ● Is the water supply filter clogged with dirt? (P. 13)
 →You can resume operation by opening and closing the lid.
-		Water has been forcibly drained.
+	None	Water has been forcibly drained.
 ● Water has been forcibly drained because the lid was open for 10 seconds or more
 with Child Lock (P. 11) set.
 → Unplug the power cord and plug it in again after 5 seconds.
-		Inspection is required.
+	None	Inspection is required.
 ● Turn off the water faucet just to be safe. Then, report the error displayed (2-digit
 number after “H”) to a service person. Unplug the power cord.
 Hot /
@@ -14075,7 +14075,7 @@ Warm
 lamp
 (P. 4)	Flashing	Normal operation
 (The lamp flashes only during hot water supply.)
-	Flashing
+None	Flashing
 quickly	The hot water faucet is not turned on / not connected.
 ● The washing machine operates using cold water.
 (May cause less washing performance)
@@ -14085,8 +14085,8 @@ type: Document
 
 --- PAGE CONTENT (TEXT) ---
 [TABLE]
-Error display		Points to be checked
-		Water cannot drain.
+Error display	None	Points to be checked
+	None	Water cannot drain.
 Check the drain water hose for the following abnormalities:
 ● Is it crushed?
 ● Is it clogged with lint?
@@ -14095,28 +14095,28 @@ Check the drain water hose for the following abnormalities:
 ● Is the total length longer than 3 m (including the extension hose)? (P. 14)
 When the above problems are solved, you can resume operation by opening and
 closing the lid.
-		The lid is open.
+	None	The lid is open.
 ● Did you try to run the washing machine with the lid open?
 →Close the lid.
-		Spin or Air Dry is not possible.
+	None	Spin or Air Dry is not possible.
 ● Are clothes concentrated on one side of the tub?
 →Distribute the clothes evenly and close the lid.
 ● Is the washing machine installed on an unstable
 or inclined surface?
 → You can resume operation by opening and
 closing the lid.
-		Water cannot be supplied.
+	None	Water cannot be supplied.
 ● Is the water faucet turned on?
 →When using Temp Setting, Collar/Cuff, Oil and Curry programs, turn on both hot
 and cold water faucets.
 ● Water outage?
 ● Is the water supply filter clogged with dirt? (P. 13)
 →You can resume operation by opening and closing the lid.
-		Water has been forcibly drained.
+	None	Water has been forcibly drained.
 ● Water has been forcibly drained because the lid was open for 10 seconds or more
 with Child Lock (P. 11) set.
 → Unplug the power cord and plug it in again after 5 seconds.
-		Inspection is required.
+	None	Inspection is required.
 ● Turn off the water faucet just to be safe. Then, report the error displayed (2-digit
 number after “H”) to a service person. Unplug the power cord.
 Hot /
@@ -14124,7 +14124,7 @@ Warm
 lamp
 (P. 4)	Flashing	Normal operation
 (The lamp flashes only during hot water supply.)
-	Flashing
+None	Flashing
 quickly	The hot water faucet is not turned on / not connected.
 ● The washing machine operates using cold water.
 (May cause less washing performance)
@@ -14170,6 +14170,62 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
+metadata: {'source': 'User Manual_NA-F65G7_F70H7.pdf', 'page_number': 17, 'element_type': 'ocr_text_block'}
+page_content: a
+
+Gp
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+a
+
+Gp
+
+
+--- METADATA ---
+  source: User Manual_NA-F65G7_F70H7.pdf
+  page_number: 17
+  element_type: ocr_text_block
+
+
+
+================================================================================
+DOCUMENT #537
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'User Manual_NA-F65G7_F70H7.pdf', 'page_number': 18, 'element_type': 'ocr_text_block'}
+page_content: a
+
+Gp
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+a
+
+Gp
+
+
+--- METADATA ---
+  source: User Manual_NA-F65G7_F70H7.pdf
+  page_number: 18
+  element_type: ocr_text_block
+
+
+
+================================================================================
+DOCUMENT #538
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
 metadata: {'source': 'User Manual_NA-F65G7_F70H7.pdf', 'page_number': 19, 'element_type': 'text'}
 page_content: Troubleshooting
 
@@ -14187,7 +14243,7 @@ Troubleshooting
 
 
 ================================================================================
-DOCUMENT #537
+DOCUMENT #539
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14196,11 +14252,11 @@ Module: langchain_core.documents.base
 id: None
 metadata: {'source': 'User Manual_NA-F65G7_F70H7.pdf', 'page_number': 19, 'element_type': 'table'}
 page_content: [TABLE]
-Symptoms		Points to be checked
+Symptoms	None	Points to be checked
 Time	Time indication increases or
 does not change	● Time indication is approximate. Remaining time is corrected
 during operation and displayed.
-	Operation time is longer than
+None	Operation time is longer than
 the time indication.
 Operation does not stop even
 after the reservation time.	● The operation time may be longer if laundry is concentrated
@@ -14217,21 +14273,21 @@ unit	No operation	● Power failure?
 Wash	No water supply	● Is the water faucet turned on?
 ● Water outage?
 ● Is the water supply filter clogged with dirt? (P. 13)
-	Water is supplied in the
+None	Water is supplied in the
 middle of wash process.	● If the water level drops, water is added automatically.
 ● With a large amount of laundry, water is added several times
 automatically.
-	The water level is too high for
+None	The water level is too high for
 the amount of laundry.	● If laundry is wet or there is water in the tub before operation,
 the water level may be higher.
-	The water level is too low for
+None	The water level is too low for
 the amount of laundry.	● With light clothes (of synthetic fibre, etc.), the water level may
 be lower.
 Rinse/Spin	Operation started with rinse,
 but water is not supplied.	● If there is no water in the tub, water is supplied after spin.
 ● If there is water in the tub, water is supplied after water
 discharge.
-	Operation suddenly changes
+None	Operation suddenly changes
 to rinse process in the middle
 of spin.
 Only spin is desired, but
@@ -14239,15 +14295,15 @@ operation starts with rinse.	● If clothes are concentrated on one side of the 
 machine automatically corrects unevenness by starting rinse
 process.
 (Place clothes as evenly as possible.)
-	Irregular rotation during spin	● The tub rotation speed is adjusted to reduce foaming during
+None	Irregular rotation during spin	● The tub rotation speed is adjusted to reduce foaming during
 spin.
 Others	Power failure/
 The breaker has tripped.	● Operation will resume from the point where it was stopped
 when the power is recovered (Auto Restart).
-	Water outage	● When water supply is recovered, remove the water supply
+None	Water outage	● When water supply is recovered, remove the water supply
 hose, release turbid water from the faucet, and then start the
 washing machine.
-	The Stain Master program has
+None	The Stain Master program has
 no effect (Stains are not
 removed).	● When using the Collar/Cuff, Oil, and Curry programs, is the
 water supply hose connected to hot water? (P. 16)
@@ -14256,17 +14312,17 @@ applying stain remover, etc.)
 ● The amount of laundry is under 2.0 kg? (P. 9)
 ● The Stain Master program is selected according to the type of
 stains? (P. 6)
-	Powder detergent remains
+None	Powder detergent remains
 undissolved.	● Put the detergent in the detergent inlet. (P. 7)
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
 [TABLE]
-Symptoms		Points to be checked
+Symptoms	None	Points to be checked
 Time	Time indication increases or
 does not change	● Time indication is approximate. Remaining time is corrected
 during operation and displayed.
-	Operation time is longer than
+None	Operation time is longer than
 the time indication.
 Operation does not stop even
 after the reservation time.	● The operation time may be longer if laundry is concentrated
@@ -14283,21 +14339,21 @@ unit	No operation	● Power failure?
 Wash	No water supply	● Is the water faucet turned on?
 ● Water outage?
 ● Is the water supply filter clogged with dirt? (P. 13)
-	Water is supplied in the
+None	Water is supplied in the
 middle of wash process.	● If the water level drops, water is added automatically.
 ● With a large amount of laundry, water is added several times
 automatically.
-	The water level is too high for
+None	The water level is too high for
 the amount of laundry.	● If laundry is wet or there is water in the tub before operation,
 the water level may be higher.
-	The water level is too low for
+None	The water level is too low for
 the amount of laundry.	● With light clothes (of synthetic fibre, etc.), the water level may
 be lower.
 Rinse/Spin	Operation started with rinse,
 but water is not supplied.	● If there is no water in the tub, water is supplied after spin.
 ● If there is water in the tub, water is supplied after water
 discharge.
-	Operation suddenly changes
+None	Operation suddenly changes
 to rinse process in the middle
 of spin.
 Only spin is desired, but
@@ -14305,15 +14361,15 @@ operation starts with rinse.	● If clothes are concentrated on one side of the 
 machine automatically corrects unevenness by starting rinse
 process.
 (Place clothes as evenly as possible.)
-	Irregular rotation during spin	● The tub rotation speed is adjusted to reduce foaming during
+None	Irregular rotation during spin	● The tub rotation speed is adjusted to reduce foaming during
 spin.
 Others	Power failure/
 The breaker has tripped.	● Operation will resume from the point where it was stopped
 when the power is recovered (Auto Restart).
-	Water outage	● When water supply is recovered, remove the water supply
+None	Water outage	● When water supply is recovered, remove the water supply
 hose, release turbid water from the faucet, and then start the
 washing machine.
-	The Stain Master program has
+None	The Stain Master program has
 no effect (Stains are not
 removed).	● When using the Collar/Cuff, Oil, and Curry programs, is the
 water supply hose connected to hot water? (P. 16)
@@ -14322,7 +14378,7 @@ applying stain remover, etc.)
 ● The amount of laundry is under 2.0 kg? (P. 9)
 ● The Stain Master program is selected according to the type of
 stains? (P. 6)
-	Powder detergent remains
+None	Powder detergent remains
 undissolved.	● Put the detergent in the detergent inlet. (P. 7)
 
 --- METADATA ---
@@ -14333,7 +14389,7 @@ undissolved.	● Put the detergent in the detergent inlet. (P. 7)
 
 
 ================================================================================
-DOCUMENT #538
+DOCUMENT #540
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14359,7 +14415,7 @@ Troubleshooting
 
 
 ================================================================================
-DOCUMENT #539
+DOCUMENT #541
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14383,7 +14439,7 @@ type: Document
 
 
 ================================================================================
-DOCUMENT #540
+DOCUMENT #542
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14407,7 +14463,7 @@ Specifications
 
 
 ================================================================================
-DOCUMENT #541
+DOCUMENT #543
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14419,15 +14475,15 @@ page_content: [TABLE]
 	NA-F70H7	NA-F65G7
 NA-F65H7	NA-F62G7
 NA-F62H7
-Rated voltage	230 V		
-Rated frequency	50 Hz		
+Rated voltage	230 V	None	None
+Rated frequency	50 Hz	None	None
 Rated power consumption	423 W	408 W	400 W
 Standard water amount	52 L	48 L	46 L
 Maximum capacity (Dry cloth)	7.0 kg	6.5 kg	6.2 kg
 Product dimensions	525 mm (W) x 571 mm (D)
-x 969 mm (H)	525 mm (W) x 571 mm (D) x 929 mm (H)	
-Product weight	31 kg	30 kg	
-Pressure of tap water	0.03 - 1 MPa (0.3 - 10 kgf/cm2)		
+x 969 mm (H)	525 mm (W) x 571 mm (D) x 929 mm (H)	None
+Product weight	31 kg	30 kg	None
+Pressure of tap water	0.03 - 1 MPa (0.3 - 10 kgf/cm2)	None	None
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
@@ -14435,15 +14491,15 @@ type: Document
 	NA-F70H7	NA-F65G7
 NA-F65H7	NA-F62G7
 NA-F62H7
-Rated voltage	230 V		
-Rated frequency	50 Hz		
+Rated voltage	230 V	None	None
+Rated frequency	50 Hz	None	None
 Rated power consumption	423 W	408 W	400 W
 Standard water amount	52 L	48 L	46 L
 Maximum capacity (Dry cloth)	7.0 kg	6.5 kg	6.2 kg
 Product dimensions	525 mm (W) x 571 mm (D)
-x 969 mm (H)	525 mm (W) x 571 mm (D) x 929 mm (H)	
-Product weight	31 kg	30 kg	
-Pressure of tap water	0.03 - 1 MPa (0.3 - 10 kgf/cm2)		
+x 969 mm (H)	525 mm (W) x 571 mm (D) x 929 mm (H)	None
+Product weight	31 kg	30 kg	None
+Pressure of tap water	0.03 - 1 MPa (0.3 - 10 kgf/cm2)	None	None
 
 --- METADATA ---
   source: User Manual_NA-F65G7_F70H7.pdf
@@ -14453,7 +14509,7 @@ Pressure of tap water	0.03 - 1 MPa (0.3 - 10 kgf/cm2)
 
 
 ================================================================================
-DOCUMENT #542
+DOCUMENT #544
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14477,7 +14533,7 @@ Disposing of Waste Electrical & Electronic Equipment
 
 
 ================================================================================
-DOCUMENT #543
+DOCUMENT #545
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14503,7 +14559,7 @@ the E-Waste (Management) Rules-2016
 
 
 ================================================================================
-DOCUMENT #544
+DOCUMENT #546
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14531,7 +14587,7 @@ E-Waste Rules-2016.
 
 
 ================================================================================
-DOCUMENT #545
+DOCUMENT #547
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14563,7 +14619,7 @@ when disposing of this product.
 
 
 ================================================================================
-DOCUMENT #546
+DOCUMENT #548
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14609,7 +14665,7 @@ over 0.1 % by weight.
 
 
 ================================================================================
-DOCUMENT #547
+DOCUMENT #549
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14635,7 +14691,7 @@ Customer care number (Toll free): 1800 103 1333
 
 
 ================================================================================
-DOCUMENT #548
+DOCUMENT #550
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14667,7 +14723,7 @@ panasonic-india-i-recycle-program.html
 
 
 ================================================================================
-DOCUMENT #549
+DOCUMENT #551
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -14693,7 +14749,7 @@ http://www.panasonic.com
 
 
 ================================================================================
-DOCUMENT #550
+DOCUMENT #552
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base

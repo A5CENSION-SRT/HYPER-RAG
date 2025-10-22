@@ -1,6 +1,6 @@
 ================================================================================
 RAW PROCESSED DOCUMENTS - BEFORE CHUNKING
-Total Documents: 47
+Total Documents: 25
 ================================================================================
 
 
@@ -12,158 +12,92 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 1, 'element_type': 'table'}
-page_content: [TABLE]
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 1, 'element_type': 'ocr_text_block'}
+page_content: Panasonic
+
+Operating Instructions
+Air Conditioner
+
+I |
+Model No.
+Indoor Unit Outdoor Unit
+
+CS-KN12WKY series CU-KN12WKY
+CS-KN18WKY series CU-KN18WKY
+CS-KN24WKY series CU-KN24WKY
+
+series
+series
+series
+
+LUC
+
+Operating Instructions
+
+Air Conditioner
+
+Thank you for purchasing Panasonic Air Conditioner.
+Installation instructions attached.
+
+Before operating the unit, please read these operating
+
+instructions thoroughly and keep them for future
+reference.
+
+ACI2PRO09001
+
+English
 
 
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[TABLE]
+Panasonic
+
+Operating Instructions
+Air Conditioner
+
+I |
+Model No.
+Indoor Unit Outdoor Unit
+
+CS-KN12WKY series CU-KN12WKY
+CS-KN18WKY series CU-KN18WKY
+CS-KN24WKY series CU-KN24WKY
+
+series
+series
+series
+
+LUC
+
+Operating Instructions
+
+Air Conditioner
+
+Thank you for purchasing Panasonic Air Conditioner.
+Installation instructions attached.
+
+Before operating the unit, please read these operating
+
+instructions thoroughly and keep them for future
+reference.
+
+ACI2PRO09001
+
+English
 
 
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
   page_number: 1
-  element_type: table
+  element_type: ocr_text_block
 
 
 
 ================================================================================
 DOCUMENT #2
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 1, 'element_type': 'text'}
-page_content: s
-
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-s
-
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 1
-  element_type: text
-
-
-
-================================================================================
-DOCUMENT #3
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 1, 'element_type': 'text'}
-page_content: 24
-24
-24
-24
-24
-24
-UU
-
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-24
-24
-24
-24
-24
-24
-UU
-
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 1
-  element_type: text
-
-
-
-================================================================================
-DOCUMENT #4
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 1, 'element_type': 'text'}
-page_content: 9
-
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-9
-
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 1
-  element_type: text
-
-
-
-================================================================================
-DOCUMENT #5
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 1, 'element_type': 'text'}
-page_content: 9
-
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-9
-
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 1
-  element_type: text
-
-
-
-================================================================================
-DOCUMENT #6
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 1, 'element_type': 'text'}
-page_content: ACI2PR0  001
-
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-ACI2PR0  001
-
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 1
-  element_type: text
-
-
-
-================================================================================
-DOCUMENT #7
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -187,7 +121,7 @@ SET
 
 
 ================================================================================
-DOCUMENT #8
+DOCUMENT #3
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -211,7 +145,7 @@ type: Document
 
 
 ================================================================================
-DOCUMENT #9
+DOCUMENT #4
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -235,7 +169,7 @@ SET
 
 
 ================================================================================
-DOCUMENT #10
+DOCUMENT #5
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -259,7 +193,7 @@ type: Document
 
 
 ================================================================================
-DOCUMENT #11
+DOCUMENT #6
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -283,7 +217,7 @@ type: Document
 
 
 ================================================================================
-DOCUMENT #12
+DOCUMENT #7
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -309,7 +243,7 @@ type: Document
 
 
 ================================================================================
-DOCUMENT #13
+DOCUMENT #8
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -337,7 +271,7 @@ as per country guidelines.
 
 
 ================================================================================
-DOCUMENT #14
+DOCUMENT #9
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -361,7 +295,7 @@ as per country guidelines.
 
 
 ================================================================================
-DOCUMENT #15
+DOCUMENT #10
 ================================================================================
 Type: Document
 Module: langchain_core.documents.base
@@ -385,6 +319,1346 @@ type: Document
 
 
 ================================================================================
+DOCUMENT #11
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 3, 'element_type': 'ocr_text_block'}
+page_content: Table of contents
+
+Safety precautions............ceeeseeeeeeeees 4-9
+HOw tO USC... ee ee eee eee eeeeeteee 10-11
+Cleaning instructions ............:ccceeeeee 12
+TrOUDICSNOOTING .........:::ccceeeeeeeesteeeeeeeeees 13
+Information... eee eee eee eeeeees 14
+
+Accessories
+«Remote control
+*AAA or RO3 batteries x 2
+
+«Remote control holder
+¢ Screws for remote control holder x 2
+
+English
+
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Table of contents
+
+Safety precautions............ceeeseeeeeeeees 4-9
+HOw tO USC... ee ee eee eee eeeeeteee 10-11
+Cleaning instructions ............:ccceeeeee 12
+TrOUDICSNOOTING .........:::ccceeeeeeeesteeeeeeeeees 13
+Information... eee eee eee eeeeees 14
+
+Accessories
+«Remote control
+*AAA or RO3 batteries x 2
+
+«Remote control holder
+¢ Screws for remote control holder x 2
+
+English
+
+
+
+--- METADATA ---
+  source: CS-KN18WKY.pdf
+  page_number: 3
+  element_type: ocr_text_block
+
+
+
+================================================================================
+DOCUMENT #12
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 4, 'element_type': 'ocr_text_block'}
+page_content: Safety precautions
+
+To prevent personal injury, injury to others or property
+damage, please comply with the following:
+
+Incorrect operation due to failure to follow instructions
+below may cause harm or damage, the seriousness of
+which is classified as below:
+
+This appliance is filled with R32 (mild
+flammable refrigerant). If the refrigerant is
+leaked and exposed to an external ignition
+source, there is a risk of fire.
+
+This sign warns of death
+or serious injury.
+
+/\ WARNING
+
+This sign warns of injury
+or damage to property.
+
+/\ CAUTION
+
+The instructions to be followed are classified by the
+following symbols:
+
+This symbol denotes an action that
+is PROHIBITED.
+
+6. These symbols denote actions
+
+COMPULSORY.
+
+EY |
+
+©
+®
+GE
+
+Power supply
+
+Indoor unit
+
+Air inlet
+
+Remote control
+
+Air inlet
+
+Outdoor unit
+
+/\ WARNING
+
+This appliance is not intended for use by
+Qe persons (including children) with reduced
+physical, sensory or mental capabilities, or lack
+of experience and knowledge, unless they have
+been given supervision or instruction concerning
+use of the appliance by a person responsible for
+their safety. Children should be supervised to
+ensure that they do not play with the appliance.
+The appliance shall be installed, and/or operated
+in a room with floor area larger than Amin (m?) and
+keep away from ignition sources, such as heat/
+sparks/open flame or hazardous areas such as
+gas appliances, gas cooking, reticulated gas
+supply systems or electric cooking appliances, etc.
+(Refer to Table A of Installation instructions table
+for Amin (m?))
+Be aware that refrigerant may not contain an
+odour, highly recommended to ensure suitable
+flammable refrigerant gas detectors are present,
+operating and able to warn of a leak.
+Please consult authorised dealer or specialist to
+clean the internal parts, repair, install, remove
+and reinstall the unit. Improper installation and
+handing will cause leakage, electric shock or fire.
+Confirm with authorised dealer or specialist on
+usage of any specified refrigerant type.
+Using refrigerant type other than the specified
+may cause product damage, burst and injury etc.
+
+Do not use means to accelerate the defrosting
+
+SO process or to clean, other than those
+recommended by manufacturer. Any unfit
+method or using incompatible material may
+cause product damage, burst and serious injury.
+Do not pierce or burn as the appliance is
+pressurized. Do not expose the appliance to
+heat, flame, sparks, or other sources of ignition.
+Else it may explode and cause injury or death.
+
+Do not install the unit in a potentially explosive
+
+or flammable atmosphere. Failure to do so could
+
+result in fire.
+
+Do not insert your fingers or other objects
+
+into the air conditioner indoor or outdoor
+
+unit, rotating parts may cause injury.
+
+Do not touch the outdoor unit during lightning, it
+
+may cause electric shock.
+
+Do not expose yourself directly to cold air for a
+
+long period to avoid excess cooling.
+
+Do not sit or step on the unit, you may
+fall down accidentally.
+
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Safety precautions
+
+To prevent personal injury, injury to others or property
+damage, please comply with the following:
+
+Incorrect operation due to failure to follow instructions
+below may cause harm or damage, the seriousness of
+which is classified as below:
+
+This appliance is filled with R32 (mild
+flammable refrigerant). If the refrigerant is
+leaked and exposed to an external ignition
+source, there is a risk of fire.
+
+This sign warns of death
+or serious injury.
+
+/\ WARNING
+
+This sign warns of injury
+or damage to property.
+
+/\ CAUTION
+
+The instructions to be followed are classified by the
+following symbols:
+
+This symbol denotes an action that
+is PROHIBITED.
+
+6. These symbols denote actions
+
+COMPULSORY.
+
+EY |
+
+©
+®
+GE
+
+Power supply
+
+Indoor unit
+
+Air inlet
+
+Remote control
+
+Air inlet
+
+Outdoor unit
+
+/\ WARNING
+
+This appliance is not intended for use by
+Qe persons (including children) with reduced
+physical, sensory or mental capabilities, or lack
+of experience and knowledge, unless they have
+been given supervision or instruction concerning
+use of the appliance by a person responsible for
+their safety. Children should be supervised to
+ensure that they do not play with the appliance.
+The appliance shall be installed, and/or operated
+in a room with floor area larger than Amin (m?) and
+keep away from ignition sources, such as heat/
+sparks/open flame or hazardous areas such as
+gas appliances, gas cooking, reticulated gas
+supply systems or electric cooking appliances, etc.
+(Refer to Table A of Installation instructions table
+for Amin (m?))
+Be aware that refrigerant may not contain an
+odour, highly recommended to ensure suitable
+flammable refrigerant gas detectors are present,
+operating and able to warn of a leak.
+Please consult authorised dealer or specialist to
+clean the internal parts, repair, install, remove
+and reinstall the unit. Improper installation and
+handing will cause leakage, electric shock or fire.
+Confirm with authorised dealer or specialist on
+usage of any specified refrigerant type.
+Using refrigerant type other than the specified
+may cause product damage, burst and injury etc.
+
+Do not use means to accelerate the defrosting
+
+SO process or to clean, other than those
+recommended by manufacturer. Any unfit
+method or using incompatible material may
+cause product damage, burst and serious injury.
+Do not pierce or burn as the appliance is
+pressurized. Do not expose the appliance to
+heat, flame, sparks, or other sources of ignition.
+Else it may explode and cause injury or death.
+
+Do not install the unit in a potentially explosive
+
+or flammable atmosphere. Failure to do so could
+
+result in fire.
+
+Do not insert your fingers or other objects
+
+into the air conditioner indoor or outdoor
+
+unit, rotating parts may cause injury.
+
+Do not touch the outdoor unit during lightning, it
+
+may cause electric shock.
+
+Do not expose yourself directly to cold air for a
+
+long period to avoid excess cooling.
+
+Do not sit or step on the unit, you may
+fall down accidentally.
+
+
+
+--- METADATA ---
+  source: CS-KN18WKY.pdf
+  page_number: 4
+  element_type: ocr_text_block
+
+
+
+================================================================================
+DOCUMENT #13
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 5, 'element_type': 'ocr_text_block'}
+page_content: Remote control
+
+Do not allow infants and small children to play
+with the remote control to prevent them from
+
+accidentally swallowing the batteries.
+
+Do not use a modified cord,
+OQ joint cord, extension cord or
+
+unspecified cord to prevent
+
+overheating and fire.
+
+To prevent overheating, fire or electric shock:
+
+* Do not share the same power outlet with
+other equipment.
+
+* Do not operate with wet hands.
+
+* Do not over bend the power supply cord.
+
+* Do not operate or stop the unit by inserting
+or pulling out the power plug.
+
+If the supply cord is damaged, it must be
+Q replaced by the manufacturer, service agent
+or similarly qualified persons in order to avoid
+a hazard.
+It is strongly recommended to be installed
+with Earth Leakage Circuit Breaker (ELCB)
+or Residual Current Device (RCD) to prevent
+electric shock or fire.
+
+To prevent overheating, fire or electric shock:
+
+¢ Insert the power plug properly.
+
+* Dust on the power plug should be
+periodically wiped with a dry cloth.
+
+Stop using the product if any abnormality/
+
+failure occurs and disconnect the power plug
+
+or turn off the power switch and breaker.
+
+(Risk of smoke/fire/electric shock) Examples
+
+of abnormality/failure
+
+* The ELCB trips frequently.
+
+* Burning smell is observed.
+
+¢ Abnormal noise or vibration of the unit is
+observed.
+
+¢ Water leaks from the indoor unit.
+
+¢ Power cord or plug becomes abnormally hot.
+
+* Fan speed cannot be controlled.
+
+* The unit stops running immediately even if it
+is switched on for operation.
+
+* The fan does not stop even if the operation
+is stopped.
+
+Contact your local dealer immediately for
+
+maintenance/repair.
+
+This equipment must be earthed to prevent
+electrical shock or fire.
+
+Prevent electric shock by switching off the
+power supply and unplug:
+
+- Before cleaning or servicing,
+fee) - When extended non-use, or
+a5) - During abnormally strong lightning activity.
+
+@ ©
+
+Precaution for using R32 refrigerant
+
+The basic installation work procedures are the same as
+conventional refrigerant (R410A, R22) models.
+
+Since the working pressure is higher than that of
+Q refrigerant R22 models, some of the piping and
+
+installation and service tools are special.
+Especially, when replacing a refrigerant R22
+model with a new refrigerant R32 model, always
+replace the conventional piping and flare nuts
+with the R32 and R410A piping and flare nuts on
+the outdoor unit side.
+For R32 and R410A, the same flare nut on the
+outdoor unit side and pipe can be used.
+Models that use refrigerant R32 and R410A
+have a different charging port thread diameter to
+prevent erroneous charging with refrigerant R22
+and for safety.
+Therefore, check beforehand. [The charging port
+thread diameter for R32 and R410A is 1/2 inch.]
+Be more careful than R22 so that foreign matter
+(oil, water, etc.) does not enter the piping.
+Also, when storing the piping, securely seal the
+opening by pinching, taping, etc. (Handling of
+R32 is similar to R410A.)
+
+/\ CAUTION
+
+Indoor unit and outdoor unit
+
+Do not wash the indoor unit with water, benzine,
+OQ thinner or scouring powder to avoid damage or
+corrosion at the unit.
+Do not use for preservation of precise
+equipment, food, animals, plants, artwork
+or other objects. This may cause quality
+deterioration, etc.
+Do not use any combustible equipment in front
+of the airflow outlet to avoid fire propagation.
+Do not expose plants or pet directly to airflow to
+
+avoid injury, etc.
+
+Do not switch ON the indoor unit when waxing
+the floor. After waxing, aerate the room properly
+before operating the unit.
+
+Do not install the unit in oily and smoky areas to
+prevent damage to the unit.
+
+Do not dismantle the unit for cleaning purpose
+to avoid injury.
+
+Do not step onto an unstable bench when
+cleaning the unit to avoid injury.
+
+Do not place a vase or water container on the
+unit. Water may enter the unit and degrade the
+insulation. This may cause an electric shock.
+Do not open window or door for long time during
+operation, it may lead to inefficient power usage
+and uncomfortable temperature changes.
+
+Do not touch the sharp aluminium fin,
+sharp parts may cause injury.
+
+Safety precautions
+
+English
+
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Remote control
+
+Do not allow infants and small children to play
+with the remote control to prevent them from
+
+accidentally swallowing the batteries.
+
+Do not use a modified cord,
+OQ joint cord, extension cord or
+
+unspecified cord to prevent
+
+overheating and fire.
+
+To prevent overheating, fire or electric shock:
+
+* Do not share the same power outlet with
+other equipment.
+
+* Do not operate with wet hands.
+
+* Do not over bend the power supply cord.
+
+* Do not operate or stop the unit by inserting
+or pulling out the power plug.
+
+If the supply cord is damaged, it must be
+Q replaced by the manufacturer, service agent
+or similarly qualified persons in order to avoid
+a hazard.
+It is strongly recommended to be installed
+with Earth Leakage Circuit Breaker (ELCB)
+or Residual Current Device (RCD) to prevent
+electric shock or fire.
+
+To prevent overheating, fire or electric shock:
+
+¢ Insert the power plug properly.
+
+* Dust on the power plug should be
+periodically wiped with a dry cloth.
+
+Stop using the product if any abnormality/
+
+failure occurs and disconnect the power plug
+
+or turn off the power switch and breaker.
+
+(Risk of smoke/fire/electric shock) Examples
+
+of abnormality/failure
+
+* The ELCB trips frequently.
+
+* Burning smell is observed.
+
+¢ Abnormal noise or vibration of the unit is
+observed.
+
+¢ Water leaks from the indoor unit.
+
+¢ Power cord or plug becomes abnormally hot.
+
+* Fan speed cannot be controlled.
+
+* The unit stops running immediately even if it
+is switched on for operation.
+
+* The fan does not stop even if the operation
+is stopped.
+
+Contact your local dealer immediately for
+
+maintenance/repair.
+
+This equipment must be earthed to prevent
+electrical shock or fire.
+
+Prevent electric shock by switching off the
+power supply and unplug:
+
+- Before cleaning or servicing,
+fee) - When extended non-use, or
+a5) - During abnormally strong lightning activity.
+
+@ ©
+
+Precaution for using R32 refrigerant
+
+The basic installation work procedures are the same as
+conventional refrigerant (R410A, R22) models.
+
+Since the working pressure is higher than that of
+Q refrigerant R22 models, some of the piping and
+
+installation and service tools are special.
+Especially, when replacing a refrigerant R22
+model with a new refrigerant R32 model, always
+replace the conventional piping and flare nuts
+with the R32 and R410A piping and flare nuts on
+the outdoor unit side.
+For R32 and R410A, the same flare nut on the
+outdoor unit side and pipe can be used.
+Models that use refrigerant R32 and R410A
+have a different charging port thread diameter to
+prevent erroneous charging with refrigerant R22
+and for safety.
+Therefore, check beforehand. [The charging port
+thread diameter for R32 and R410A is 1/2 inch.]
+Be more careful than R22 so that foreign matter
+(oil, water, etc.) does not enter the piping.
+Also, when storing the piping, securely seal the
+opening by pinching, taping, etc. (Handling of
+R32 is similar to R410A.)
+
+/\ CAUTION
+
+Indoor unit and outdoor unit
+
+Do not wash the indoor unit with water, benzine,
+OQ thinner or scouring powder to avoid damage or
+corrosion at the unit.
+Do not use for preservation of precise
+equipment, food, animals, plants, artwork
+or other objects. This may cause quality
+deterioration, etc.
+Do not use any combustible equipment in front
+of the airflow outlet to avoid fire propagation.
+Do not expose plants or pet directly to airflow to
+
+avoid injury, etc.
+
+Do not switch ON the indoor unit when waxing
+the floor. After waxing, aerate the room properly
+before operating the unit.
+
+Do not install the unit in oily and smoky areas to
+prevent damage to the unit.
+
+Do not dismantle the unit for cleaning purpose
+to avoid injury.
+
+Do not step onto an unstable bench when
+cleaning the unit to avoid injury.
+
+Do not place a vase or water container on the
+unit. Water may enter the unit and degrade the
+insulation. This may cause an electric shock.
+Do not open window or door for long time during
+operation, it may lead to inefficient power usage
+and uncomfortable temperature changes.
+
+Do not touch the sharp aluminium fin,
+sharp parts may cause injury.
+
+Safety precautions
+
+English
+
+
+
+--- METADATA ---
+  source: CS-KN18WKY.pdf
+  page_number: 5
+  element_type: ocr_text_block
+
+
+
+================================================================================
+DOCUMENT #14
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 6, 'element_type': 'ocr_text_block'}
+page_content: Safety precautions
+
+pipe is:
+
+- Connected properly,
+
+- Kept clear of gutters and containers, or
+- Not immersed in water
+
+Q Prevent water leakage by ensuring drainage
+
+After a long period of use or use with any
+combustible equipment, aerate the room
+regularly.
+
+After a long period of use, make sure the
+installation rack does not deteriorate to
+prevent the unit from falling down.
+
+Remote control
+
+OQ Do not use rechargeable (Ni-Cd) batteries. It
+
+may damage the remote control.
+
+To prevent malfunction or damage of the
+
+remote control:
+
+* Remove the batteries if the unit is not going
+to be used for a long period of time.
+
+* New batteries of the same type must be
+inserted following the polarity stated.
+
+Power supply
+
+Do not disconnect the plug by pulling the cord
+to prevent electric shock.
+
+Precaution for using R32 refrigerant
+
+The basic installation work procedures are the same as
+conventional refrigerant (R410A, R22) models.
+
+1. Installation (Space)
+
+Q ¢ Must ensure the installation of pipe-work
+shall be kept to a minimum. Avoid use
+dented pipe and do not allow acute bending.
+
+* Must ensure that pipe-work shall be
+protected from physical damage.
+
+* Must comply with national gas regulations,
+state municipal rules and legislation. Notify
+relevant authorities in accordance with all
+applicable regulations.
+
+« Must ensure mechanical connections be
+accessible for maintenance purposes.
+
+* In cases that require mechanical ventilation,
+ventilation openings shall be kept clear of
+obstruction.
+
+* When disposal of the product, do follow
+to the precautions in #12 and comply with
+national regulations.
+
+Always contact to local municipal offices for
+proper handling.
+
+0
+
+2. Servicing
+
+2-1. Service personnel
+
+« Any qualified person who is involved with
+working on or breaking into a refrigerant
+circuit should hold a current valid certificate
+from an industry-accredited assessment
+authority, which authorizes their competence
+to handle refrigerants safely in accordance
+with an industry recognised assessment
+specification.
+
+* Servicing shall only be performed
+as recommended by the equipment
+manufacturer.
+Maintenance and repair requiring the
+assistance of other skilled personnel shall
+be carried out under the supervision of the
+person competent in the use of flammable
+refrigerants.
+
+* Servicing shall be performed only as
+recommended by the manufacturer.
+
+2-2. Work
+
++ Prior to beginning work on systems
+containing flammable refrigerants, safety
+checks are necessary to ensure that the risk
+of ignition is minimised.
+
+For repair to the refrigerating system, the
+precautions in #2-2 to #2-8 must be followed
+before conducting work on the system.
+
+«Work shall be undertaken under a controlled
+procedure so as to minimize the risk of a
+flammable gas or vapour being present while
+the work is being performed.
+
+«All maintenance staff and others working
+in the local area shall be instructed and
+supervised on the nature of work being
+carried out.
+
++ Avoid working in confined spaces.
+
+¢ Wear appropriate protective equipment,
+including respiratory protection, as
+conditions warrant.
+
+* Ensure that the conditions within the area
+have been made safe by limit of use of any
+flammable material. Keep all sources of
+ignition and hot metal surfaces away.
+
+2-3. Checking for presence of refrigerant
+
+* The area shall be checked with an
+appropriate refrigerant detector prior to and
+during work, to ensure the technician is
+aware of potentially flammable atmospheres.
+
+¢ Ensure that the leak detection equipment
+being used is suitable for use with flammable
+refrigerants, i.e. non sparking, adequately
+sealed or intrinsically safe.
+
+«In case of leakage/spillage happened,
+immediately ventilate area and stay upwind
+and away from spill/release.
+
+In case of leakage/spillage happened, do
+notify persons down wind of the leaking/spill,
+isolate immediate hazard area and keep
+unauthorized personnel out.
+
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+Safety precautions
+
+pipe is:
+
+- Connected properly,
+
+- Kept clear of gutters and containers, or
+- Not immersed in water
+
+Q Prevent water leakage by ensuring drainage
+
+After a long period of use or use with any
+combustible equipment, aerate the room
+regularly.
+
+After a long period of use, make sure the
+installation rack does not deteriorate to
+prevent the unit from falling down.
+
+Remote control
+
+OQ Do not use rechargeable (Ni-Cd) batteries. It
+
+may damage the remote control.
+
+To prevent malfunction or damage of the
+
+remote control:
+
+* Remove the batteries if the unit is not going
+to be used for a long period of time.
+
+* New batteries of the same type must be
+inserted following the polarity stated.
+
+Power supply
+
+Do not disconnect the plug by pulling the cord
+to prevent electric shock.
+
+Precaution for using R32 refrigerant
+
+The basic installation work procedures are the same as
+conventional refrigerant (R410A, R22) models.
+
+1. Installation (Space)
+
+Q ¢ Must ensure the installation of pipe-work
+shall be kept to a minimum. Avoid use
+dented pipe and do not allow acute bending.
+
+* Must ensure that pipe-work shall be
+protected from physical damage.
+
+* Must comply with national gas regulations,
+state municipal rules and legislation. Notify
+relevant authorities in accordance with all
+applicable regulations.
+
+« Must ensure mechanical connections be
+accessible for maintenance purposes.
+
+* In cases that require mechanical ventilation,
+ventilation openings shall be kept clear of
+obstruction.
+
+* When disposal of the product, do follow
+to the precautions in #12 and comply with
+national regulations.
+
+Always contact to local municipal offices for
+proper handling.
+
+0
+
+2. Servicing
+
+2-1. Service personnel
+
+« Any qualified person who is involved with
+working on or breaking into a refrigerant
+circuit should hold a current valid certificate
+from an industry-accredited assessment
+authority, which authorizes their competence
+to handle refrigerants safely in accordance
+with an industry recognised assessment
+specification.
+
+* Servicing shall only be performed
+as recommended by the equipment
+manufacturer.
+Maintenance and repair requiring the
+assistance of other skilled personnel shall
+be carried out under the supervision of the
+person competent in the use of flammable
+refrigerants.
+
+* Servicing shall be performed only as
+recommended by the manufacturer.
+
+2-2. Work
+
++ Prior to beginning work on systems
+containing flammable refrigerants, safety
+checks are necessary to ensure that the risk
+of ignition is minimised.
+
+For repair to the refrigerating system, the
+precautions in #2-2 to #2-8 must be followed
+before conducting work on the system.
+
+«Work shall be undertaken under a controlled
+procedure so as to minimize the risk of a
+flammable gas or vapour being present while
+the work is being performed.
+
+«All maintenance staff and others working
+in the local area shall be instructed and
+supervised on the nature of work being
+carried out.
+
++ Avoid working in confined spaces.
+
+¢ Wear appropriate protective equipment,
+including respiratory protection, as
+conditions warrant.
+
+* Ensure that the conditions within the area
+have been made safe by limit of use of any
+flammable material. Keep all sources of
+ignition and hot metal surfaces away.
+
+2-3. Checking for presence of refrigerant
+
+* The area shall be checked with an
+appropriate refrigerant detector prior to and
+during work, to ensure the technician is
+aware of potentially flammable atmospheres.
+
+¢ Ensure that the leak detection equipment
+being used is suitable for use with flammable
+refrigerants, i.e. non sparking, adequately
+sealed or intrinsically safe.
+
+«In case of leakage/spillage happened,
+immediately ventilate area and stay upwind
+and away from spill/release.
+
+In case of leakage/spillage happened, do
+notify persons down wind of the leaking/spill,
+isolate immediate hazard area and keep
+unauthorized personnel out.
+
+
+
+--- METADATA ---
+  source: CS-KN18WKY.pdf
+  page_number: 6
+  element_type: ocr_text_block
+
+
+
+================================================================================
+DOCUMENT #15
+================================================================================
+Type: Document
+Module: langchain_core.documents.base
+
+--- ALL ATTRIBUTES ---
+id: None
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 7, 'element_type': 'ocr_text_block'}
+page_content: 2-4. Presence of fire extinguisher
+@ * If any hot work is to be conducted on the
+refrigeration equipment or any associated
+parts, appropriate fire extinguishing
+equipment shall be available at hand.
+* Have a dry powder or CO? fire extinguisher
+adjacent to the charging area.
+
+2-5. No ignition sources
+
+@ * No person carrying out work in relation to a
+refrigeration system which involves exposing
+any pipe work that contains or has contained
+flammable refrigerant shall use any sources
+of ignition in such a manner that it may lead
+to the risk of fire or explosion. He/She must
+not be smoking when carrying out such work.
+
+* All possible ignition sources, including
+cigarette smoking, should be kept sufficiently
+far away from the site of installation,
+repairing, removing and disposal, during
+which flammable refrigerant can possibly be
+released to the surrounding space.
+
+* Prior to work taking place, the area around
+the equipment is to be surveyed to make
+sure that there are no flammable hazards or
+ignition risks.
+
+* “No Smoking” signs shall be displayed.
+
+2-6. Ventilated area
+@ ¢ Ensure that the area is in the open or that it
+
+is adequately ventilated before breaking into
+the system or conducting any hot work.
+
+* Adegree of ventilation shall continue during
+the period that the work is carried out.
+
+* The ventilation should safely disperse any
+released refrigerant and preferably expel it
+externally into the atmosphere.
+
+Q 2-7. Checks to the refrigeration equipment
+
+* Where electrical components are being
+changed, they shall be fit for the purpose
+and to the correct specification.
+
+* At all times the manufacturer's maintenance
+and service guidelines shall be followed.
+
+¢ If in doubt consult the manufacturer’s
+technical department for assistance.
+
+* The following checks shall be applied to
+installations using flammable refrigerants.
+
+- The charge size is in accordance with
+the room size within which the refrigerant
+containing parts are installed.
+
+- The ventilation machinery and outlets are
+operating adequately and are not obstructed.
+
+- If an indirect refrigerating circuit is being
+used, the secondary circuit shall be
+checked for the presence of refrigerant.
+
+- Marking to the equipment continues to be
+visible and legible. Markings and signs that
+are illegible shall be corrected.
+
+- Refrigeration pipe or components are
+installed in a position where they are unlikely
+to be exposed to any substance which may
+corrode refrigerant containing components,
+unless the components are constructed of
+materials which are inherently resistant to
+being corroded or are properly protected
+against being so corroded.
+
+2-8. Checks to electrical devices
+Q ¢ Repair and maintenance to electrical
+components shall include initial safety
+checks and component inspection
+procedures.
+
+* Initial safety checks shall include but not
+limit to:-
+
+- That capacitors are discharged: this
+shall be done in a safe manner to avoid
+possibility of sparking.
+
+- That there no live electrical components
+and wiring are exposed while charging,
+recovering or purging the system.
+
+- That there is continuity of earth bonding.
+
+* At all times the manufacturer's maintenance
+and service guidelines shall be followed.
+
+* If in doubt consult the manufacturer’s
+technical department for assistance.
+
+* If a fault exists that could compromise safety,
+then no electrical supply shall be connected
+to the circuit until it is satisfactorily dealt with.
+
+* If the fault cannot be corrected immediately
+but it is necessary to continue operation, an
+adequate temporary solution shall be used.
+
+* The owner of the equipment must be
+informed or reported so all parties are
+advised thereinafter.
+
+3. Repairs to sealed components
+@ * During repairs to sealed components, all
+electrical supplies shall be disconnected
+from the equipment being worked upon prior
+to any removal of sealed covers, etc.
+
+* lf itis absolutely necessary to have an
+electrical supply to equipment during
+servicing, then a permanently operating
+form of leak detection shall be located at the
+most critical point to warn of a potentially
+hazardous situation.
+
+¢ Particular attention shall be paid to the
+following to ensure that by working on
+electrical components, the casing is not
+altered in such a way that the level of
+protection is affected.
+
+This shall include damage to cables,
+excessive number of connections, terminals
+not made to original specification, damage to
+seals, incorrect fitting of glands, etc.
+
+¢ Ensure that apparatus is mounted securely.
+
+¢ Ensure that seals or sealing materials have
+not degraded such that they no longer serve
+the purpose of preventing the ingress of
+flammable atmospheres.
+
+* Replacement parts shall be in accordance
+with the manufacturer’s specifications.
+
+NOTE: The use of silicon sealant may inhibit
+
+the effectiveness of some types of leak
+
+detection equipment.
+
+Intrinsically safe components do not have to
+
+be isolated prior to working on them.
+
+Safety precautions
+
+English
+
+
+type: Document
+
+--- PAGE CONTENT (TEXT) ---
+2-4. Presence of fire extinguisher
+@ * If any hot work is to be conducted on the
+refrigeration equipment or any associated
+parts, appropriate fire extinguishing
+equipment shall be available at hand.
+* Have a dry powder or CO? fire extinguisher
+adjacent to the charging area.
+
+2-5. No ignition sources
+
+@ * No person carrying out work in relation to a
+refrigeration system which involves exposing
+any pipe work that contains or has contained
+flammable refrigerant shall use any sources
+of ignition in such a manner that it may lead
+to the risk of fire or explosion. He/She must
+not be smoking when carrying out such work.
+
+* All possible ignition sources, including
+cigarette smoking, should be kept sufficiently
+far away from the site of installation,
+repairing, removing and disposal, during
+which flammable refrigerant can possibly be
+released to the surrounding space.
+
+* Prior to work taking place, the area around
+the equipment is to be surveyed to make
+sure that there are no flammable hazards or
+ignition risks.
+
+* “No Smoking” signs shall be displayed.
+
+2-6. Ventilated area
+@ ¢ Ensure that the area is in the open or that it
+
+is adequately ventilated before breaking into
+the system or conducting any hot work.
+
+* Adegree of ventilation shall continue during
+the period that the work is carried out.
+
+* The ventilation should safely disperse any
+released refrigerant and preferably expel it
+externally into the atmosphere.
+
+Q 2-7. Checks to the refrigeration equipment
+
+* Where electrical components are being
+changed, they shall be fit for the purpose
+and to the correct specification.
+
+* At all times the manufacturer's maintenance
+and service guidelines shall be followed.
+
+¢ If in doubt consult the manufacturer’s
+technical department for assistance.
+
+* The following checks shall be applied to
+installations using flammable refrigerants.
+
+- The charge size is in accordance with
+the room size within which the refrigerant
+containing parts are installed.
+
+- The ventilation machinery and outlets are
+operating adequately and are not obstructed.
+
+- If an indirect refrigerating circuit is being
+used, the secondary circuit shall be
+checked for the presence of refrigerant.
+
+- Marking to the equipment continues to be
+visible and legible. Markings and signs that
+are illegible shall be corrected.
+
+- Refrigeration pipe or components are
+installed in a position where they are unlikely
+to be exposed to any substance which may
+corrode refrigerant containing components,
+unless the components are constructed of
+materials which are inherently resistant to
+being corroded or are properly protected
+against being so corroded.
+
+2-8. Checks to electrical devices
+Q ¢ Repair and maintenance to electrical
+components shall include initial safety
+checks and component inspection
+procedures.
+
+* Initial safety checks shall include but not
+limit to:-
+
+- That capacitors are discharged: this
+shall be done in a safe manner to avoid
+possibility of sparking.
+
+- That there no live electrical components
+and wiring are exposed while charging,
+recovering or purging the system.
+
+- That there is continuity of earth bonding.
+
+* At all times the manufacturer's maintenance
+and service guidelines shall be followed.
+
+* If in doubt consult the manufacturer’s
+technical department for assistance.
+
+* If a fault exists that could compromise safety,
+then no electrical supply shall be connected
+to the circuit until it is satisfactorily dealt with.
+
+* If the fault cannot be corrected immediately
+but it is necessary to continue operation, an
+adequate temporary solution shall be used.
+
+* The owner of the equipment must be
+informed or reported so all parties are
+advised thereinafter.
+
+3. Repairs to sealed components
+@ * During repairs to sealed components, all
+electrical supplies shall be disconnected
+from the equipment being worked upon prior
+to any removal of sealed covers, etc.
+
+* lf itis absolutely necessary to have an
+electrical supply to equipment during
+servicing, then a permanently operating
+form of leak detection shall be located at the
+most critical point to warn of a potentially
+hazardous situation.
+
+¢ Particular attention shall be paid to the
+following to ensure that by working on
+electrical components, the casing is not
+altered in such a way that the level of
+protection is affected.
+
+This shall include damage to cables,
+excessive number of connections, terminals
+not made to original specification, damage to
+seals, incorrect fitting of glands, etc.
+
+¢ Ensure that apparatus is mounted securely.
+
+¢ Ensure that seals or sealing materials have
+not degraded such that they no longer serve
+the purpose of preventing the ingress of
+flammable atmospheres.
+
+* Replacement parts shall be in accordance
+with the manufacturer’s specifications.
+
+NOTE: The use of silicon sealant may inhibit
+
+the effectiveness of some types of leak
+
+detection equipment.
+
+Intrinsically safe components do not have to
+
+be isolated prior to working on them.
+
+Safety precautions
+
+English
+
+
+
+--- METADATA ---
+  source: CS-KN18WKY.pdf
+  page_number: 7
+  element_type: ocr_text_block
+
+
+
+================================================================================
 DOCUMENT #16
 ================================================================================
 Type: Document
@@ -392,21 +1666,375 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 4, 'element_type': 'table'}
-page_content: [TABLE]
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 8, 'element_type': 'ocr_text_block'}
+page_content: Safety precautions
+
+®
+
+WD
+
+WD
+WD
+
+4. Repair to intrinsically safe components
+
+*Do not apply any permanent inductive or
+capacitance loads to the circuit without
+ensuring that this will not exceed the
+permissible voltage and current permitted for
+the equipment in use.
+
+* Intrinsically safe components are the only
+types that can be worked on while live in the
+presence of a flammable atmosphere.
+
+* The test apparatus shall be at the correct
+rating.
+
+* Replace components only with parts
+specified by the manufacturer. Unspecified
+parts by manufacturer may result ignition of
+refrigerant in the atmosphere from a leak.
+
+5. Cabling
+
+* Check that cabling will not be subject
+to wear, corrosion, excessive pressure,
+vibration, sharp edges or any other adverse
+environmental effects.
+
+* The check shall also take into account the
+effects of aging or continual vibration from
+sources such as compressors or fans.
+
+6. Detection of flammable refrigerants
+
+¢ Under no circumstances shall potential
+sources of ignition be used in the searching
+or detection of refrigerant leaks.
+
+* A halide torch (or any other detector using a
+naked flame) shall not be used.
+
+7. Leak detection methods
+
+* Electronic leak detectors shall be used
+to detect flammable refrigerants, but the
+sensitivity may not be adequate, or may
+need re-calibration.
+
+(Detection equipment shall be calibrated in a
+refrigerant-free area.)
+
+* Ensure that the detector is not a potential
+source of ignition and is suitable for the
+refrigerant used.
+
+* Leak detection equipment shall be set at
+a percentage of the LFL of the refrigerant
+and shall be calibrated to the refrigerant
+employed and the appropriate percentage of
+gas (25 % maximum) is confirmed.
+
+* Leak detection fluids are suitable for use with
+most refrigerants but the use of detergents
+containing chlorine shall be avoided as the
+chlorine may react with the refrigerant and
+corrode the copper pipe-work.
+
+* If a leak is suspected, all naked flames shall
+be removed/extinguished.
+
+* If a leakage of refrigerant is found which
+requires brazing, all of the refrigerant shall
+be recovered from the system, or isolated
+(by means of shut off valves) in a part of the
+system remote from the leak. Oxygen free
+nitrogen (OFN) shall then be purged through
+the system both before and during the
+brazing process.
+
+0
+
+o
+
+8. Removal and evacuation
+
+* When breaking into the refrigerant circuit to make
+repairs — or for any other purpose — conventional
+procedures shall be used.
+
+However, it is important that best practice is
+followed since flammability is a consideration.
+The following procedure shall be adhered to:
+remove refrigerant -> purge the circuit with inert
+gas -> evacuate -> purge again with inert gas ->
+open the circuit by cutting or brazing
+
+* The refrigerant charge shall be recovered into
+the correct recovery cylinders.
+
+* The system shall be “flushed” with OFN to
+render the unit safe.
+
+* This process may need to be repeated several times.
+
+* Compressed air or oxygen shall not be used
+for this task.
+
+* Flushing shall be achieved by breaking the
+vacuum in the system with OFN and continuing
+to fill until the working pressure is achieved,
+then venting to atmosphere, and finally pulling
+down to a vacuum.
+
+This process shall be repeated until no
+refrigerant is within the system.
+
+«When the final OFN charge is used, the system
+shall be vented down to atmospheric pressure
+to enable work to take place.
+
+* This operation is absolutely vital if brazing
+operations on the pipe work are to take place.
+
+¢ Ensure that the outlet for the vacuum pump is
+not close to any ignition sources and there is
+ventilation available.
+
+9. Charging procedures
+
+* In addition to conventional charging procedures,
+the following requirements shall be followed.
+
+- Ensure that contamination of different
+refrigerants does not occur when using
+charging equipment.
+
+- Hoses or lines shall be as short as possible to
+minimize the amount of refrigerant contained
+in them.
+
+- Cylinders shall be kept upright.
+
+- Ensure that the refrigeration system is earthed
+prior to charging the system with refrigerant.
+
+- Label the system when charging is complete
+(if not already).
+
+- Extreme care shall be taken not to over fill the
+refrigeration system.
+
+* Prior to recharging the system it shall be
+pressure tested with OFN (refer to #7).
+
+* The system shall be leak tested on completion
+of charging but prior to commissioning.
+
+* A follow up leak test shall be carried out prior to
+leaving the site.
+
+* Electrostatic charge may accumulate and
+create a hazardous condition when charging
+and discharging the refrigerant.
+
+To avoid fire or explosion, dissipate static
+
+electricity during transfer by grounding and
+
+bonding containers and equipment before
+charging/discharging.
 
 
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[TABLE]
+Safety precautions
+
+®
+
+WD
+
+WD
+WD
+
+4. Repair to intrinsically safe components
+
+*Do not apply any permanent inductive or
+capacitance loads to the circuit without
+ensuring that this will not exceed the
+permissible voltage and current permitted for
+the equipment in use.
+
+* Intrinsically safe components are the only
+types that can be worked on while live in the
+presence of a flammable atmosphere.
+
+* The test apparatus shall be at the correct
+rating.
+
+* Replace components only with parts
+specified by the manufacturer. Unspecified
+parts by manufacturer may result ignition of
+refrigerant in the atmosphere from a leak.
+
+5. Cabling
+
+* Check that cabling will not be subject
+to wear, corrosion, excessive pressure,
+vibration, sharp edges or any other adverse
+environmental effects.
+
+* The check shall also take into account the
+effects of aging or continual vibration from
+sources such as compressors or fans.
+
+6. Detection of flammable refrigerants
+
+¢ Under no circumstances shall potential
+sources of ignition be used in the searching
+or detection of refrigerant leaks.
+
+* A halide torch (or any other detector using a
+naked flame) shall not be used.
+
+7. Leak detection methods
+
+* Electronic leak detectors shall be used
+to detect flammable refrigerants, but the
+sensitivity may not be adequate, or may
+need re-calibration.
+
+(Detection equipment shall be calibrated in a
+refrigerant-free area.)
+
+* Ensure that the detector is not a potential
+source of ignition and is suitable for the
+refrigerant used.
+
+* Leak detection equipment shall be set at
+a percentage of the LFL of the refrigerant
+and shall be calibrated to the refrigerant
+employed and the appropriate percentage of
+gas (25 % maximum) is confirmed.
+
+* Leak detection fluids are suitable for use with
+most refrigerants but the use of detergents
+containing chlorine shall be avoided as the
+chlorine may react with the refrigerant and
+corrode the copper pipe-work.
+
+* If a leak is suspected, all naked flames shall
+be removed/extinguished.
+
+* If a leakage of refrigerant is found which
+requires brazing, all of the refrigerant shall
+be recovered from the system, or isolated
+(by means of shut off valves) in a part of the
+system remote from the leak. Oxygen free
+nitrogen (OFN) shall then be purged through
+the system both before and during the
+brazing process.
+
+0
+
+o
+
+8. Removal and evacuation
+
+* When breaking into the refrigerant circuit to make
+repairs — or for any other purpose — conventional
+procedures shall be used.
+
+However, it is important that best practice is
+followed since flammability is a consideration.
+The following procedure shall be adhered to:
+remove refrigerant -> purge the circuit with inert
+gas -> evacuate -> purge again with inert gas ->
+open the circuit by cutting or brazing
+
+* The refrigerant charge shall be recovered into
+the correct recovery cylinders.
+
+* The system shall be “flushed” with OFN to
+render the unit safe.
+
+* This process may need to be repeated several times.
+
+* Compressed air or oxygen shall not be used
+for this task.
+
+* Flushing shall be achieved by breaking the
+vacuum in the system with OFN and continuing
+to fill until the working pressure is achieved,
+then venting to atmosphere, and finally pulling
+down to a vacuum.
+
+This process shall be repeated until no
+refrigerant is within the system.
+
+«When the final OFN charge is used, the system
+shall be vented down to atmospheric pressure
+to enable work to take place.
+
+* This operation is absolutely vital if brazing
+operations on the pipe work are to take place.
+
+¢ Ensure that the outlet for the vacuum pump is
+not close to any ignition sources and there is
+ventilation available.
+
+9. Charging procedures
+
+* In addition to conventional charging procedures,
+the following requirements shall be followed.
+
+- Ensure that contamination of different
+refrigerants does not occur when using
+charging equipment.
+
+- Hoses or lines shall be as short as possible to
+minimize the amount of refrigerant contained
+in them.
+
+- Cylinders shall be kept upright.
+
+- Ensure that the refrigeration system is earthed
+prior to charging the system with refrigerant.
+
+- Label the system when charging is complete
+(if not already).
+
+- Extreme care shall be taken not to over fill the
+refrigeration system.
+
+* Prior to recharging the system it shall be
+pressure tested with OFN (refer to #7).
+
+* The system shall be leak tested on completion
+of charging but prior to commissioning.
+
+* A follow up leak test shall be carried out prior to
+leaving the site.
+
+* Electrostatic charge may accumulate and
+create a hazardous condition when charging
+and discharging the refrigerant.
+
+To avoid fire or explosion, dissipate static
+
+electricity during transfer by grounding and
+
+bonding containers and equipment before
+charging/discharging.
 
 
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 4
-  element_type: table
+  page_number: 8
+  element_type: ocr_text_block
 
 
 
@@ -418,17 +2046,363 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 4, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white square with a shadow on it']
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 9, 'element_type': 'ocr_text_block'}
+page_content: 10. Decommissioning
+
+* Before carrying out this procedure, it is
+essential that the technician is completely
+familiar with the equipment and all its details.
+
+* It is recommended good practice that all
+refrigerants are recovered safely.
+
+«Prior to the task being carried out, an oil
+and refrigerant sample shall be taken in
+case analysis is required prior to re-use of
+reclaimed refrigerant.
+
+¢ It is essential that electrical power is
+available before the task is commenced.
+
+a) Become familiar with the equipment and
+its operation.
+
+b) Isolate system electrically.
+
+c) Before attempting the procedure ensure
+
+that:
+
+«mechanical handling equipment is
+available, if required, for handling
+refrigerant cylinders;
+
+«all personal protective equipment is
+available and being used correctly;
+
+the recovery process is supervised at all
+times by a competent person;
+
+* recovery equipment and cylinders conform
+to the appropriate standards.
+
+d) Pump down refrigerant system, if
+
+possible.
+
+e) Ifa vacuum is not possible, make a
+manifold so that refrigerant can be
+removed from various parts of the system.
+
+f) Make sure that cylinder is situated on the
+scales before recovery takes place.
+
+g) Start the recovery machine and operate
+in accordance with manufacturer’s
+instructions.
+
+h) Do not over fill cylinders. (No more than
+80 % volume liquid charge).
+
+i) Do not exceed the maximum working
+
+pressure of the cylinder, even temporarily.
+
+j) When the cylinders have been filled
+correctly and the process completed, make
+sure that the cylinders and the equipment
+are removed from site promptly and all
+isolation valves on the equipment are
+closed off.
+
+k) Recovered refrigerant shall not be
+charged into another refrigeration system
+unless it has been cleaned and checked.
+
+* Electrostatic charge may accumulate and
+create a hazardous condition when charging
+or discharging the refrigerant.
+
+To avoid fire or explosion, dissipate static
+
+electricity during transfer by grounding and
+
+bonding containers and equipment before
+charging/discharging.
+
+11. Labelling
+
+* Equipment shall be labelled stating that it
+has been de-commissioned and emptied of
+refrigerant.
+
+¢ The label shall be dated and signed.
+
+¢ Ensure that there are labels on the
+equipment stating the equipment contains
+flammable refrigerant.
+
+12. Recovery
+
+«When removing refrigerant from a system,
+either for servicing or decommissioning,
+it is recommended good practice that all
+refrigerants are removed safely.
+
+¢ When transferring refrigerant into cylinders,
+ensure that only appropriate refrigerant
+recovery cylinders are employed.
+
+¢ Ensure that the correct number of cylinders
+for holding the total system charge are
+available.
+
+* All cylinders to be used are designated for
+the recovered refrigerant and labelled for
+that refrigerant (i.e. special cylinders for the
+recovery of refrigerant).
+
+* Cylinders shall be complete with pressure
+relief valve and associated shut-off valves in
+good working order.
+
+* Recovery cylinders are evacuated and, if
+possible, cooled before recovery occurs.
+
+* The recovery equipment shall be in good
+working order with a set of instructions
+concerning the equipment that is at hand
+and shall be suitable for the recovery of
+flammable refrigerants.
+
+«In addition, a set of calibrated weighing
+scales shall be available and in good
+working order.
+
+* Hoses shall be complete with leak-free
+disconnect couplings and in good condition.
+
+* Before using the recovery machine, check
+that it is in satisfactory working order, has
+been properly maintained and that any
+associated electrical components are
+sealed to prevent ignition in the event of a
+refrigerant release.
+
+Consult manufacturer if in doubt.
+
+* The recovered refrigerant shall be returned
+to the refrigerant supplier in the correct
+recovery cylinder, and the relevant Waste
+Transfer Note arranged.
+
+* Do not mix refrigerants in recovery units and
+especially not in cylinders.
+
+* If compressors or compressor oils are to
+be removed, ensure that they have been
+evacuated to an acceptable level to make
+certain that flammable refrigerant does not
+remain within the lubricant.
+
+* The evacuation process shall be carried
+out prior to returning the compressor to the
+suppliers.
+
+* Only electric heating to the compressor
+body shall be employed to accelerate this
+process.
+
+«When oil is drained from a system, it shall be
+carried out safely.
+
+Safety precautions
+
+English
+
+
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white square with a shadow on it']
+10. Decommissioning
+
+* Before carrying out this procedure, it is
+essential that the technician is completely
+familiar with the equipment and all its details.
+
+* It is recommended good practice that all
+refrigerants are recovered safely.
+
+«Prior to the task being carried out, an oil
+and refrigerant sample shall be taken in
+case analysis is required prior to re-use of
+reclaimed refrigerant.
+
+¢ It is essential that electrical power is
+available before the task is commenced.
+
+a) Become familiar with the equipment and
+its operation.
+
+b) Isolate system electrically.
+
+c) Before attempting the procedure ensure
+
+that:
+
+«mechanical handling equipment is
+available, if required, for handling
+refrigerant cylinders;
+
+«all personal protective equipment is
+available and being used correctly;
+
+the recovery process is supervised at all
+times by a competent person;
+
+* recovery equipment and cylinders conform
+to the appropriate standards.
+
+d) Pump down refrigerant system, if
+
+possible.
+
+e) Ifa vacuum is not possible, make a
+manifold so that refrigerant can be
+removed from various parts of the system.
+
+f) Make sure that cylinder is situated on the
+scales before recovery takes place.
+
+g) Start the recovery machine and operate
+in accordance with manufacturer’s
+instructions.
+
+h) Do not over fill cylinders. (No more than
+80 % volume liquid charge).
+
+i) Do not exceed the maximum working
+
+pressure of the cylinder, even temporarily.
+
+j) When the cylinders have been filled
+correctly and the process completed, make
+sure that the cylinders and the equipment
+are removed from site promptly and all
+isolation valves on the equipment are
+closed off.
+
+k) Recovered refrigerant shall not be
+charged into another refrigeration system
+unless it has been cleaned and checked.
+
+* Electrostatic charge may accumulate and
+create a hazardous condition when charging
+or discharging the refrigerant.
+
+To avoid fire or explosion, dissipate static
+
+electricity during transfer by grounding and
+
+bonding containers and equipment before
+charging/discharging.
+
+11. Labelling
+
+* Equipment shall be labelled stating that it
+has been de-commissioned and emptied of
+refrigerant.
+
+¢ The label shall be dated and signed.
+
+¢ Ensure that there are labels on the
+equipment stating the equipment contains
+flammable refrigerant.
+
+12. Recovery
+
+«When removing refrigerant from a system,
+either for servicing or decommissioning,
+it is recommended good practice that all
+refrigerants are removed safely.
+
+¢ When transferring refrigerant into cylinders,
+ensure that only appropriate refrigerant
+recovery cylinders are employed.
+
+¢ Ensure that the correct number of cylinders
+for holding the total system charge are
+available.
+
+* All cylinders to be used are designated for
+the recovered refrigerant and labelled for
+that refrigerant (i.e. special cylinders for the
+recovery of refrigerant).
+
+* Cylinders shall be complete with pressure
+relief valve and associated shut-off valves in
+good working order.
+
+* Recovery cylinders are evacuated and, if
+possible, cooled before recovery occurs.
+
+* The recovery equipment shall be in good
+working order with a set of instructions
+concerning the equipment that is at hand
+and shall be suitable for the recovery of
+flammable refrigerants.
+
+«In addition, a set of calibrated weighing
+scales shall be available and in good
+working order.
+
+* Hoses shall be complete with leak-free
+disconnect couplings and in good condition.
+
+* Before using the recovery machine, check
+that it is in satisfactory working order, has
+been properly maintained and that any
+associated electrical components are
+sealed to prevent ignition in the event of a
+refrigerant release.
+
+Consult manufacturer if in doubt.
+
+* The recovered refrigerant shall be returned
+to the refrigerant supplier in the correct
+recovery cylinder, and the relevant Waste
+Transfer Note arranged.
+
+* Do not mix refrigerants in recovery units and
+especially not in cylinders.
+
+* If compressors or compressor oils are to
+be removed, ensure that they have been
+evacuated to an acceptable level to make
+certain that flammable refrigerant does not
+remain within the lubricant.
+
+* The evacuation process shall be carried
+out prior to returning the compressor to the
+suppliers.
+
+* Only electric heating to the compressor
+body shall be employed to accelerate this
+process.
+
+«When oil is drained from a system, it shall be
+carried out safely.
+
+Safety precautions
+
+English
+
+
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 4
-  element_type: image
+  page_number: 9
+  element_type: ocr_text_block
 
 
 
@@ -440,17 +2414,249 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 4, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a black and white background with a white border']
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 10, 'element_type': 'ocr_text_block'}
+page_content: How to use
+
+— To select operation mode
+
+AUTO - For your convenience
+
+¢ Unit selects the operation mode according to
+the room temperature.
+
+¢Once AUTO mode is selected, the unit will
+operate at the standard setting temperature.
+
+Standard settin
+Room temperature temperature 9
+
+23 °C & above
+Below 23 °C
+
+¢Press ZS for “HI” to +2 °C or V7 for “LO” to
+-2 °C to the standard setting temperature.
+
+COOL - To enjoy cool air
+
+¢ To reduce power consumption during COOL
+mode, use curtains to screen off sunlight and
+outdoor heat.
+
+DRY - To dehumidify the environment
+
+- Unit operates at low fan speed to give a gentle
+cooling operation.
+
+FAN - To operate Air-Con in “Fan Only” mode
+
+«Unit operates without running compressor with
+IDU fan running as per remote setting fan speed
+and air flow direction. Indoor unit temperature
+display will show standard set temperature of
+30 °C and no set temperature is displayed on
+remote controller display .
+
+SLEEP To maximise comfort while
+sleeping
+(= SLEEP
+¢ This operation provides you with a comfortable
+environment while sleeping by gradually increase
+the set temperature 1 °C after 3 hours operation.
+¢The unit is turned off after 8 hours.
+*Can be cancelled by pressing the respective
+button again.
+
+To adjust horizontal airflow direction
+
+L Via
+Remote control receiver
+and indicator
+
+€ 3090
+
+ahs whe
+
+Remote control display
+
+POWERFUL ‘TIMER
+
+Oi Lay
+
+ON
+TIMER _ TIMER
+
+POWERFUL OFF/ONO
+
+DIM (Press for 5 secs to
+DIM the display)
+
+Press to restore the
+remote control to
+default setting.
+
+Press for 10 secs to
+change temp °C to °F
+and Vice Versa.
+
+Not used in normal
+operations.
+
+SET cLoc|
+
+Panasonic
+
+Auto OFF/ON button
+
+* Manually adjustable.
+
+Temperature display
+
+* The unit displays set
+temperature.
+
+3n
+cin”
+€300
+
+10
+
+Use when remote control is
+
+misplaced or a malfunction
+
+occurs. Raise the front panel:
+
+«Press the button to turn on.
+
+* Press the button again to turn
+off.
+
+
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a black and white background with a white border']
+How to use
+
+— To select operation mode
+
+AUTO - For your convenience
+
+¢ Unit selects the operation mode according to
+the room temperature.
+
+¢Once AUTO mode is selected, the unit will
+operate at the standard setting temperature.
+
+Standard settin
+Room temperature temperature 9
+
+23 °C & above
+Below 23 °C
+
+¢Press ZS for “HI” to +2 °C or V7 for “LO” to
+-2 °C to the standard setting temperature.
+
+COOL - To enjoy cool air
+
+¢ To reduce power consumption during COOL
+mode, use curtains to screen off sunlight and
+outdoor heat.
+
+DRY - To dehumidify the environment
+
+- Unit operates at low fan speed to give a gentle
+cooling operation.
+
+FAN - To operate Air-Con in “Fan Only” mode
+
+«Unit operates without running compressor with
+IDU fan running as per remote setting fan speed
+and air flow direction. Indoor unit temperature
+display will show standard set temperature of
+30 °C and no set temperature is displayed on
+remote controller display .
+
+SLEEP To maximise comfort while
+sleeping
+(= SLEEP
+¢ This operation provides you with a comfortable
+environment while sleeping by gradually increase
+the set temperature 1 °C after 3 hours operation.
+¢The unit is turned off after 8 hours.
+*Can be cancelled by pressing the respective
+button again.
+
+To adjust horizontal airflow direction
+
+L Via
+Remote control receiver
+and indicator
+
+€ 3090
+
+ahs whe
+
+Remote control display
+
+POWERFUL ‘TIMER
+
+Oi Lay
+
+ON
+TIMER _ TIMER
+
+POWERFUL OFF/ONO
+
+DIM (Press for 5 secs to
+DIM the display)
+
+Press to restore the
+remote control to
+default setting.
+
+Press for 10 secs to
+change temp °C to °F
+and Vice Versa.
+
+Not used in normal
+operations.
+
+SET cLoc|
+
+Panasonic
+
+Auto OFF/ON button
+
+* Manually adjustable.
+
+Temperature display
+
+* The unit displays set
+temperature.
+
+3n
+cin”
+€300
+
+10
+
+Use when remote control is
+
+misplaced or a malfunction
+
+occurs. Raise the front panel:
+
+«Press the button to turn on.
+
+* Press the button again to turn
+off.
+
+
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 4
-  element_type: image
+  page_number: 10
+  element_type: ocr_text_block
 
 
 
@@ -462,17 +2668,25 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 4, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white and black background with a shadow']
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 11, 'element_type': 'table'}
+page_content: [TABLE]
+
+Note:-Turn off existing function Before
+switching of other function in any mode
+( Applicable for Sleep, Powerfull etc.)
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white and black background with a shadow']
+[TABLE]
+
+Note:-Turn off existing function Before
+switching of other function in any mode
+( Applicable for Sleep, Powerfull etc.)
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 4
-  element_type: image
+  page_number: 11
+  element_type: table
 
 
 
@@ -484,17 +2698,25 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 4, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white and black background with a black and white image']
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 11, 'element_type': 'table'}
+page_content: [TABLE]
+
+
+
+
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white and black background with a black and white image']
+[TABLE]
+
+
+
+
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 4
-  element_type: image
+  page_number: 11
+  element_type: table
 
 
 
@@ -506,17 +2728,201 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 4, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white and black background with a black and white image']
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'ocr_text_block'}
+page_content: 12
+
+Cleaning instructions
+
+To ensure optimal performance of the unit,
+cleaning has to be carried out at regular
+intervals. Please consult authorised dealer.
+
+* Switch off the power supply and unplug before
+cleaning.
+
+*Do not touch the aluminium fin, sharp parts may
+cause injury.
+
+* Do not use benzine, thinner or scouring powder.
+
+* Use only soap (~ pH 7) or neutral household
+detergent.
+
+* Do not use water hotter than 40 °C.
+
+Indoor unit
+
+Wipe the unit gently with a soft,
+dry cloth.
+
+Front panel
+
+Wash gently and dry.
+
+Remove the front panel
+
+@) Pullout
+
+Close it securely
+
+a) Insert at both sides
+
+@) Close down
+@) Press both ends of the front panel
+
+Indoor unit
+Front Panel
+
+Dust filters
+Every 2 weeks
+
+-Wash/rinse the dust filters gently
+with water to avoid damage to the
+filter surface.
+
+¢ Dry the dust filters thoroughly under shade,
+away from fire or direct sunlight.
+
+* Replace any damaged filters.
+
+Remove air filter Attach ai
+
+r filter
+
+Insert into the unit
+
+Filter & PM 2.5 filter
+
+Filter / PM 2.5 filter.
+
+* Clean the filter whenever necessary.
+
+* Don’t wash/rinse the filter with water.
+
+* The surface of the filter shouldn’t be rubbed
+with any object.
+
+The filter shouldn’t be pulled with strong force
+as it may get damaged.
+
+* This filter is applicable to specific models only.
+
+For seasonal inspection after extended
+non-use
+* Checking of remote control batteries.
+*No obstruction at air inlet and air outlet vents.
+«After 15 minutes of operation, it is normal to
+have the following temperature difference
+between air inlet and air outlet vents:
+
+COOL: 28 °C
+
+For extended non-use
+¢ Turn off the power supply and unplug.
+«Remove the remote control batteries.
+
+
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white and black background with a black and white image']
+12
+
+Cleaning instructions
+
+To ensure optimal performance of the unit,
+cleaning has to be carried out at regular
+intervals. Please consult authorised dealer.
+
+* Switch off the power supply and unplug before
+cleaning.
+
+*Do not touch the aluminium fin, sharp parts may
+cause injury.
+
+* Do not use benzine, thinner or scouring powder.
+
+* Use only soap (~ pH 7) or neutral household
+detergent.
+
+* Do not use water hotter than 40 °C.
+
+Indoor unit
+
+Wipe the unit gently with a soft,
+dry cloth.
+
+Front panel
+
+Wash gently and dry.
+
+Remove the front panel
+
+@) Pullout
+
+Close it securely
+
+a) Insert at both sides
+
+@) Close down
+@) Press both ends of the front panel
+
+Indoor unit
+Front Panel
+
+Dust filters
+Every 2 weeks
+
+-Wash/rinse the dust filters gently
+with water to avoid damage to the
+filter surface.
+
+¢ Dry the dust filters thoroughly under shade,
+away from fire or direct sunlight.
+
+* Replace any damaged filters.
+
+Remove air filter Attach ai
+
+r filter
+
+Insert into the unit
+
+Filter & PM 2.5 filter
+
+Filter / PM 2.5 filter.
+
+* Clean the filter whenever necessary.
+
+* Don’t wash/rinse the filter with water.
+
+* The surface of the filter shouldn’t be rubbed
+with any object.
+
+The filter shouldn’t be pulled with strong force
+as it may get damaged.
+
+* This filter is applicable to specific models only.
+
+For seasonal inspection after extended
+non-use
+* Checking of remote control batteries.
+*No obstruction at air inlet and air outlet vents.
+«After 15 minutes of operation, it is normal to
+have the following temperature difference
+between air inlet and air outlet vents:
+
+COOL: 28 °C
+
+For extended non-use
+¢ Turn off the power supply and unplug.
+«Remove the remote control batteries.
+
+
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 4
-  element_type: image
+  page_number: 12
+  element_type: ocr_text_block
 
 
 
@@ -528,21 +2934,253 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 6, 'element_type': 'table'}
-page_content: [TABLE]
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 13, 'element_type': 'ocr_text_block'}
+page_content: Troubleshooting
+
+The following symptoms do not indicate malfunction.
+
+Symptom
+
+Cause
+
+Mist emerges from indoor unit.
+
+* Condensation effect due to cooling process.
+
+Water flowing sound during operation.
+
+¢ Refrigerant flow inside the unit.
+
+The room has a peculiar odour.
+
+* This may be due to damp smell emitted by the wall,
+carpet, furniture or clothing.
+
+Indoor fan stops occasionally during automatic
+fan speed setting.
+
+* This helps to remove the surrounding odour.
+
+Operation is delayed a few minutes after
+restarting.
+
+¢ The delay is a protection to the unit’s compressor.
+
+Outdoor unit emits water/steam.
+
+* Condensation or evaporation occurs on pipes.
+
+TIMER indicator is always on.
+
+¢ The timer setting repeats daily once set.
+
+Cracking sound during operation.
+
+* Changes of temperature caused the expansion/
+contraction of the unit.
+
+Discoloration of some plastic parts.
+
+* Discoloration is subject to material types used in plastic
+parts, accelerated when exposed to heat, sun light, UV
+light, or environmental factor.
+
+Check the following before calling for servicing.
+
+Symptom
+
+Check
+
+Operation in COOL mode is not working
+efficiently.
+
+¢ Set the temperature correctly.
+
+* Close all doors and windows.
+
+*Clean or replace the filters.
+
+¢ Clear any obstruction at the air inlet and air outlet
+vents.
+
+Noisy during operation.
+
+* Check if the unit has been installed at an incline.
+* Close the front panel properly.
+
+Remote control does not work.
+(Display is dim or transmission signal is weak.)
+
+«Insert the batteries correctly.
+«Replace weak batteries.
+
+The unit does not work.
+
+* Check if the circuit breaker is tripped.
+* Check if timers have been set.
+
+The unit does not receive the signal from the
+remote control.
+
+¢ Make sure the receiver is not obstructed.
+* Certain fluorescent lights may interfere with signal
+transmitter. Please consult authorised dealer.
+
+NON SERVICEABLE CRITERIAS
+
+TURN OFF POWER SUPPLY AND UNPLUG then please consult authorised dealer under the following
+
+conditions:
+* Abnormal noise during operation.
+
+¢ Water/foreign particles have entered the remote
+
+control.
+¢ Water leaks from Indoor unit.
+
+* Circuit breaker switches off frequently.
+
+* Power cord becomes unnaturally warm.
+
+* Switches or buttons are not functioning properly.
+
+* The unit stops and some alpha-numeric codes
+appear on IDU display.
+
+Cleaning instructions / Troubleshooting
+
+English
+
+13
 
 
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[TABLE]
+Troubleshooting
+
+The following symptoms do not indicate malfunction.
+
+Symptom
+
+Cause
+
+Mist emerges from indoor unit.
+
+* Condensation effect due to cooling process.
+
+Water flowing sound during operation.
+
+¢ Refrigerant flow inside the unit.
+
+The room has a peculiar odour.
+
+* This may be due to damp smell emitted by the wall,
+carpet, furniture or clothing.
+
+Indoor fan stops occasionally during automatic
+fan speed setting.
+
+* This helps to remove the surrounding odour.
+
+Operation is delayed a few minutes after
+restarting.
+
+¢ The delay is a protection to the unit’s compressor.
+
+Outdoor unit emits water/steam.
+
+* Condensation or evaporation occurs on pipes.
+
+TIMER indicator is always on.
+
+¢ The timer setting repeats daily once set.
+
+Cracking sound during operation.
+
+* Changes of temperature caused the expansion/
+contraction of the unit.
+
+Discoloration of some plastic parts.
+
+* Discoloration is subject to material types used in plastic
+parts, accelerated when exposed to heat, sun light, UV
+light, or environmental factor.
+
+Check the following before calling for servicing.
+
+Symptom
+
+Check
+
+Operation in COOL mode is not working
+efficiently.
+
+¢ Set the temperature correctly.
+
+* Close all doors and windows.
+
+*Clean or replace the filters.
+
+¢ Clear any obstruction at the air inlet and air outlet
+vents.
+
+Noisy during operation.
+
+* Check if the unit has been installed at an incline.
+* Close the front panel properly.
+
+Remote control does not work.
+(Display is dim or transmission signal is weak.)
+
+«Insert the batteries correctly.
+«Replace weak batteries.
+
+The unit does not work.
+
+* Check if the circuit breaker is tripped.
+* Check if timers have been set.
+
+The unit does not receive the signal from the
+remote control.
+
+¢ Make sure the receiver is not obstructed.
+* Certain fluorescent lights may interfere with signal
+transmitter. Please consult authorised dealer.
+
+NON SERVICEABLE CRITERIAS
+
+TURN OFF POWER SUPPLY AND UNPLUG then please consult authorised dealer under the following
+
+conditions:
+* Abnormal noise during operation.
+
+¢ Water/foreign particles have entered the remote
+
+control.
+¢ Water leaks from Indoor unit.
+
+* Circuit breaker switches off frequently.
+
+* Power cord becomes unnaturally warm.
+
+* Switches or buttons are not functioning properly.
+
+* The unit stops and some alpha-numeric codes
+appear on IDU display.
+
+Cleaning instructions / Troubleshooting
+
+English
+
+13
 
 
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 6
-  element_type: table
+  page_number: 13
+  element_type: ocr_text_block
 
 
 
@@ -554,21 +3192,157 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 8, 'element_type': 'table'}
-page_content: [TABLE]
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 14, 'element_type': 'ocr_text_block'}
+page_content: Information
+
+English
+
+Information on hazardous constituents as specified in sub-rule1 of rule16 (1) in electrical and electronic
+equipment.
+
+Declaration of Conformity with the requirements of the E-Waste (Management) Amendment Rules 2018
+with the rule 16 (1) limits with respect to Lead, Mercury, Cadmium, Hexavalent chromium, Polybrominated
+biphenyls, Polybrominated diphenyl ethers.
+
+The content of hazardous substance with the exemption of the applications listed in SCHEDULE II of the
+E-Waste (Management) Amendment Rules 2018 :
+
+1. Lead (Pb) — not over 0.1% by weight;
+
+2. Cadmium (Cd) — not over 0.01% by weight;
+
+3. Mercury (Hg) — not over 0.1% by weight;
+
+4. Hexavalent chromium (Cr6+) — not over 0.1% by weight;
+
+5. Polybrominated biphenyls (PBBs) — not over 0.1% by weight;
+
+6. Polybrominated diphenyl ethers (PBDEs) — not over 0.1% by weight.
+
+For the purpose of recycling to facilitate effective utilization of resources,
+
+please return this product to a nearby authorized collection center,
+
+registered dismantler of recycler, or Panasonic service center when
+—a disposing of this product.
+
+Customer care number ( Toll free ): 1800 103 1333 ,1800 108 1333
+
+Please see the Panasonic website for further information on collection centers, etc.
+or call the customer care toll-free number
+http://www.panasonic.com/in/corporate/sustainability/panasonic-india-i-recycle-program.html
+
+Do’s & Don’t: E-waste (Management ) Amendment Rules 2018
+2
+All electrical and electronic products are required | The product should not be opened by the User
+1. |to be handed over only to the Authorized | himself / herself, but only by authorized service
+recycler. personnel.
+The product should be handed over only to|The product is not meant for re-sale to any
+2. | authorized recycler for disposal. unauthorized agencies / scrap dealer / kabari
+walas.
+Keep the product in isolated area, after it} The product is not meant for mixing into house
+3. | becomes non-functional / un-repairable so as to | hold waste stream.
+prevent its accidental breakage.
+
+Refer to operating instruction for handling of | Do not keep any replaced spare part(s) from the
+
+End-of-Life products product in exposed area.
+
+Always dispose products that have reached | Do not donate old electronic items to any body.
+
+end-of life at Panasonic India Authorized Service |Do not dispose your product in garbage bins
+
+Centre. along with municipal waste that ultimately
+reaches landfill.
+
+Wherever possible or as instructed, separate the | Do not give e-waste to informal and unorganized
+
+packaging material according to responsible | sectors like Local Scrap Dealer / Rag Pickers.
+
+waste disposal options and sorting for recycling.
+
+14
 
 
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[TABLE]
+Information
+
+English
+
+Information on hazardous constituents as specified in sub-rule1 of rule16 (1) in electrical and electronic
+equipment.
+
+Declaration of Conformity with the requirements of the E-Waste (Management) Amendment Rules 2018
+with the rule 16 (1) limits with respect to Lead, Mercury, Cadmium, Hexavalent chromium, Polybrominated
+biphenyls, Polybrominated diphenyl ethers.
+
+The content of hazardous substance with the exemption of the applications listed in SCHEDULE II of the
+E-Waste (Management) Amendment Rules 2018 :
+
+1. Lead (Pb) — not over 0.1% by weight;
+
+2. Cadmium (Cd) — not over 0.01% by weight;
+
+3. Mercury (Hg) — not over 0.1% by weight;
+
+4. Hexavalent chromium (Cr6+) — not over 0.1% by weight;
+
+5. Polybrominated biphenyls (PBBs) — not over 0.1% by weight;
+
+6. Polybrominated diphenyl ethers (PBDEs) — not over 0.1% by weight.
+
+For the purpose of recycling to facilitate effective utilization of resources,
+
+please return this product to a nearby authorized collection center,
+
+registered dismantler of recycler, or Panasonic service center when
+—a disposing of this product.
+
+Customer care number ( Toll free ): 1800 103 1333 ,1800 108 1333
+
+Please see the Panasonic website for further information on collection centers, etc.
+or call the customer care toll-free number
+http://www.panasonic.com/in/corporate/sustainability/panasonic-india-i-recycle-program.html
+
+Do’s & Don’t: E-waste (Management ) Amendment Rules 2018
+2
+All electrical and electronic products are required | The product should not be opened by the User
+1. |to be handed over only to the Authorized | himself / herself, but only by authorized service
+recycler. personnel.
+The product should be handed over only to|The product is not meant for re-sale to any
+2. | authorized recycler for disposal. unauthorized agencies / scrap dealer / kabari
+walas.
+Keep the product in isolated area, after it} The product is not meant for mixing into house
+3. | becomes non-functional / un-repairable so as to | hold waste stream.
+prevent its accidental breakage.
+
+Refer to operating instruction for handling of | Do not keep any replaced spare part(s) from the
+
+End-of-Life products product in exposed area.
+
+Always dispose products that have reached | Do not donate old electronic items to any body.
+
+end-of life at Panasonic India Authorized Service |Do not dispose your product in garbage bins
+
+Centre. along with municipal waste that ultimately
+reaches landfill.
+
+Wherever possible or as instructed, separate the | Do not give e-waste to informal and unorganized
+
+packaging material according to responsible | sectors like Local Scrap Dealer / Rag Pickers.
+
+waste disposal options and sorting for recycling.
+
+14
 
 
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 8
-  element_type: table
+  page_number: 14
+  element_type: ocr_text_block
 
 
 
@@ -580,21 +3354,33 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 10, 'element_type': 'table'}
-page_content: [TABLE]
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 15, 'element_type': 'ocr_text_block'}
+page_content: Memo
+
+OWS / UONEWJO}U]
+
+ysi|6uR
+
+15
 
 
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[TABLE]
+Memo
+
+OWS / UONEWJO}U]
+
+ysi|6uR
+
+15
 
 
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
-  page_number: 10
-  element_type: table
+  page_number: 15
+  element_type: ocr_text_block
 
 
 
@@ -606,552 +3392,80 @@ Module: langchain_core.documents.base
 
 --- ALL ATTRIBUTES ---
 id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 10, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white background with a light gray background']
-type: Document
+metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 16, 'element_type': 'ocr_text_block'}
+page_content: This symbol shows that this equipment
+uses a flammable refrigerant. If the
+refrigerant is leaked, together with
 
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white background with a light gray background']
+WARNING | 2" external ignition source, there is a
+possibility of ignition.
 
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 10
-  element_type: image
+This symbol shows that the
+Operation Instructions should
+be read carefully.
 
+This symbol shows that a service
+AP personnel should be handling this
 
+equipment with reference to the
 
-================================================================================
-DOCUMENT #26
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
+Installation Instructions.
 
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 11, 'element_type': 'table'}
-page_content: [TABLE]
+This symbol shows that there
+is information included in the
+Operation Instructions and/or
+Installation Instructions.
 
-Note:-Turn off existing function Before
-switching of other function in any mode
-( Applicable for Sleep, Powerfull etc.)
-type: Document
+Panasonic Corporation
+Website: http://www.panasonic.com
 
---- PAGE CONTENT (TEXT) ---
-[TABLE]
+© Panasonic Corporation 2019
 
-Note:-Turn off existing function Before
-switching of other function in any mode
-( Applicable for Sleep, Powerfull etc.)
+Printed in India
 
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 11
-  element_type: table
-
-
-
-================================================================================
-DOCUMENT #27
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 11, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white background with a white background and a white background']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white background with a white background and a white background']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 11
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #28
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 11, 'element_type': 'table'}
-page_content: [TABLE]
-
-
+ACI2PR09001
 
 
 type: Document
 
 --- PAGE CONTENT (TEXT) ---
-[TABLE]
+This symbol shows that this equipment
+uses a flammable refrigerant. If the
+refrigerant is leaked, together with
 
+WARNING | 2" external ignition source, there is a
+possibility of ignition.
 
+This symbol shows that the
+Operation Instructions should
+be read carefully.
 
+This symbol shows that a service
+AP personnel should be handling this
 
+equipment with reference to the
 
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 11
-  element_type: table
+Installation Instructions.
 
+This symbol shows that there
+is information included in the
+Operation Instructions and/or
+Installation Instructions.
 
+Panasonic Corporation
+Website: http://www.panasonic.com
 
-================================================================================
-DOCUMENT #29
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
+© Panasonic Corporation 2019
 
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white square frame with a black border']
-type: Document
+Printed in India
 
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white square frame with a black border']
+ACI2PR09001
 
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #30
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white square frame with a black border']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white square frame with a black border']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #31
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white outline of a face']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white outline of a face']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #32
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'the logo for the new gun club']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'the logo for the new gun club']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #33
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a white square frame with a black border']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a white square frame with a black border']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #34
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'table'}
-page_content: [TABLE]
-
-Front Panel
-Dust Filters
-Filter & PM 2.5 filter
-Filter / PM 2.5 filter.
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[TABLE]
-
-Front Panel
-Dust Filters
-Filter & PM 2.5 filter
-Filter / PM 2.5 filter.
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: table
-
-
-
-================================================================================
-DOCUMENT #35
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'the diagram shows the location of the camera']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'the diagram shows the location of the camera']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #36
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a diagram showing the location of the rear door']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a diagram showing the location of the rear door']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #37
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a hand holding a cell phone in front of a train']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a hand holding a cell phone in front of a train']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #38
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a 3d image of a printer']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a 3d image of a printer']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #39
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a pixel style image of a hand holding a knife']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a pixel style image of a hand holding a knife']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #40
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a drawing of a printer with the words'''''''''' '']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a drawing of a printer with the words'''''''''' '']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #41
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 12, 'element_type': 'image'}
-page_content: [IMAGE: A picture of 'a 3d image of a printer']
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[IMAGE: A picture of 'a 3d image of a printer']
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 12
-  element_type: image
-
-
-
-================================================================================
-DOCUMENT #42
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 13, 'element_type': 'table'}
-page_content: [TABLE]
-
-
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[TABLE]
-
-
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 13
-  element_type: table
-
-
-
-================================================================================
-DOCUMENT #43
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 14, 'element_type': 'table'}
-page_content: [TABLE]
-
-Refer to operating instruction for handling of
-End-of-Life products
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[TABLE]
-
-Refer to operating instruction for handling of
-End-of-Life products
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 14
-  element_type: table
-
-
-
-================================================================================
-DOCUMENT #44
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 15, 'element_type': 'table'}
-page_content: [TABLE]
-
-
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[TABLE]
-
-
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 15
-  element_type: table
-
-
-
-================================================================================
-DOCUMENT #45
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 16, 'element_type': 'table'}
-page_content: [TABLE]
-			
-			
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[TABLE]
-			
-			
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 16
-  element_type: table
-
-
-
-================================================================================
-DOCUMENT #46
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 16, 'element_type': 'table'}
-page_content: [TABLE]
-	
-	
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-[TABLE]
-	
-	
-
---- METADATA ---
-  source: CS-KN18WKY.pdf
-  page_number: 16
-  element_type: table
-
-
-
-================================================================================
-DOCUMENT #47
-================================================================================
-Type: Document
-Module: langchain_core.documents.base
-
---- ALL ATTRIBUTES ---
-id: None
-metadata: {'source': 'CS-KN18WKY.pdf', 'page_number': 16, 'element_type': 'text'}
-page_content: ACI2PR0  001
-99
-
-type: Document
-
---- PAGE CONTENT (TEXT) ---
-ACI2PR0  001
-99
 
 
 --- METADATA ---
   source: CS-KN18WKY.pdf
   page_number: 16
-  element_type: text
+  element_type: ocr_text_block
 
 
