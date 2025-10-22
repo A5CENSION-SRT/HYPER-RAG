@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MACAG - Multi-Agent Customer Assistant",
+  title: "HYPER-RAG",
   description: "AI-powered customer support system with RAG capabilities",
 };
 
