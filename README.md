@@ -199,13 +199,11 @@ pip install -r requirements_minimal.txt
 Create a `.env` file in the `backend/` directory:
 
 ```bash
-# Create .env file
-cat > .env << 'EOF'
-GOOGLE_API_KEY=your_google_api_key_here
-DATABASE_URL=postgresql://postgres:testpassword123@localhost:5432/rag_db
-SUPERVISOR_MODEL=gemini-2.5-flash
-SUB_AGENT_MODEL=gemini-2.5-pro
-EOF
+# Copy the example file and edit it
+cp .env.example .env
+
+# Edit the .env file and add your Google API key
+nano .env  # or use your preferred editor
 ```
 
 **Or create it manually:**
@@ -213,23 +211,64 @@ EOF
 ```bash
 # backend/.env
 GOOGLE_API_KEY=your_google_api_key_here
-DATABASE_URL=postgresql://postgres:testpassword123@localhost:5432/rag_db
+
+# Database credentials
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=testpassword123
+POSTGRES_DB=rag_db
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+
+# LLM models
 SUPERVISOR_MODEL=gemini-2.5-flash
 SUB_AGENT_MODEL=gemini-2.5-pro
 ```
 
-⚠️ **Important:** Replace `your_google_api_key_here` with your actual Google API key from [Google AI Studio](https://ai.google.dev/).
+**Quick setup (one command):**
+
+```bash
+cat > .env << 'EOF'
+GOOGLE_API_KEY=your_google_api_key_here
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=testpassword123
+POSTGRES_DB=rag_db
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+SUPERVISOR_MODEL=gemini-2.5-flash
+SUB_AGENT_MODEL=gemini-2.5-pro
+EOF
+```
+
+⚠️ **Important:** 
+- Replace `your_google_api_key_here` with your actual Google API key from [Google AI Studio](https://ai.google.dev/)
+- Change `POSTGRES_PASSWORD` to a secure password for production use
+
+📄 **Reference:** See `backend/.env.example` for all available configuration options.
 
 #### 2.4 Start PostgreSQL Database with Docker
 
 ```bash
+# Make sure you're in the backend directory
+cd backend
+
 # Navigate to database directory
 cd app/database
 
 # Start PostgreSQL container in detached mode
+# Docker Compose will automatically use the environment variables from backend/.env
 docker compose up -d
 
 # Go back to backend root
+cd ../..
+```
+
+**Note:** The `docker-compose.yml` file is configured to read database credentials from your `.env` file. If you change the password or other settings, make sure to recreate the container:
+
+```bash
+cd app/database
+docker compose down
+docker volume rm database_postgres_data  # Only if you want to reset the database
+docker compose up -d
 cd ../..
 ```
 
@@ -266,12 +305,15 @@ docker exec -it rag_postgres_db psql -U postgres -d rag_db
 Apply the schema migrations to create necessary tables:
 
 ```bash
-# Method 1: Using psql client directly
+# Make sure you're in the backend directory
+cd backend
+
+# Method 1: Using psql client directly (will prompt for password from .env)
 psql -h localhost -U postgres -d rag_db -f migrations/add_message_metadata.sql
 
-# You'll be prompted for password: testpassword123
+# You'll be prompted for password (use the value from POSTGRES_PASSWORD in your .env)
 
-# Method 2: Using Docker exec (no password needed)
+# Method 2: Using Docker exec (recommended - no password prompt)
 docker exec -i rag_postgres_db psql -U postgres -d rag_db < migrations/add_message_metadata.sql
 
 # Verify tables were created:
@@ -328,10 +370,11 @@ npm list next react react-dom
 Create a `.env.local` file in the `frontend/` directory:
 
 ```bash
-# Create .env.local file
-cat > .env.local << 'EOF'
-NEXT_PUBLIC_API_URL=http://localhost:8000
-EOF
+# Copy the example file and edit it
+cp .env.local.example .env.local
+
+# Edit if needed (default values work for local development)
+nano .env.local  # or use your preferred editor
 ```
 
 **Or create it manually:**
@@ -340,6 +383,16 @@ EOF
 # frontend/.env.local
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
+
+**Quick setup (one command):**
+
+```bash
+cat > .env.local << 'EOF'
+NEXT_PUBLIC_API_URL=http://localhost:8000
+EOF
+```
+
+📄 **Reference:** See `frontend/.env.local.example` for all available configuration options.
 
 ---
 

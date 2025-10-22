@@ -37,12 +37,29 @@ class Settings(BaseSettings):
 
     VALID_PRODUCT_TYPES: List[str] = ["washing_machine", "air_conditioner", "refrigerator"]
 
-    DATABASE_URL: str = "postgresql://postgres:testpassword123@localhost:5432/rag_db"
+    # Database configuration - individual components
+    POSTGRES_USER: str = "postgres"
+    POSTGRES_PASSWORD: str = "testpassword123"
+    POSTGRES_DB: str = "rag_db"
+    POSTGRES_HOST: str = "localhost"
+    POSTGRES_PORT: str = "5432"
+    
+    # Database URL - can be set directly or will be constructed from components above
+    DATABASE_URL: Optional[str] = None
 
     PROJECT_NAME: str = "Multi-Agent RAG Chatbot"
 
     class Config:
         env_file = Path(__file__).parent.parent.parent / ".env"
         env_file_encoding = "utf-8"
+    
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        # If DATABASE_URL is not explicitly set, construct it from components
+        if not self.DATABASE_URL:
+            self.DATABASE_URL = (
+                f"postgresql://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}"
+                f"@{self.POSTGRES_HOST}:{self.POSTGRES_PORT}/{self.POSTGRES_DB}"
+            )
 
 settings = Settings()
