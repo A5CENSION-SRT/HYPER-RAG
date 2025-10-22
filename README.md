@@ -1,4 +1,4 @@
-# Multi-Agent RAG Pipeline
+# HYPER-RAG: A Hierarchical Multi-Agent RAG System
 
 A production-ready Retrieval-Augmented Generation (RAG) chatbot powered by Google Gemini, LangGraph multi-agent system, and ChromaDB vector stores. The system provides intelligent assistance for household appliances (Washing Machines, Refrigerators, and Air Conditioners) by querying product manuals.
 
