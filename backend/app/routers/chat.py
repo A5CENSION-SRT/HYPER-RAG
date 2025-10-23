@@ -147,7 +147,11 @@ async def stream_message(
                     elif "ac" in langgraph_node.lower() or "air" in langgraph_node.lower():
                         status_msg = 'Air Conditioner Agent searching knowledge base...'
                     else:
-                        clean_name = langgraph_node.replace("_", " ").replace("agent", "").replace("Agent", "").strip().title()
+                        # Remove "agent" suffix (case-insensitive) and format the name
+                        clean_name = langgraph_node.lower().replace("_", " ")
+                        if clean_name.endswith(" agent"):
+                            clean_name = clean_name[:-6]  # Remove " agent" from the end
+                        clean_name = clean_name.strip().title()
                         status_msg = f'Running {clean_name} Agent...'
                     print(f"[STATUS] {status_msg}")
                     yield f"data: {json.dumps({'status': status_msg})}\n\n"
