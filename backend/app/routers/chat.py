@@ -140,18 +140,19 @@ async def stream_message(
                     yield f"data: {json.dumps({'status': status_msg})}\n\n"
                 
                 if kind == "on_chain_start" and langgraph_node and langgraph_node != "supervisor":
-                    if "washing" in langgraph_node.lower():
+                    # Use the 'name' field which contains the actual node name
+                    node_name = name.lower() if name else langgraph_node.lower()
+                    
+                    if "washing" in node_name:
                         status_msg = 'Washing Machine Agent searching knowledge base...'
-                    elif "refrigerator" in langgraph_node.lower():
+                    elif "refrigerator" in node_name:
                         status_msg = 'Refrigerator Agent searching knowledge base...'
-                    elif "ac" in langgraph_node.lower() or "air" in langgraph_node.lower():
+                    elif "ac" in node_name or "air" in node_name or "conditioner" in node_name:
                         status_msg = 'Air Conditioner Agent searching knowledge base...'
                     else:
-                        # Remove "agent" suffix (case-insensitive) and format the name
-                        clean_name = langgraph_node.lower().replace("_", " ")
-                        if clean_name.endswith(" agent"):
-                            clean_name = clean_name[:-6]  # Remove " agent" from the end
-                        clean_name = clean_name.strip().title()
+                        # Fallback: clean up the node name
+                        clean_name = node_name.replace("_", " ").replace("agent", "").replace("expert", "").strip()
+                        clean_name = clean_name.title()
                         status_msg = f'Running {clean_name} Agent...'
                     print(f"[STATUS] {status_msg}")
                     yield f"data: {json.dumps({'status': status_msg})}\n\n"

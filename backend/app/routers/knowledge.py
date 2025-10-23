@@ -2,6 +2,8 @@ from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 import json
 import asyncio
 import logging
+import shutil
+from pathlib import Path
 from typing import AsyncGenerator
 
 from fastapi.responses import StreamingResponse
@@ -90,3 +92,60 @@ async def upload_manual(
         media_type="text/event-stream",
         headers=headers
     )
+
+
+@router.delete("/vector-db/clear", status_code=status.HTTP_200_OK)
+async def clear_all_vector_databases():
+    """
+    Clear all vector databases (ac_db, washing_machine_db, refrigerator_db).
+    This will delete all the data in the ChromaDB collections.
+    """
+    try:
+        deleted_dbs = []
+        errors = []
+        
+        # List of all database directories
+        db_paths = [
+            (settings.CHROMA_DB_DIR_AC, "ac_db"),
+            (settings.CHROMA_DB_DIR_REFRIGERATOR, "refrigerator_db"),
+            (settings.CHROMA_DB_DIR_WASHING_MACHINE, "washing_machine_db"),
+        ]
+        
+        for db_path, db_name in db_paths:
+            try:
+                db_path_obj = Path(db_path)
+                if db_path_obj.exists():
+                    # Remove the entire directory
+                    shutil.rmtree(db_path)
+                    # Recreate the empty directory
+                    db_path_obj.mkdir(parents=True, exist_ok=True)
+                    deleted_dbs.append(db_name)
+                    logger.info(f"Successfully cleared {db_name} at {db_path}")
+                else:
+                    logger.warning(f"{db_name} does not exist at {db_path}")
+                    deleted_dbs.append(f"{db_name} (already empty)")
+            except Exception as e:
+                error_msg = f"Error clearing {db_name}: {str(e)}"
+                logger.error(error_msg)
+                errors.append(error_msg)
+        
+        if errors:
+            return {
+                "status": "partial_success",
+                "message": "Some databases were cleared, but errors occurred",
+                "deleted": deleted_dbs,
+                "errors": errors
+            }
+        
+        return {
+            "status": "success",
+            "message": "All vector databases cleared successfully",
+            "deleted": deleted_dbs
+        }
+        
+    except Exception as e:
+        logger.error(f"Unexpected error while clearing vector databases: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to clear vector databases: {str(e)}"
+        )

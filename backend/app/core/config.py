@@ -11,10 +11,10 @@ class Settings(BaseSettings):
 
     SUPERVISOR_MODEL: str = "gemini-2.5-flash"
 
-    SUB_AGENT_MODEL: str = "gemini-2.5-pro"
-    WASHING_MACHINE_MODEL: str = "gemini-2.5-pro"
-    AC_MODEL: str = "gemini-2.5-pro"
-    REFRIGERATOR_MODEL: str = "gemini-2.5-pro"
+    SUB_AGENT_MODEL: str = "gemini-2.5-flash"
+    WASHING_MACHINE_MODEL: str = "gemini-2.5-flash"
+    AC_MODEL: str = "gemini-2.5-flash"
+    REFRIGERATOR_MODEL: str = "gemini-2.5-flash"
 
 
     #chroma db paths - using absolute paths

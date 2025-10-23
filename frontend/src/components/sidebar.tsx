@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useChatSessions } from "@/hooks/useChatSessions";
 import { createChatSession } from "@/lib/chatService";
+import { ClearVectorDBButton } from "@/components/clear-vector-db-button";
 
 /**
  * Navigation item configuration
@@ -238,6 +239,11 @@ export function Sidebar({ isCollapsed = false, onToggle }: SidebarProps) {
             </ul>
           </div>
         </nav>
+
+        {/* Clear Vector DB Button at the bottom */}
+        <div className="px-2 pb-4">
+          <ClearVectorDBButton isCollapsed={isCollapsed} />
+        </div>
 
         {/* removed bottom spacer so the sidebar naturally fills wrapper height */}
       </div>
